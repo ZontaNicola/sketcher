@@ -42,6 +42,7 @@ namespace rdkit_extensions
 {
 // empty space gap between a monomer and the one following it in the chain. This
 // will be the length of the visibile bond line connecting the two.
+// trigger a change
 constexpr double SIDE_TO_SIDE_DISTANCE = 0.70;
 // when a monomer size is not specified or its value is lower than this, this
 // value is used as the minimum size
