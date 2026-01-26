@@ -112,6 +112,7 @@ static void place_monomer_at(RDKit::Conformer& conformer,
                              const RDGeom::Point3D& position,
                              std::unordered_set<int>& placed_monomers_idcs)
 {
+    std::cerr << "change in monomer_coordgen.cpp\n";
     auto monomer_idx = monomer_to_place->getIdx();
     conformer.setAtomPos(monomer_idx, position);
     placed_monomers_idcs.insert(monomer_to_place->getProp<int>(ORIGINAL_INDEX));
