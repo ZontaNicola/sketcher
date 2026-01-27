@@ -247,8 +247,8 @@ lay_out_chain(RDKit::ROMol& polymer, const RDKit::Atom* start_monomer,
             last_placed_monomer == nullptr);
         auto next_available_direction = available_directions.begin();
         if (available_directions.size() < branches.size()) {
-            throw std::runtime_error(
-                "Not enough available directions to place all branch monomers");
+            throw std::runtime_error("Not  enough available directions to "
+                                     "place all branch monomers");
         }
 
         for (auto branch_monomer : branches) {
