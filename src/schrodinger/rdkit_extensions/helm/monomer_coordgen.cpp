@@ -620,7 +620,9 @@ static void lay_out_polymer(RDKit::ROMol& polymer,
 }
 
 /**
- * Lays out a simple long linear polymer (with no branches) in a snaking pattern
+ * Lays out a simple long linear polymer (with no branches) in a snaking pattern.
+ * Distributes monomers evenly across rows to avoid having a very short last row.
+ * For example, 21 monomers will be laid out as 7+7+7 instead of 10+10+1.
  */
 static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
 {
@@ -629,9 +631,18 @@ static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
     ChainDirection chain_dir = ChainDirection::LTR;
     auto placed_monomers_idcs = std::unordered_set<int>{};
 
-    for (size_t i = 0; i < polymer.getNumAtoms(); i += MONOMERS_PER_SNAKE) {
+    auto total_monomers = polymer.getNumAtoms();
+    // Calculate number of rows needed
+    auto num_rows = (total_monomers + MONOMERS_PER_SNAKE - 1) / MONOMERS_PER_SNAKE;
+    // Calculate monomers per row to distribute evenly (ceiling division)
+    auto monomers_per_row = (total_monomers + num_rows - 1) / num_rows;
+
+    for (size_t row = 0, i = 0; i < total_monomers; ++row) {
         auto start_idx = i;
-        auto end_idx = start_idx + MONOMERS_PER_SNAKE;
+        // For all rows except the last, use monomers_per_row
+        // Last row gets whatever remains
+        auto row_size = std::min(monomers_per_row, total_monomers - i);
+        auto end_idx = start_idx + row_size;
 
         lay_out_chain(polymer, polymer.getAtomWithIdx(start_idx),
                       placed_monomers_idcs, chain_start_pos, chain_dir,
@@ -640,7 +651,9 @@ static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
                           return monomer->getIdx() == end_idx;
                       });
 
-        if (end_idx < polymer.getNumAtoms()) {
+        i = end_idx;
+
+        if (i < total_monomers) {
             // next chain will be under this one and in the opposite direction
             chain_dir = chain_dir == ChainDirection::LTR ? ChainDirection::RTL
                                                          : ChainDirection::LTR;
