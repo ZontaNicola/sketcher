@@ -65,6 +65,10 @@ constexpr double BOND_CLASH_DISTANCE = MONOMER_CLASH_DISTANCE;
 constexpr double MIN_ANGLE_BETWEEN_ADJACENT_BONDS =
     boost::math::constants::pi<double>() / 18; // 10 degrees
 
+// epsilon value for floating-point geometric comparisons (e.g., checking if a
+// value is effectively zero)
+constexpr double GEOMETRIC_EPSILON = 1e-6;
+
 // Props used in the fragmented polymer mols to store monomer graph info from
 // the monomersitc mol
 const std::string BOND_TO{"bondTo"};
@@ -1545,10 +1549,14 @@ struct RingResizeInfo {
  * expanding or shrinking of the ring, then store the maximum change as a scale
  * factor to apply to all the ring's monomer coordinates. This function performs
  * NO geometry mutation.
+ * @param mol the molecule containing the rings
+ * @param monomer_sizes map of monomer index to requested new size
+ * @param ring_resize_info precomputed ring information
+ * @return vector of ring resize data
  */
 std::vector<RingResizeData> collect_ring_resize_data(
     const RDKit::ROMol& mol,
-    const std::unordered_map<int, RDGeom::Point3D>& resizes,
+    const std::unordered_map<int, RDGeom::Point3D>& monomer_sizes,
     const RingResizeInfo& ring_resize_info)
 {
     std::vector<RingResizeData> result;
@@ -1569,7 +1577,8 @@ std::vector<RingResizeData> collect_ring_resize_data(
             side_sum += (p1 - p0).length();
         }
         const double current_side = side_sum / ring.size();
-        if (current_side < 1e-6) {
+        if (current_side < GEOMETRIC_EPSILON) {
+            // degenerate ring, skip to avoid division by zero
             continue;
         }
 
@@ -1577,12 +1586,12 @@ std::vector<RingResizeData> collect_ring_resize_data(
         double max_side_delta = 0.0;
 
         for (const auto& atom_idx : ring) {
-            auto resize_it = resizes.find(atom_idx);
-            if (resize_it == resizes.end()) {
+            auto monomer_sizes_it = monomer_sizes.find(atom_idx);
+            if (monomer_sizes_it == monomer_sizes.end()) {
                 continue;
             }
 
-            const RDGeom::Point3D& new_size = resize_it->second;
+            const RDGeom::Point3D& new_size = monomer_sizes_it->second;
             const RDGeom::Point3D current_size =
                 get_monomer_size(mol, atom_idx);
 
@@ -1931,7 +1940,7 @@ bool is_geometrically_regular_ring_2d(const RDKit::ROMol& mol,
     }
 
     double stddev = std::sqrt(var / N);
-    if (mean_r < 1e-6 || stddev / mean_r > radius_tol) {
+    if (mean_r < GEOMETRIC_EPSILON || stddev / mean_r > radius_tol) {
         return false;
     }
 
