@@ -621,9 +621,10 @@ static void lay_out_polymer(RDKit::ROMol& polymer,
 
 /**
  * Lays out a simple long linear polymer (with no branches) in a snaking
- * pattern. Distributes monomers evenly across rows to avoid having a very short
- * last row. For example, 21 monomers will be laid out as 7-7-7 instead of
- * 10-10-1.
+ * pattern. Distributes monomers as evenly as possibleacross rows to avoid
+ * having a very short last row. For example, 21 monomers will be laid out as
+ * 7-7-7 (instead of 10-10-1) and 22 will be layed out as 8-8-6 (instead of
+ * 10-10-2).
  */
 static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
 {
@@ -636,7 +637,7 @@ static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
     // Calculate number of rows needed
     auto num_rows =
         (total_monomers + MONOMERS_PER_SNAKE - 1) / MONOMERS_PER_SNAKE;
-    // Calculate monomers per row to distribute evenly (ceiling division)
+    // Calculate monomers per row to distribute evenly
     auto monomers_per_row = (total_monomers + num_rows - 1) / num_rows;
 
     unsigned int i = 0u;
