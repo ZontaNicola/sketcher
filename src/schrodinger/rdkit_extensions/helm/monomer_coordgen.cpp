@@ -639,7 +639,8 @@ static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
     // Calculate monomers per row to distribute evenly (ceiling division)
     auto monomers_per_row = (total_monomers + num_rows - 1) / num_rows;
 
-    for (size_t row = 0, i = 0; i < total_monomers; ++row) {
+    unsigned int i = 0u;
+    while (i < total_monomers) {
         auto start_idx = i;
         // For all rows except the last, use monomers_per_row
         // Last row gets whatever remains
@@ -655,13 +656,11 @@ static void lay_out_snaked_linear_polymer(RDKit::ROMol& polymer)
 
         i = end_idx;
 
-        if (i < total_monomers) {
-            // next chain will be under this one and in the opposite direction
-            chain_dir = chain_dir == ChainDirection::LTR ? ChainDirection::RTL
-                                                         : ChainDirection::LTR;
-            chain_start_pos = conformer.getAtomPos(end_idx - 1);
-            chain_start_pos.y -= MONOMER_BOND_LENGTH;
-        }
+        // next chain will be under this one and in the opposite direction
+        chain_dir = chain_dir == ChainDirection::LTR ? ChainDirection::RTL
+                                                     : ChainDirection::LTR;
+        chain_start_pos = conformer.getAtomPos(end_idx - 1);
+        chain_start_pos.y -= MONOMER_BOND_LENGTH;
     }
 }
 
