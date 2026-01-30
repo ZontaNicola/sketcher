@@ -117,6 +117,7 @@ static void place_monomer_at(RDKit::Conformer& conformer,
                              const RDGeom::Point3D& position,
                              std::unordered_set<int>& placed_monomers_idcs)
 {
+    std::cerr << "change in monomer_coordgen.cpp\n";
     auto monomer_idx = monomer_to_place->getIdx();
     conformer.setAtomPos(monomer_idx, position);
     placed_monomers_idcs.insert(monomer_to_place->getProp<int>(ORIGINAL_INDEX));
@@ -251,8 +252,8 @@ lay_out_chain(RDKit::ROMol& polymer, const RDKit::Atom* start_monomer,
             last_placed_monomer == nullptr);
         auto next_available_direction = available_directions.begin();
         if (available_directions.size() < branches.size()) {
-            throw std::runtime_error(
-                "Not enough available directions to place all branch monomers");
+            throw std::runtime_error("Not  enough available directions to "
+                                     "place all branch monomers");
         }
 
         for (auto branch_monomer : branches) {
