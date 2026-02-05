@@ -25,6 +25,7 @@ namespace sketcher
 
 QPointF to_scene_xy(const RDGeom::Point3D& mol_xy)
 {
+    std::cerr << "change unrelated to monomer_coordgen.cpp\n";
     return QPointF(mol_xy.x * VIEW_SCALE, -mol_xy.y * VIEW_SCALE);
 }
 
