@@ -1012,7 +1012,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(0.467108,0,0,0.467108,198.509,42.6608)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M-7.82969,-17.3833 L-12.6297,-22.1833 L-17.4297,-17.3833 L-12.6297,-12.5833 L-7.82969,-17.3833 M-11.6657,-22.6631 L-16.4657,-27.4631 L-21.2657,-22.6631 L-16.4657,-17.8631 L-11.6657,-22.6631"/>
+<path vector-effect="none" fill-rule="evenodd" d="M-15.4511,-21.2666 L-8.74641,-20.2047 L-9.80832,-13.5 L-16.513,-14.5619 L-15.4511,-21.2666 M-19.287,-26.5463 L-12.5824,-25.4844 L-13.6443,-18.7798 L-20.349,-19.8417 L-19.287,-26.5463"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.467108,0,0,0.467108,198.509,42.6608)"
@@ -1081,7 +1081,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(0.467108,0,0,0.467108,294.292,221.617)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M-7.82969,17.3833 L-12.6297,12.5833 L-17.4297,17.3833 L-12.6297,22.1833 L-7.82969,17.3833 M-11.6657,22.6631 L-16.4657,17.8631 L-21.2657,22.6631 L-16.4657,27.4631 L-11.6657,22.6631"/>
+<path vector-effect="none" fill-rule="evenodd" d="M-15.4511,21.2666 L-16.513,14.5619 L-9.80832,13.5 L-8.74641,20.2047 L-15.4511,21.2666 M-19.287,26.5463 L-20.349,19.8417 L-13.6443,18.7798 L-12.5824,25.4844 L-19.287,26.5463"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.467108,0,0,0.467108,294.292,221.617)"
@@ -1129,7 +1129,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#444444" fill-opacity="1" stroke="#444444" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(0.467108,0,0,0.467108,198.509,231.684)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M4.8,18.3 L-2.52258e-15,13.5 L-4.8,18.3 L-2.52258e-15,23.1 L4.8,18.3 M4.8,84.7925 L-1.16883e-14,79.9925 L-4.8,84.7925 L-1.16883e-14,89.5925 L4.8,84.7925"/>
+<path vector-effect="none" fill-rule="evenodd" d="M-3.18424e-15,23.1 L-4.8,18.3 L-1.86092e-15,13.5 L4.8,18.3 L-3.18424e-15,23.1 M-1.23499e-14,89.5925 L-4.8,84.7925 L-1.10266e-14,79.9925 L4.8,84.7925 L-1.23499e-14,89.5925"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.467108,0,0,0.467108,198.509,231.684)"
@@ -1156,7 +1156,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(0.467108,0,0,0.467108,232.124,310.106)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M-7.82969,-17.3833 L-12.6297,-22.1833 L-17.4297,-17.3833 L-12.6297,-12.5833 L-7.82969,-17.3833 M-11.6657,-22.6631 L-16.4657,-27.4631 L-21.2657,-22.6631 L-16.4657,-17.8631 L-11.6657,-22.6631"/>
+<path vector-effect="none" fill-rule="evenodd" d="M-15.4511,-21.2666 L-8.74641,-20.2047 L-9.80832,-13.5 L-16.513,-14.5619 L-15.4511,-21.2666 M-19.287,-26.5463 L-12.5824,-25.4844 L-13.6443,-18.7798 L-20.349,-19.8417 L-19.287,-26.5463"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(0.467108,0,0,0.467108,232.124,310.106)"

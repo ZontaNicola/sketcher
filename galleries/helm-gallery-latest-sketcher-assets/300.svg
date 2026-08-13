@@ -298,7 +298,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1.14783,0,0,1.14783,25.9739,170.591)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M4.8,18.3 L0,13.5 L-4.8,18.3 L0,23.1 L4.8,18.3 M4.8,31.2 L0,26.4 L-4.8,31.2 L0,36 L4.8,31.2"/>
+<path vector-effect="none" fill-rule="evenodd" d="M0,23.1 L-4.8,18.3 L0,13.5 L4.8,18.3 L0,23.1 M0,36 L-4.8,31.2 L0,26.4 L4.8,31.2 L0,36"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.14783,0,0,1.14783,25.9739,170.591)"

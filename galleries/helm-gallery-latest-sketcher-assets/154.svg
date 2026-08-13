@@ -235,7 +235,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1.19765,0,0,1.19765,269.651,127.438)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M4.8,18.3 L1.08808e-15,13.5 L-4.8,18.3 L1.08808e-15,23.1 L4.8,18.3 M4.8,101.204 L6.01735e-15,96.4036 L-4.8,101.204 L6.01735e-15,106.004 L4.8,101.204"/>
+<path vector-effect="none" fill-rule="evenodd" d="M1.37348e-15,23.1 L-4.8,18.3 L8.02681e-16,13.5 L4.8,18.3 L1.37348e-15,23.1 M6.30275e-15,106.004 L-4.8,101.204 L5.73195e-15,96.4036 L4.8,101.204 L6.30275e-15,106.004"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.19765,0,0,1.19765,269.651,127.438)"

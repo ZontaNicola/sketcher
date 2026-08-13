@@ -130,7 +130,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#444444" fill-opacity="1" stroke="#444444" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.66542,0,0,2.66542,193.575,330.938)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M21.6941,-16.8941 L16.8941,-21.6941 L12.0941,-16.8941 L16.8941,-12.0941 L21.6941,-16.8941 M37.4059,-32.6059 L32.6059,-37.4059 L27.8059,-32.6059 L32.6059,-27.8059 L37.4059,-32.6059"/>
+<path vector-effect="none" fill-rule="evenodd" d="M20.2882,-20.2882 L20.2882,-13.5 L13.5,-13.5 L13.5,-20.2882 L20.2882,-20.2882 M36,-36 L36,-29.2118 L29.2118,-29.2118 L29.2118,-36 L36,-36"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.66542,0,0,2.66542,193.575,330.938)"

@@ -319,7 +319,7 @@ font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal"
 <g fill="#666666" fill-opacity="1" stroke="#666666" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(1.07218,0,0,1.07218,132.42,153.305)"
 font-family="Sans Serif" font-size="9" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M4.8,18.3 L0,13.5 L-4.8,18.3 L0,23.1 L4.8,18.3 M4.8,67.4365 L0,62.6365 L-4.8,67.4365 L0,72.2365 L4.8,67.4365"/>
+<path vector-effect="none" fill-rule="evenodd" d="M0,23.1 L-4.8,18.3 L0,13.5 L4.8,18.3 L0,23.1 M0,72.2365 L-4.8,67.4365 L0,62.6365 L4.8,67.4365 L0,72.2365"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1.07218,0,0,1.07218,132.42,153.305)"
