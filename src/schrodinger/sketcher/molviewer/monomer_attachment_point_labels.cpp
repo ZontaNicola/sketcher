@@ -97,18 +97,19 @@ static void position_ap_label_rect(
 }
 
 /**
- * Position the given rectangle to label a monomer's attachment point, assuming
- * that the attachment point connection is drawn either above or below the
- * monomer using an arrowhead. See `prep_attachment_point_name` for parameter
- * documentation.
+ * Position the given rectangle next to an attachment point arrowhead. The
+ * arrowhead may be on a cardinal side or a corner of the monomer. See
+ * `prep_attachment_point_name` for parameter documentation.
  */
 static void position_ap_label_rect_next_to_arrowhead(
     QRectF& ap_label_rect, const QGraphicsItem* monomer_item,
-    const RDGeom::Point3D& monomer_coords, const RDGeom::Point3D& bound_coords)
+    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
+    const bool is_secondary_connection, const RDGeom::Point3D& bound_coords)
 {
     auto bound_qcoords = to_scene_xy(bound_coords);
-    auto arrowhead_offset =
-        get_monomer_arrowhead_offset(*monomer_item, bound_qcoords);
+    auto arrowhead_offset = get_monomer_arrowhead_offset(
+        *monomer_item, bound_qcoords, monomer, bound_monomer,
+        is_secondary_connection);
 
     // Position the label perpendicular to the connector, just past the
     // arrowhead. Opposite ends of a connector naturally use opposite sides.
@@ -228,7 +229,9 @@ QGraphicsItem* create_label_for_bound_attachment_point(
         // this connection is drawn with an arrowhead, so position the label
         // next to the arrowhead
         position_ap_label_rect_next_to_arrowhead(ap_label_rect, monomer_item,
-                                                 monomer_coords, bound_coords);
+                                                 monomer, bound_monomer,
+                                                 is_secondary_connection,
+                                                 bound_coords);
     }
     return create_attachment_point_label(ap_qname, ap_label_rect, fonts, color);
 }

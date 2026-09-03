@@ -51,6 +51,12 @@ const std::unordered_map<MonomerType, std::vector<std::string>>
 
 const int INVALID_ATTACHMENT_POINT_SPEC = -2;
 
+// A connection occupies a cardinal side only when it is within 30 degrees of
+// that side's normal. This leaves gaps around the diagonals where a connection
+// does not block either neighboring side. tan(30 degrees) is used so that we
+// can compare vector components without calculating an angle.
+constexpr double SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE = 0.5773502691896258;
+
 const std::unordered_map<Direction, Direction> OPPOSITE_CARDINAL_DIRECTION = {
     {Direction::N, Direction::S},
     {Direction::S, Direction::N},
@@ -221,24 +227,176 @@ does_connector_have_arrowheads(const RDKit::Bond* bond,
     }
 }
 
-QPointF get_monomer_arrowhead_offset(const QGraphicsItem& monomer_item,
-                                     const QPointF& bound_coords)
+static std::pair<Direction, Direction>
+get_nearest_cardinal_directions(const QPointF& relative_pos)
 {
-    auto line = QLineF(QPointF(), bound_coords - monomer_item.pos());
-    if (qFuzzyIsNull(line.length())) {
+    auto horizontal = relative_pos.x() < 0 ? Direction::W : Direction::E;
+    auto vertical = relative_pos.y() > 0 ? Direction::S : Direction::N;
+    if (qAbs(relative_pos.x()) >= qAbs(relative_pos.y())) {
+        return {horizontal, vertical};
+    }
+    return {vertical, horizontal};
+}
+
+static bool is_in_horizontal_side_cone(const QPointF& relative_pos)
+{
+    return qAbs(relative_pos.y()) <=
+           qAbs(relative_pos.x()) * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE;
+}
+
+static bool is_in_vertical_side_cone(const QPointF& relative_pos)
+{
+    return qAbs(relative_pos.x()) <=
+           qAbs(relative_pos.y()) * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE;
+}
+
+static std::optional<Direction>
+get_occupied_direction_between(const RDKit::Atom* monomer,
+                               const RDKit::Atom* bound_monomer)
+{
+    const auto& conf = monomer->getOwningMol().getConformer();
+    auto relative_pos = conf.getAtomPos(bound_monomer->getIdx()) -
+                        conf.getAtomPos(monomer->getIdx());
+    auto abs_x = std::fabs(relative_pos.x);
+    auto abs_y = std::fabs(relative_pos.y);
+    if (abs_y <= abs_x * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+        return relative_pos.x > 0 ? Direction::E : Direction::W;
+    }
+    if (abs_x <= abs_y * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+        return relative_pos.y > 0 ? Direction::N : Direction::S;
+    }
+    return std::nullopt;
+}
+
+static std::unordered_set<Direction> get_occupied_cardinal_directions(
+    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
+    const bool is_secondary_connection)
+{
+    const auto& mol = monomer->getOwningMol();
+    const auto* current_bond = mol.getBondBetweenAtoms(
+        monomer->getIdx(), bound_monomer->getIdx());
+    std::unordered_set<Direction> occupied;
+
+    auto record_connection = [&](const RDKit::Bond* bond,
+                                 const bool is_secondary,
+                                 const std::string& prop_name) {
+        std::string linkage;
+        if (!bond->getPropIfPresent(prop_name, linkage) ||
+            (bond == current_bond &&
+             is_secondary == is_secondary_connection)) {
+            return;
+        }
+        auto direction = get_occupied_direction_between(
+            monomer, bond->getOtherAtom(monomer));
+        if (direction.has_value()) {
+            occupied.insert(*direction);
+        }
+    };
+
+    for (const auto* bond : mol.atomBonds(monomer)) {
+        record_connection(bond, false, LINKAGE);
+        if (contains_two_monomer_linkages(bond)) {
+            record_connection(bond, true, CUSTOM_BOND);
+        }
+    }
+    return occupied;
+}
+
+static QPointF get_offset_for_directions(const QRectF& rect,
+                                         const Direction first,
+                                         const Direction second,
+                                         const bool use_corner)
+{
+    auto x = first == Direction::W || second == Direction::W
+                 ? rect.left()
+                 : first == Direction::E || second == Direction::E
+                       ? rect.right()
+                       : 0.0;
+    auto y = first == Direction::N || second == Direction::N
+                 ? rect.top()
+                 : first == Direction::S || second == Direction::S
+                       ? rect.bottom()
+                       : 0.0;
+    QPointF edge_point(x, y);
+
+    QLineF offset(QPointF(), edge_point);
+    if (!use_corner) {
+        if (first == Direction::N || first == Direction::S) {
+            offset = QLineF(QPointF(), QPointF(0.0, y));
+        } else {
+            offset = QLineF(QPointF(), QPointF(x, 0.0));
+        }
+    }
+    offset.setLength(offset.length() + MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+    return offset.p2();
+}
+
+QPointF get_monomer_arrowhead_offset(
+    const QGraphicsItem& monomer_item, const QPointF& bound_coords,
+    const std::unordered_set<Direction>& occupied)
+{
+    auto relative_pos = bound_coords - monomer_item.pos();
+    if (qFuzzyIsNull(QLineF(QPointF(), relative_pos).length())) {
         return {};
     }
 
-    const auto rect = monomer_item.boundingRect();
-    line.setLength(2 * (rect.width() + rect.height()));
-    QPointF intersection;
-    if (!intersection_of_line_and_rect(line, rect, intersection)) {
-        return {};
+    auto [nearest, next_nearest] =
+        get_nearest_cardinal_directions(relative_pos);
+    if (!occupied.contains(nearest)) {
+        return get_offset_for_directions(monomer_item.boundingRect(), nearest,
+                                         next_nearest, false);
     }
+    if (!occupied.contains(next_nearest)) {
+        return get_offset_for_directions(monomer_item.boundingRect(),
+                                         next_nearest, nearest, false);
+    }
+    return get_offset_for_directions(monomer_item.boundingRect(), nearest,
+                                     next_nearest, true);
+}
 
-    line.setLength(QLineF(QPointF(), intersection).length() +
-                   MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
-    return line.p2();
+QPointF get_monomer_arrowhead_offset(
+    const QGraphicsItem& monomer_item, const QPointF& bound_coords,
+    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
+    const bool is_secondary_connection)
+{
+    auto occupied = get_occupied_cardinal_directions(
+        monomer, bound_monomer, is_secondary_connection);
+    auto bound_occupied = get_occupied_cardinal_directions(
+        bound_monomer, monomer, is_secondary_connection);
+    auto relative_pos = bound_coords - monomer_item.pos();
+    auto nearest = get_nearest_cardinal_directions(relative_pos).first;
+    auto bound_nearest =
+        get_nearest_cardinal_directions(-relative_pos).first;
+
+    // When a near-horizontal or near-vertical connection is blocked at both
+    // ends, independent fallback choices are unstable: a tiny coordinate
+    // change can put the two arrowheads on opposite sides and make this
+    // connector cross the bond between the same monomers. Prefer a cardinal
+    // side that is available at both ends so that the two connectors remain
+    // parallel.
+    if (occupied.contains(nearest) &&
+        bound_occupied.contains(bound_nearest)) {
+        const std::vector<Direction>* shared_fallbacks = nullptr;
+        static const std::vector<Direction> HORIZONTAL_FALLBACKS = {
+            Direction::N, Direction::S};
+        static const std::vector<Direction> VERTICAL_FALLBACKS = {
+            Direction::E, Direction::W};
+        if (is_in_horizontal_side_cone(relative_pos)) {
+            shared_fallbacks = &HORIZONTAL_FALLBACKS;
+        } else if (is_in_vertical_side_cone(relative_pos)) {
+            shared_fallbacks = &VERTICAL_FALLBACKS;
+        }
+        if (shared_fallbacks != nullptr) {
+            for (auto direction : *shared_fallbacks) {
+                if (!occupied.contains(direction) &&
+                    !bound_occupied.contains(direction)) {
+                    return get_offset_for_directions(
+                        monomer_item.boundingRect(), direction, nearest, false);
+                }
+            }
+        }
+    }
+    return get_monomer_arrowhead_offset(monomer_item, bound_coords, occupied);
 }
 
 int ap_name_to_num(const std::string_view attachment_point_name)

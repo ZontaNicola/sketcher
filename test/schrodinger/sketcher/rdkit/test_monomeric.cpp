@@ -10,7 +10,9 @@
 #include <QGraphicsRectItem>
 
 #include "schrodinger/rdkit_extensions/convert.h"
+#include "schrodinger/rdkit_extensions/helm/monomer_coordgen.h"
 #include "schrodinger/sketcher/molviewer/constants.h"
+#include "schrodinger/sketcher/molviewer/coord_utils.h"
 #include "schrodinger/sketcher/molviewer/monomer_constants.h"
 #include "schrodinger/sketcher/rdkit/mol_update.h"
 #include "schrodinger/sketcher/rdkit/monomeric.h"
@@ -400,30 +402,157 @@ BOOST_AUTO_TEST_CASE(test_get_first_available_chain_name)
                "PEPTIDE1");
 }
 
-BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_faces_bound_monomer)
+BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_uses_available_side)
 {
     QGraphicsRectItem monomer(-10.0, -5.0, 20.0, 10.0);
     monomer.setPos(100.0, 100.0);
 
     const auto right_offset =
-        get_monomer_arrowhead_offset(monomer, QPointF(200.0, 100.0));
+        get_monomer_arrowhead_offset(monomer, QPointF(200.0, 100.0), {});
     BOOST_TEST(right_offset.x() == monomer.boundingRect().right() +
                                        MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
                boost::test_tools::tolerance(0.001));
     BOOST_TEST(right_offset.y() == 0.0, boost::test_tools::tolerance(0.001));
 
     const auto left_offset =
-        get_monomer_arrowhead_offset(monomer, QPointF(0.0, 100.0));
+        get_monomer_arrowhead_offset(monomer, QPointF(0.0, 100.0), {});
     BOOST_TEST(left_offset.x() == monomer.boundingRect().left() -
                                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
                boost::test_tools::tolerance(0.001));
     BOOST_TEST(left_offset.y() == 0.0, boost::test_tools::tolerance(0.001));
 
     const auto bottom_offset =
-        get_monomer_arrowhead_offset(monomer, QPointF(100.0, 200.0));
+        get_monomer_arrowhead_offset(monomer, QPointF(100.0, 200.0), {});
     BOOST_TEST(bottom_offset.x() == 0.0, boost::test_tools::tolerance(0.001));
     BOOST_TEST(bottom_offset.y() == monomer.boundingRect().bottom() +
                                         MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+
+    const auto fallback_offset = get_monomer_arrowhead_offset(
+        monomer, QPointF(200.0, 50.0), {Direction::E});
+    BOOST_TEST(fallback_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(fallback_offset.y() == monomer.boundingRect().top() -
+                                          MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+
+    const auto corner_offset = get_monomer_arrowhead_offset(
+        monomer, QPointF(200.0, 50.0), {Direction::E, Direction::N});
+    QLineF expected_corner_offset(QPointF(), monomer.boundingRect().topRight());
+    expected_corner_offset.setLength(expected_corner_offset.length() +
+                                     MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+    BOOST_TEST(corner_offset.x() == expected_corner_offset.p2().x(),
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(corner_offset.y() == expected_corner_offset.p2().y(),
+               boost::test_tools::tolerance(0.001));
+}
+
+BOOST_AUTO_TEST_CASE(test_duplicate_custom_bond_does_not_occupy_side)
+{
+    auto mol = rdkit_extensions::to_rdkit(
+        "PEPTIDE1{[dC].[dQ].I.[dD].S.[dP].[dC]}$PEPTIDE1,PEPTIDE1,"
+        "1:R3-7:R3$$$");
+    prepare_mol(*mol);
+    auto& conf = mol->getConformer();
+    conf.setAtomPos(0, {0.0, 0.0, 0.0});
+    conf.setAtomPos(1, {BOND_LENGTH, 0.0, 0.0});
+    conf.setAtomPos(5, {BOND_LENGTH, -BOND_LENGTH, 0.0});
+    conf.setAtomPos(6, {0.0, -BOND_LENGTH, 0.0});
+
+    const auto* first_monomer = mol->getAtomWithIdx(0);
+    const auto* last_monomer = mol->getAtomWithIdx(6);
+    QGraphicsRectItem first_item(-10.0, -5.0, 20.0, 10.0);
+    QGraphicsRectItem last_item(-10.0, -5.0, 20.0, 10.0);
+    last_item.setPos(0.0, BOND_LENGTH);
+
+    const auto first_offset = get_monomer_arrowhead_offset(
+        first_item, last_item.pos(), first_monomer, last_monomer, false);
+    BOOST_TEST(first_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(first_offset.y() == first_item.boundingRect().bottom() +
+                                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+
+    const auto last_offset = get_monomer_arrowhead_offset(
+        last_item, first_item.pos(), last_monomer, first_monomer, false);
+    BOOST_TEST(last_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(last_offset.y() == last_item.boundingRect().top() -
+                                      MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+}
+
+BOOST_AUTO_TEST_CASE(test_diagonal_connections_do_not_occupy_sides)
+{
+    auto mol = rdkit_extensions::to_rdkit(
+        "PEPTIDE1{C.K.G.K.G.A.K.C.S.R.L.M.Y.D.C.C.T.G.S.C.R.S.G.K.C}"
+        "$PEPTIDE1,PEPTIDE1,1:R3-16:R3|PEPTIDE1,PEPTIDE1,8:R3-20:R3|"
+        "PEPTIDE1,PEPTIDE1,15:R3-25:R3$$$");
+    rdkit_extensions::compute_monomer_mol_coords(*mol);
+
+    const auto* monomer_8 = mol->getAtomWithIdx(7);
+    const auto* monomer_20 = mol->getAtomWithIdx(19);
+    const auto& conf = mol->getConformer();
+    auto monomer_8_pos = to_scene_xy(conf.getAtomPos(monomer_8->getIdx()));
+    auto monomer_20_pos = to_scene_xy(conf.getAtomPos(monomer_20->getIdx()));
+
+    QGraphicsRectItem monomer_8_item(-10.0, -5.0, 20.0, 10.0);
+    monomer_8_item.setPos(monomer_8_pos);
+    QGraphicsRectItem monomer_20_item(-10.0, -5.0, 20.0, 10.0);
+    monomer_20_item.setPos(monomer_20_pos);
+
+    const auto monomer_8_offset = get_monomer_arrowhead_offset(
+        monomer_8_item, monomer_20_pos, monomer_8, monomer_20, false);
+    BOOST_TEST(monomer_8_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(monomer_8_offset.y() ==
+                   monomer_8_item.boundingRect().top() -
+                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+
+    const auto monomer_20_offset = get_monomer_arrowhead_offset(
+        monomer_20_item, monomer_8_pos, monomer_20, monomer_8, false);
+    BOOST_TEST(monomer_20_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(monomer_20_offset.y() ==
+                   monomer_20_item.boundingRect().bottom() +
+                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+               boost::test_tools::tolerance(0.001));
+}
+
+BOOST_AUTO_TEST_CASE(test_parallel_connections_use_same_fallback_side)
+{
+    auto mol = rdkit_extensions::to_rdkit(
+        "PEPTIDE1{C.C}$PEPTIDE1,PEPTIDE1,1:R3-2:R3$$$");
+    prepare_mol(*mol);
+    auto& conf = mol->getConformer();
+    conf.setAtomPos(0, {0.0, 0.0, 0.0});
+    // A small vertical perturbation used to send the two arrowheads to
+    // opposite sides, causing the disulfide connector to cross the backbone.
+    conf.setAtomPos(1, {BOND_LENGTH, 0.1 * BOND_LENGTH, 0.0});
+
+    const auto* first_monomer = mol->getAtomWithIdx(0);
+    const auto* second_monomer = mol->getAtomWithIdx(1);
+    auto first_pos = to_scene_xy(conf.getAtomPos(0));
+    auto second_pos = to_scene_xy(conf.getAtomPos(1));
+    QGraphicsRectItem first_item(-10.0, -5.0, 20.0, 10.0);
+    first_item.setPos(first_pos);
+    QGraphicsRectItem second_item(-10.0, -5.0, 20.0, 10.0);
+    second_item.setPos(second_pos);
+
+    const auto first_offset = get_monomer_arrowhead_offset(
+        first_item, second_pos, first_monomer, second_monomer, true);
+    const auto second_offset = get_monomer_arrowhead_offset(
+        second_item, first_pos, second_monomer, first_monomer, true);
+    const auto expected_y = first_item.boundingRect().top() -
+                            MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
+    BOOST_TEST(first_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(second_offset.x() == 0.0,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(first_offset.y() == expected_y,
+               boost::test_tools::tolerance(0.001));
+    BOOST_TEST(second_offset.y() == expected_y,
                boost::test_tools::tolerance(0.001));
 }
 
