@@ -24,6 +24,21 @@ namespace schrodinger
 namespace sketcher
 {
 
+namespace
+{
+
+constexpr double COORDINATE_TOLERANCE = 0.001;
+
+void check_point_close(const QPointF& actual, const QPointF& expected)
+{
+    BOOST_TEST(actual.x() == expected.x(),
+               boost::test_tools::tolerance(COORDINATE_TOLERANCE));
+    BOOST_TEST(actual.y() == expected.y(),
+               boost::test_tools::tolerance(COORDINATE_TOLERANCE));
+}
+
+} // namespace
+
 /**
  * Make sure that contains_two_monomer_linkages correctly detects two monomer
  * linkages in the same bond when there's a disulfide bond between neighboring
@@ -409,42 +424,34 @@ BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_uses_available_side)
 
     const auto right_offset =
         get_monomer_arrowhead_offset(monomer, QPointF(200.0, 100.0), {});
-    BOOST_TEST(right_offset.x() == monomer.boundingRect().right() +
-                                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(right_offset.y() == 0.0, boost::test_tools::tolerance(0.001));
+    check_point_close(right_offset, {monomer.boundingRect().right() +
+                                         MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+                                     0.0});
 
     const auto left_offset =
         get_monomer_arrowhead_offset(monomer, QPointF(0.0, 100.0), {});
-    BOOST_TEST(left_offset.x() == monomer.boundingRect().left() -
-                                      MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(left_offset.y() == 0.0, boost::test_tools::tolerance(0.001));
+    check_point_close(left_offset, {monomer.boundingRect().left() -
+                                        MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+                                    0.0});
 
     const auto bottom_offset =
         get_monomer_arrowhead_offset(monomer, QPointF(100.0, 200.0), {});
-    BOOST_TEST(bottom_offset.x() == 0.0, boost::test_tools::tolerance(0.001));
-    BOOST_TEST(bottom_offset.y() == monomer.boundingRect().bottom() +
-                                        MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(bottom_offset,
+                      {0.0, monomer.boundingRect().bottom() +
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
     const auto fallback_offset = get_monomer_arrowhead_offset(
         monomer, QPointF(200.0, 50.0), {Direction::E});
-    BOOST_TEST(fallback_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(fallback_offset.y() == monomer.boundingRect().top() -
-                                          MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(fallback_offset,
+                      {0.0, monomer.boundingRect().top() -
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
     const auto corner_offset = get_monomer_arrowhead_offset(
         monomer, QPointF(200.0, 50.0), {Direction::E, Direction::N});
     QLineF expected_corner_offset(QPointF(), monomer.boundingRect().topRight());
     expected_corner_offset.setLength(expected_corner_offset.length() +
                                      MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
-    BOOST_TEST(corner_offset.x() == expected_corner_offset.p2().x(),
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(corner_offset.y() == expected_corner_offset.p2().y(),
-               boost::test_tools::tolerance(0.001));
+    check_point_close(corner_offset, expected_corner_offset.p2());
 }
 
 BOOST_AUTO_TEST_CASE(test_duplicate_custom_bond_does_not_occupy_side)
@@ -467,19 +474,15 @@ BOOST_AUTO_TEST_CASE(test_duplicate_custom_bond_does_not_occupy_side)
 
     const auto first_offset = get_monomer_arrowhead_offset(
         first_item, last_item.pos(), first_monomer, last_monomer, false);
-    BOOST_TEST(first_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(first_offset.y() == first_item.boundingRect().bottom() +
-                                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(first_offset,
+                      {0.0, first_item.boundingRect().bottom() +
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
     const auto last_offset = get_monomer_arrowhead_offset(
         last_item, first_item.pos(), last_monomer, first_monomer, false);
-    BOOST_TEST(last_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(last_offset.y() == last_item.boundingRect().top() -
-                                      MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(last_offset,
+                      {0.0, last_item.boundingRect().top() -
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 }
 
 BOOST_AUTO_TEST_CASE(test_diagonal_connections_do_not_occupy_sides)
@@ -503,21 +506,15 @@ BOOST_AUTO_TEST_CASE(test_diagonal_connections_do_not_occupy_sides)
 
     const auto monomer_8_offset = get_monomer_arrowhead_offset(
         monomer_8_item, monomer_20_pos, monomer_8, monomer_20, false);
-    BOOST_TEST(monomer_8_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(monomer_8_offset.y() ==
-                   monomer_8_item.boundingRect().top() -
-                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(monomer_8_offset,
+                      {0.0, monomer_8_item.boundingRect().top() -
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
     const auto monomer_20_offset = get_monomer_arrowhead_offset(
         monomer_20_item, monomer_8_pos, monomer_20, monomer_8, false);
-    BOOST_TEST(monomer_20_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(monomer_20_offset.y() ==
-                   monomer_20_item.boundingRect().bottom() +
-                       MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
-               boost::test_tools::tolerance(0.001));
+    check_point_close(monomer_20_offset,
+                      {0.0, monomer_20_item.boundingRect().bottom() +
+                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 }
 
 BOOST_AUTO_TEST_CASE(test_parallel_connections_use_same_fallback_side)
@@ -544,16 +541,10 @@ BOOST_AUTO_TEST_CASE(test_parallel_connections_use_same_fallback_side)
         first_item, second_pos, first_monomer, second_monomer, true);
     const auto second_offset = get_monomer_arrowhead_offset(
         second_item, first_pos, second_monomer, first_monomer, true);
-    const auto expected_y = first_item.boundingRect().top() -
-                            MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
-    BOOST_TEST(first_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(second_offset.x() == 0.0,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(first_offset.y() == expected_y,
-               boost::test_tools::tolerance(0.001));
-    BOOST_TEST(second_offset.y() == expected_y,
-               boost::test_tools::tolerance(0.001));
+    const auto expected_y =
+        first_item.boundingRect().top() - MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
+    check_point_close(first_offset, {0.0, expected_y});
+    check_point_close(second_offset, {0.0, expected_y});
 }
 
 } // namespace sketcher

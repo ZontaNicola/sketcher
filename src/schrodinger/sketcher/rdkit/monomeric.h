@@ -211,6 +211,9 @@ SKETCHER_API QPointF get_monomer_arrowhead_offset(
 /**
  * Low-level overload that uses an explicitly provided set of occupied sides.
  * This is useful when the caller has already determined connection occupancy.
+ * @param monomer_item the graphics item for the monomer
+ * @param bound_coords the Scene coordinates for the other monomer
+ * @param occupied_directions cardinal sides already used by other connections
  */
 SKETCHER_API QPointF get_monomer_arrowhead_offset(
     const QGraphicsItem& monomer_item, const QPointF& bound_coords,

@@ -21,13 +21,28 @@
 #include "schrodinger/rdkit_extensions/helm/monomer_coordgen.h"
 #include "schrodinger/sketcher/image_generation.h"
 
-using schrodinger::rdkit_extensions::Format;
 using schrodinger::rdkit_extensions::compute_monomer_mol_coords;
 using schrodinger::rdkit_extensions::coordinates_are_valid;
+using schrodinger::rdkit_extensions::Format;
 using schrodinger::rdkit_extensions::to_rdkit;
+using schrodinger::sketcher::get_image_bytes;
 using schrodinger::sketcher::ImageFormat;
 using schrodinger::sketcher::RenderOptions;
-using schrodinger::sketcher::get_image_bytes;
+
+namespace
+{
+
+void write_response(const bool success, const bool coordinates_valid,
+                    const QByteArray& payload)
+{
+    // Base64 keeps SVG, HELM, and exception text from introducing tabs or
+    // newlines into the one-request-per-line protocol.
+    std::cout << success << '\t' << coordinates_valid << '\t'
+              << payload.toBase64().toStdString() << '\n';
+    std::cout.flush();
+}
+
+} // namespace
 
 int main(int argc, char* argv[])
 {
@@ -39,21 +54,16 @@ int main(int argc, char* argv[])
     std::string encoded_helm;
     while (std::getline(std::cin, encoded_helm)) {
         try {
-            auto helm_bytes = QByteArray::fromBase64(
-                QByteArray::fromStdString(encoded_helm));
-            auto helm = helm_bytes.toStdString();
-            auto mol = to_rdkit(helm, Format::HELM);
+            const auto helm_bytes =
+                QByteArray::fromBase64(QByteArray::fromStdString(encoded_helm));
+            auto mol = to_rdkit(helm_bytes.toStdString(), Format::HELM);
             compute_monomer_mol_coords(*mol);
-            auto coords_valid = coordinates_are_valid(*mol);
-            auto svg = get_image_bytes(*mol, ImageFormat::SVG, options);
-            std::cout << "1\t" << coords_valid << "\t"
-                      << svg.toBase64().toStdString() << '\n';
+            const auto coordinates_valid = coordinates_are_valid(*mol);
+            const auto svg = get_image_bytes(*mol, ImageFormat::SVG, options);
+            write_response(true, coordinates_valid, svg);
         } catch (const std::exception& error) {
-            auto encoded_error =
-                QByteArray(error.what()).toBase64().toStdString();
-            std::cout << "0\t0\t" << encoded_error << '\n';
+            write_response(false, false, QByteArray(error.what()));
         }
-        std::cout.flush();
     }
     return 0;
 }

@@ -107,12 +107,13 @@ static void position_ap_label_rect_next_to_arrowhead(
     const bool is_secondary_connection, const RDGeom::Point3D& bound_coords)
 {
     auto bound_qcoords = to_scene_xy(bound_coords);
-    auto arrowhead_offset = get_monomer_arrowhead_offset(
-        *monomer_item, bound_qcoords, monomer, bound_monomer,
-        is_secondary_connection);
+    auto arrowhead_offset =
+        get_monomer_arrowhead_offset(*monomer_item, bound_qcoords, monomer,
+                                     bound_monomer, is_secondary_connection);
 
-    // Position the label perpendicular to the connector, just past the
-    // arrowhead. Opposite ends of a connector naturally use opposite sides.
+    // Position the label perpendicular to the radial line from the monomer
+    // center to its arrowhead. This also works when the arrowhead has moved to
+    // a fallback side or corner.
     QLineF normal(QPointF(),
                   QPointF(-arrowhead_offset.y(), arrowhead_offset.x()));
     auto normal_length = normal.length();
@@ -228,10 +229,9 @@ QGraphicsItem* create_label_for_bound_attachment_point(
     } else {
         // this connection is drawn with an arrowhead, so position the label
         // next to the arrowhead
-        position_ap_label_rect_next_to_arrowhead(ap_label_rect, monomer_item,
-                                                 monomer, bound_monomer,
-                                                 is_secondary_connection,
-                                                 bound_coords);
+        position_ap_label_rect_next_to_arrowhead(
+            ap_label_rect, monomer_item, monomer, bound_monomer,
+            is_secondary_connection, bound_coords);
     }
     return create_attachment_point_label(ap_qname, ap_label_rect, fonts, color);
 }

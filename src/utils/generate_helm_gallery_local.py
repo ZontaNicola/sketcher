@@ -18,6 +18,8 @@ def load_gallery_helpers():
 
 
 class LocalRenderer:
+    """Persistent subprocess using the newly built C++ Sketcher target."""
+
     def __init__(self):
         build_root = Path(os.environ["SCHRODINGER"])
         executable = (
@@ -34,6 +36,9 @@ class LocalRenderer:
         )
 
     def render(self, helm):
+        """Render one HELM string and return success, payload, and validity."""
+
+        # Some source tables contain the older four-section terminator.
         if helm.endswith("$$") and not helm.endswith("$$$"):
             helm += "$"
         request = base64.b64encode(helm.encode()).decode()
@@ -42,9 +47,11 @@ class LocalRenderer:
         response = self.process.stdout.readline()
         if not response:
             raise RuntimeError("Local Sketcher renderer exited unexpectedly")
-        success, coords_valid, payload = response.rstrip("\n").split("\t", 2)
+        success, coordinates_valid, payload = response.rstrip("\n").split(
+            "\t", 2
+        )
         decoded = base64.b64decode(payload).decode()
-        return success == "1", decoded, coords_valid == "1"
+        return success == "1", decoded, coordinates_valid == "1"
 
     def close(self):
         self.process.stdin.close()

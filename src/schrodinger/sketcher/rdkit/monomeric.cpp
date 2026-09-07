@@ -1,9 +1,11 @@
 #include "schrodinger/sketcher/rdkit/monomeric.h"
 
 #include <algorithm>
+#include <array>
 #include <functional>
 #include <numeric>
 #include <optional>
+#include <stdexcept>
 #include <string>
 
 #include <boost/range/combine.hpp>
@@ -56,6 +58,11 @@ const int INVALID_ATTACHMENT_POINT_SPEC = -2;
 // does not block either neighboring side. tan(30 degrees) is used so that we
 // can compare vector components without calculating an angle.
 constexpr double SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE = 0.5773502691896258;
+
+constexpr std::array<Direction, 2> HORIZONTAL_CONNECTION_FALLBACK_SIDES = {
+    Direction::N, Direction::S};
+constexpr std::array<Direction, 2> VERTICAL_CONNECTION_FALLBACK_SIDES = {
+    Direction::E, Direction::W};
 
 const std::unordered_map<Direction, Direction> OPPOSITE_CARDINAL_DIRECTION = {
     {Direction::N, Direction::S},
@@ -230,24 +237,33 @@ does_connector_have_arrowheads(const RDKit::Bond* bond,
 static std::pair<Direction, Direction>
 get_nearest_cardinal_directions(const QPointF& relative_pos)
 {
-    auto horizontal = relative_pos.x() < 0 ? Direction::W : Direction::E;
-    auto vertical = relative_pos.y() > 0 ? Direction::S : Direction::N;
+    const auto horizontal_side =
+        relative_pos.x() < 0 ? Direction::W : Direction::E;
+    const auto vertical_side =
+        relative_pos.y() > 0 ? Direction::S : Direction::N;
     if (qAbs(relative_pos.x()) >= qAbs(relative_pos.y())) {
-        return {horizontal, vertical};
+        return {horizontal_side, vertical_side};
     }
-    return {vertical, horizontal};
+    return {vertical_side, horizontal_side};
 }
 
-static bool is_in_horizontal_side_cone(const QPointF& relative_pos)
-{
-    return qAbs(relative_pos.y()) <=
-           qAbs(relative_pos.x()) * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE;
-}
+enum class SideCone { HORIZONTAL, VERTICAL };
 
-static bool is_in_vertical_side_cone(const QPointF& relative_pos)
+/**
+ * Return the cardinal axis occupied by a vector, if any. Each side owns the
+ * central 60 degrees around its outward normal, leaving the diagonals free.
+ */
+static std::optional<SideCone> get_side_cone(const double x, const double y)
 {
-    return qAbs(relative_pos.x()) <=
-           qAbs(relative_pos.y()) * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE;
+    const auto abs_x = std::fabs(x);
+    const auto abs_y = std::fabs(y);
+    if (abs_y <= abs_x * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+        return SideCone::HORIZONTAL;
+    }
+    if (abs_x <= abs_y * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+        return SideCone::VERTICAL;
+    }
+    return std::nullopt;
 }
 
 static std::optional<Direction>
@@ -255,117 +271,154 @@ get_occupied_direction_between(const RDKit::Atom* monomer,
                                const RDKit::Atom* bound_monomer)
 {
     const auto& conf = monomer->getOwningMol().getConformer();
-    auto relative_pos = conf.getAtomPos(bound_monomer->getIdx()) -
-                        conf.getAtomPos(monomer->getIdx());
-    auto abs_x = std::fabs(relative_pos.x);
-    auto abs_y = std::fabs(relative_pos.y);
-    if (abs_y <= abs_x * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+    const auto relative_pos = conf.getAtomPos(bound_monomer->getIdx()) -
+                              conf.getAtomPos(monomer->getIdx());
+    const auto side_cone = get_side_cone(relative_pos.x, relative_pos.y);
+    if (side_cone == SideCone::HORIZONTAL) {
         return relative_pos.x > 0 ? Direction::E : Direction::W;
     }
-    if (abs_x <= abs_y * SIDE_OCCUPANCY_MAX_OFF_AXIS_SLOPE) {
+    if (side_cone == SideCone::VERTICAL) {
+        // RDKit's positive y direction is north; Qt Scene's is south.
         return relative_pos.y > 0 ? Direction::N : Direction::S;
     }
     return std::nullopt;
 }
 
-static std::unordered_set<Direction> get_occupied_cardinal_directions(
-    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
-    const bool is_secondary_connection)
+static std::unordered_set<Direction>
+get_occupied_cardinal_directions(const RDKit::Atom* monomer,
+                                 const RDKit::Atom* bound_monomer,
+                                 const bool is_secondary_connection)
 {
     const auto& mol = monomer->getOwningMol();
-    const auto* current_bond = mol.getBondBetweenAtoms(
-        monomer->getIdx(), bound_monomer->getIdx());
-    std::unordered_set<Direction> occupied;
+    const auto* current_bond =
+        mol.getBondBetweenAtoms(monomer->getIdx(), bound_monomer->getIdx());
+    std::unordered_set<Direction> occupied_sides;
 
-    auto record_connection = [&](const RDKit::Bond* bond,
-                                 const bool is_secondary,
-                                 const std::string& prop_name) {
+    auto record_occupied_side = [&](const RDKit::Bond* bond,
+                                    const bool is_secondary,
+                                    const std::string& linkage_property) {
         std::string linkage;
-        if (!bond->getPropIfPresent(prop_name, linkage) ||
-            (bond == current_bond &&
-             is_secondary == is_secondary_connection)) {
+        if (!bond->getPropIfPresent(linkage_property, linkage) ||
+            (bond == current_bond && is_secondary == is_secondary_connection)) {
             return;
         }
-        auto direction = get_occupied_direction_between(
+        const auto occupied_side = get_occupied_direction_between(
             monomer, bond->getOtherAtom(monomer));
-        if (direction.has_value()) {
-            occupied.insert(*direction);
+        if (occupied_side.has_value()) {
+            occupied_sides.insert(*occupied_side);
         }
     };
 
     for (const auto* bond : mol.atomBonds(monomer)) {
-        record_connection(bond, false, LINKAGE);
+        record_occupied_side(bond, false, LINKAGE);
+        // A custom-bond property can duplicate the primary HELM linkage. It is
+        // a separate connection only when the bond stores two linkages.
         if (contains_two_monomer_linkages(bond)) {
-            record_connection(bond, true, CUSTOM_BOND);
+            record_occupied_side(bond, true, CUSTOM_BOND);
         }
     }
-    return occupied;
+    return occupied_sides;
 }
 
-static QPointF get_offset_for_directions(const QRectF& rect,
-                                         const Direction first,
-                                         const Direction second,
-                                         const bool use_corner)
+static QPointF get_point_on_side(const QRectF& monomer_rect,
+                                 const Direction side)
 {
-    auto x = first == Direction::W || second == Direction::W
-                 ? rect.left()
-                 : first == Direction::E || second == Direction::E
-                       ? rect.right()
-                       : 0.0;
-    auto y = first == Direction::N || second == Direction::N
-                 ? rect.top()
-                 : first == Direction::S || second == Direction::S
-                       ? rect.bottom()
-                       : 0.0;
-    QPointF edge_point(x, y);
-
-    QLineF offset(QPointF(), edge_point);
-    if (!use_corner) {
-        if (first == Direction::N || first == Direction::S) {
-            offset = QLineF(QPointF(), QPointF(0.0, y));
-        } else {
-            offset = QLineF(QPointF(), QPointF(x, 0.0));
-        }
+    switch (side) {
+        case Direction::N:
+            return {0.0, monomer_rect.top()};
+        case Direction::S:
+            return {0.0, monomer_rect.bottom()};
+        case Direction::E:
+            return {monomer_rect.right(), 0.0};
+        case Direction::W:
+            return {monomer_rect.left(), 0.0};
+        default:
+            throw std::logic_error("Expected a cardinal direction");
     }
+}
+
+static QPointF extend_past_monomer(const QPointF& boundary_point)
+{
+    QLineF offset(QPointF(), boundary_point);
     offset.setLength(offset.length() + MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
     return offset.p2();
 }
 
-QPointF get_monomer_arrowhead_offset(
-    const QGraphicsItem& monomer_item, const QPointF& bound_coords,
-    const std::unordered_set<Direction>& occupied)
+static QPointF get_offset_for_side(const QRectF& monomer_rect,
+                                   const Direction side)
 {
-    auto relative_pos = bound_coords - monomer_item.pos();
-    if (qFuzzyIsNull(QLineF(QPointF(), relative_pos).length())) {
-        return {};
+    return extend_past_monomer(get_point_on_side(monomer_rect, side));
+}
+
+static QPointF get_offset_for_corner(const QRectF& monomer_rect,
+                                     const Direction first_side,
+                                     const Direction second_side)
+{
+    // The two side points contain complementary x and y components, so their
+    // sum is the corner shared by the sides.
+    const auto corner = get_point_on_side(monomer_rect, first_side) +
+                        get_point_on_side(monomer_rect, second_side);
+    return extend_past_monomer(corner);
+}
+
+static std::optional<Direction> get_shared_fallback_side(
+    const QPointF& relative_pos,
+    const std::unordered_set<Direction>& occupied_sides,
+    const std::unordered_set<Direction>& bound_monomer_occupied_sides)
+{
+    const auto side_cone = get_side_cone(relative_pos.x(), relative_pos.y());
+    if (!side_cone.has_value()) {
+        return std::nullopt;
     }
 
-    auto [nearest, next_nearest] =
-        get_nearest_cardinal_directions(relative_pos);
-    if (!occupied.contains(nearest)) {
-        return get_offset_for_directions(monomer_item.boundingRect(), nearest,
-                                         next_nearest, false);
+    const auto& candidates = side_cone == SideCone::HORIZONTAL
+                                 ? HORIZONTAL_CONNECTION_FALLBACK_SIDES
+                                 : VERTICAL_CONNECTION_FALLBACK_SIDES;
+    for (const auto side : candidates) {
+        if (!occupied_sides.contains(side) &&
+            !bound_monomer_occupied_sides.contains(side)) {
+            return side;
+        }
     }
-    if (!occupied.contains(next_nearest)) {
-        return get_offset_for_directions(monomer_item.boundingRect(),
-                                         next_nearest, nearest, false);
-    }
-    return get_offset_for_directions(monomer_item.boundingRect(), nearest,
-                                     next_nearest, true);
+    return std::nullopt;
 }
 
 QPointF get_monomer_arrowhead_offset(
     const QGraphicsItem& monomer_item, const QPointF& bound_coords,
-    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
-    const bool is_secondary_connection)
+    const std::unordered_set<Direction>& occupied_sides)
 {
-    auto occupied = get_occupied_cardinal_directions(
+    const auto relative_pos = bound_coords - monomer_item.pos();
+    if (qFuzzyIsNull(QLineF(QPointF(), relative_pos).length())) {
+        return {};
+    }
+
+    const auto [nearest_side, next_nearest_side] =
+        get_nearest_cardinal_directions(relative_pos);
+    if (!occupied_sides.contains(nearest_side)) {
+        return get_offset_for_side(monomer_item.boundingRect(), nearest_side);
+    }
+    if (!occupied_sides.contains(next_nearest_side)) {
+        return get_offset_for_side(monomer_item.boundingRect(),
+                                   next_nearest_side);
+    }
+    return get_offset_for_corner(monomer_item.boundingRect(), nearest_side,
+                                 next_nearest_side);
+}
+
+QPointF get_monomer_arrowhead_offset(const QGraphicsItem& monomer_item,
+                                     const QPointF& bound_coords,
+                                     const RDKit::Atom* monomer,
+                                     const RDKit::Atom* bound_monomer,
+                                     const bool is_secondary_connection)
+{
+    const auto occupied_sides = get_occupied_cardinal_directions(
         monomer, bound_monomer, is_secondary_connection);
-    auto bound_occupied = get_occupied_cardinal_directions(
+    const auto bound_monomer_occupied_sides = get_occupied_cardinal_directions(
         bound_monomer, monomer, is_secondary_connection);
-    auto relative_pos = bound_coords - monomer_item.pos();
-    auto nearest = get_nearest_cardinal_directions(relative_pos).first;
-    auto bound_nearest =
+    const auto relative_pos = bound_coords - monomer_item.pos();
+    const auto nearest_side =
+        get_nearest_cardinal_directions(relative_pos).first;
+    const auto bound_monomer_nearest_side =
         get_nearest_cardinal_directions(-relative_pos).first;
 
     // When a near-horizontal or near-vertical connection is blocked at both
@@ -374,29 +427,17 @@ QPointF get_monomer_arrowhead_offset(
     // connector cross the bond between the same monomers. Prefer a cardinal
     // side that is available at both ends so that the two connectors remain
     // parallel.
-    if (occupied.contains(nearest) &&
-        bound_occupied.contains(bound_nearest)) {
-        const std::vector<Direction>* shared_fallbacks = nullptr;
-        static const std::vector<Direction> HORIZONTAL_FALLBACKS = {
-            Direction::N, Direction::S};
-        static const std::vector<Direction> VERTICAL_FALLBACKS = {
-            Direction::E, Direction::W};
-        if (is_in_horizontal_side_cone(relative_pos)) {
-            shared_fallbacks = &HORIZONTAL_FALLBACKS;
-        } else if (is_in_vertical_side_cone(relative_pos)) {
-            shared_fallbacks = &VERTICAL_FALLBACKS;
-        }
-        if (shared_fallbacks != nullptr) {
-            for (auto direction : *shared_fallbacks) {
-                if (!occupied.contains(direction) &&
-                    !bound_occupied.contains(direction)) {
-                    return get_offset_for_directions(
-                        monomer_item.boundingRect(), direction, nearest, false);
-                }
-            }
+    if (occupied_sides.contains(nearest_side) &&
+        bound_monomer_occupied_sides.contains(bound_monomer_nearest_side)) {
+        const auto shared_fallback_side = get_shared_fallback_side(
+            relative_pos, occupied_sides, bound_monomer_occupied_sides);
+        if (shared_fallback_side.has_value()) {
+            return get_offset_for_side(monomer_item.boundingRect(),
+                                       *shared_fallback_side);
         }
     }
-    return get_monomer_arrowhead_offset(monomer_item, bound_coords, occupied);
+    return get_monomer_arrowhead_offset(monomer_item, bound_coords,
+                                        occupied_sides);
 }
 
 int ap_name_to_num(const std::string_view attachment_point_name)
