@@ -80,8 +80,7 @@ bool MonomerConnectorItem::isSecondaryConnection() const
 }
 
 /**
- * Add an axis-aligned diamond to the path at the given point. Diamond
- * orientation is intentionally independent of the connector angle.
+ * Add a diamond shape to the path at the given point
  *
  * @param path the path to add to
  * @param center the center of the diamond
@@ -91,10 +90,10 @@ static void add_diamond_arrowhead_to_path(QPainterPath& path,
                                           const QPointF& center,
                                           const qreal radius)
 {
-    const QPointF right(radius, 0.0);
-    const QPointF up(0.0, -radius);
     QPolygonF diamond;
-    diamond << center + right << center + up << center - right << center - up;
+    diamond << QPointF(radius, 0) << QPointF(0, -radius) << QPointF(-radius, 0)
+            << QPointF(0, radius);
+    diamond.translate(center);
     path.addPolygon(diamond);
     path.closeSubpath();
 }
