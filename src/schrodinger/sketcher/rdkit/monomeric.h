@@ -192,9 +192,13 @@ does_connector_have_arrowheads(const RDKit::Bond* bond,
  * For a monomer connector being drawn with a diamond arrowhead, determine the
  * offset from the center of the monomer to the center of the arrowhead. The
  * arrowhead is placed outside the nearest cardinal side facing the bound
- * monomer. If that side is occupied by another connection, the next-nearest
- * cardinal side is used. If both sides are occupied, their shared corner is
- * used.
+ * monomer. If that side is occupied, up to three other forward-facing sides
+ * and corners are considered, preferring sides over corners. A side or corner
+ * is occupied when another connection is within 45 degrees of its direction.
+ * Independently placed endpoints use the candidate crossing the fewest other
+ * bonds, with normal direction priority breaking ties. Same-chain endpoints
+ * are coordinated when necessary so their connector does not cross the chain
+ * between them.
  * @param monomer_item the graphics item for the monomer
  * @param bound_coords the Scene coordinates for the other monomer involved in
  * the bond
@@ -209,11 +213,13 @@ SKETCHER_API QPointF get_monomer_arrowhead_offset(
     bool is_secondary_connection);
 
 /**
- * Low-level overload that uses an explicitly provided set of occupied sides.
- * This is useful when the caller has already determined connection occupancy.
+ * Low-level overload that uses an explicitly provided set of occupied sides
+ * and corners. This is useful when the caller has already determined
+ * connection occupancy.
  * @param monomer_item the graphics item for the monomer
  * @param bound_coords the Scene coordinates for the other monomer
- * @param occupied_directions cardinal sides already used by other connections
+ * @param occupied_directions sides and corners already used by other
+ * connections
  */
 SKETCHER_API QPointF get_monomer_arrowhead_offset(
     const QGraphicsItem& monomer_item, const QPointF& bound_coords,

@@ -417,7 +417,7 @@ BOOST_AUTO_TEST_CASE(test_get_first_available_chain_name)
                "PEPTIDE1");
 }
 
-BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_uses_available_side)
+BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_uses_ranked_directions)
 {
     QGraphicsRectItem monomer(-10.0, -5.0, 20.0, 10.0);
     monomer.setPos(100.0, 100.0);
@@ -440,18 +440,57 @@ BOOST_AUTO_TEST_CASE(test_monomer_arrowhead_offset_uses_available_side)
                       {0.0, monomer.boundingRect().bottom() +
                                 MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
-    const auto fallback_offset = get_monomer_arrowhead_offset(
+    QLineF expected_corner_offset(QPointF(), monomer.boundingRect().topRight());
+    expected_corner_offset.setLength(expected_corner_offset.length() +
+                                     MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+
+    const auto second_side_offset = get_monomer_arrowhead_offset(
         monomer, QPointF(200.0, 50.0), {Direction::E});
-    check_point_close(fallback_offset,
+    check_point_close(second_side_offset,
                       {0.0, monomer.boundingRect().top() -
                                 MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 
     const auto corner_offset = get_monomer_arrowhead_offset(
         monomer, QPointF(200.0, 50.0), {Direction::E, Direction::N});
-    QLineF expected_corner_offset(QPointF(), monomer.boundingRect().topRight());
-    expected_corner_offset.setLength(expected_corner_offset.length() +
-                                     MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
     check_point_close(corner_offset, expected_corner_offset.p2());
+
+    // Only the four closest forward-facing directions are candidates. If all
+    // four are occupied, overlap the preferred side rather than wrapping a
+    // connector around the back of the monomer.
+    const auto all_candidates_occupied_offset = get_monomer_arrowhead_offset(
+        monomer, QPointF(200.0, 50.0),
+        {Direction::E, Direction::NE, Direction::N, Direction::SE});
+    check_point_close(
+        all_candidates_occupied_offset,
+        {monomer.boundingRect().right() + MONOMER_CONNECTOR_ARROWHEAD_RADIUS,
+         0.0});
+}
+
+BOOST_AUTO_TEST_CASE(test_side_and_corner_use_ninety_degree_occupancy)
+{
+    auto mol = rdkit_extensions::to_rdkit(
+        "PEPTIDE1{C.C.C.C}$PEPTIDE1,PEPTIDE1,1:R3-4:R3$$$");
+    prepare_mol(*mol);
+    auto& conf = mol->getConformer();
+    conf.setAtomPos(0, {0.0, 0.0, 0.0});
+    conf.setAtomPos(1, {BOND_LENGTH, 0.70 * BOND_LENGTH, 0.0});
+    conf.setAtomPos(2, {3.0 * BOND_LENGTH, BOND_LENGTH, 0.0});
+    conf.setAtomPos(3, {3.0 * BOND_LENGTH, 0.0, 0.0});
+
+    const auto* first_monomer = mol->getAtomWithIdx(0);
+    const auto* fourth_monomer = mol->getAtomWithIdx(3);
+    QGraphicsRectItem first_item(-10.0, -5.0, 20.0, 10.0);
+    const auto fourth_pos = to_scene_xy(conf.getAtomPos(3));
+
+    // The connection at about 35 degrees lies within 45 degrees of both east
+    // and northeast. The north candidate crosses the existing chain, so the
+    // non-crossing southeast corner is used instead.
+    const auto offset = get_monomer_arrowhead_offset(
+        first_item, fourth_pos, first_monomer, fourth_monomer, false);
+    QLineF expected_offset(QPointF(), first_item.boundingRect().bottomRight());
+    expected_offset.setLength(expected_offset.length() +
+                              MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+    check_point_close(offset, expected_offset.p2());
 }
 
 BOOST_AUTO_TEST_CASE(test_duplicate_custom_bond_does_not_occupy_side)
@@ -485,7 +524,7 @@ BOOST_AUTO_TEST_CASE(test_duplicate_custom_bond_does_not_occupy_side)
                                 MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
 }
 
-BOOST_AUTO_TEST_CASE(test_diagonal_connections_do_not_occupy_sides)
+BOOST_AUTO_TEST_CASE(test_macrocycle_connection_avoids_crossing_bonds)
 {
     auto mol = rdkit_extensions::to_rdkit(
         "PEPTIDE1{C.K.G.K.G.A.K.C.S.R.L.M.Y.D.C.C.T.G.S.C.R.S.G.K.C}"
@@ -512,12 +551,14 @@ BOOST_AUTO_TEST_CASE(test_diagonal_connections_do_not_occupy_sides)
 
     const auto monomer_20_offset = get_monomer_arrowhead_offset(
         monomer_20_item, monomer_8_pos, monomer_20, monomer_8, false);
-    check_point_close(monomer_20_offset,
-                      {0.0, monomer_20_item.boundingRect().bottom() +
-                                MONOMER_CONNECTOR_ARROWHEAD_RADIUS});
+    QLineF expected_monomer_20_offset(
+        QPointF(), monomer_20_item.boundingRect().bottomRight());
+    expected_monomer_20_offset.setLength(expected_monomer_20_offset.length() +
+                                         MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+    check_point_close(monomer_20_offset, expected_monomer_20_offset.p2());
 }
 
-BOOST_AUTO_TEST_CASE(test_parallel_connections_use_same_fallback_side)
+BOOST_AUTO_TEST_CASE(test_parallel_connections_do_not_cross)
 {
     auto mol = rdkit_extensions::to_rdkit(
         "PEPTIDE1{C.C}$PEPTIDE1,PEPTIDE1,1:R3-2:R3$$$");
@@ -541,10 +582,40 @@ BOOST_AUTO_TEST_CASE(test_parallel_connections_use_same_fallback_side)
         first_item, second_pos, first_monomer, second_monomer, true);
     const auto second_offset = get_monomer_arrowhead_offset(
         second_item, first_pos, second_monomer, first_monomer, true);
-    const auto expected_y =
-        first_item.boundingRect().top() - MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
+    const auto expected_y = first_item.boundingRect().top() -
+                            MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
     check_point_close(first_offset, {0.0, expected_y});
     check_point_close(second_offset, {0.0, expected_y});
+}
+
+BOOST_AUTO_TEST_CASE(test_interchain_connection_avoids_crossing_other_bond)
+{
+    auto mol = rdkit_extensions::to_rdkit(
+        "PEPTIDE1{C.C}|PEPTIDE2{C.C}"
+        "$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$");
+    prepare_mol(*mol);
+    auto& conf = mol->getConformer();
+    conf.setAtomPos(0, {0.0, 0.0, 0.0});
+    conf.setAtomPos(1, {-0.293, -1.471, 0.0});
+    conf.setAtomPos(2, {0.0, -7.0, 0.0});
+    // The bottom residue's backbone bond crosses the east candidate but not
+    // northwest. An incident bond can cross a connector away from the residue
+    // center, so it must participate in crossing detection.
+    conf.setAtomPos(3, {0.833, -5.753, 0.0});
+
+    const auto* bottom_monomer = mol->getAtomWithIdx(2);
+    const auto* top_monomer = mol->getAtomWithIdx(0);
+    const auto bottom_pos = to_scene_xy(conf.getAtomPos(2));
+    const auto top_pos = to_scene_xy(conf.getAtomPos(0));
+    QGraphicsRectItem bottom_item(-10.0, -5.0, 20.0, 10.0);
+    bottom_item.setPos(bottom_pos);
+
+    const auto bottom_offset = get_monomer_arrowhead_offset(
+        bottom_item, top_pos, bottom_monomer, top_monomer, false);
+    QLineF expected_offset(QPointF(), bottom_item.boundingRect().topLeft());
+    expected_offset.setLength(expected_offset.length() +
+                              MONOMER_CONNECTOR_ARROWHEAD_RADIUS);
+    check_point_close(bottom_offset, expected_offset.p2());
 }
 
 } // namespace sketcher
