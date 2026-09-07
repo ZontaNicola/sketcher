@@ -532,10 +532,16 @@ static Direction get_direction_with_fewest_bond_crossings(
     auto best_direction = directions.front();
     auto fewest_crossings = count_candidate_bond_crossings(
         monomer_item, bound_coords, monomer, bound_monomer, best_direction);
+    if (fewest_crossings == 0) {
+        return best_direction;
+    }
     for (size_t index = 1; index < directions.size(); ++index) {
         const auto direction = directions[index];
         const auto crossing_count = count_candidate_bond_crossings(
             monomer_item, bound_coords, monomer, bound_monomer, direction);
+        if (crossing_count == 0) {
+            return direction;
+        }
         if (crossing_count < fewest_crossings) {
             best_direction = direction;
             fewest_crossings = crossing_count;
