@@ -362,23 +362,6 @@ target_link_libraries(
   PRIVATE Boost::boost Boost::filesystem Qt6::Core RDKit::SmilesParse
           ${RDKIT_EXTENSIONS_TARGET})
 
-# Utility: helm_gallery_renderer
-#
-# This renderer uses a line-based protocol so gallery-generation scripts can
-# render many HELM strings while initializing Qt only once. Input and SVG/error
-# payloads are base64 encoded to keep each request and response on one line.
-set(HELM_GALLERY_RENDERER_TARGET helm_gallery_renderer)
-add_executable(${HELM_GALLERY_RENDERER_TARGET}
-               src/utils/helm_gallery_renderer.cpp)
-setup_target(${HELM_GALLERY_RENDERER_TARGET})
-set_target_properties(
-  ${HELM_GALLERY_RENDERER_TARGET}
-  PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/sketcher_app)
-target_link_libraries(
-  ${HELM_GALLERY_RENDERER_TARGET}
-  PRIVATE Boost::boost Qt6::Widgets ${RDKIT_EXTENSIONS_TARGET}
-          ${SKETCHER_TARGET})
-
 # Crash handler: configure Boost.Stacktrace backend per platform
 if(NOT EMSCRIPTEN)
   target_link_libraries(${APP_TARGET} PRIVATE fmt::fmt)
