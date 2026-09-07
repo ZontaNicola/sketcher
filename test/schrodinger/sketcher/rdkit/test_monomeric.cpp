@@ -582,17 +582,16 @@ BOOST_AUTO_TEST_CASE(test_parallel_connections_do_not_cross)
         first_item, second_pos, first_monomer, second_monomer, true);
     const auto second_offset = get_monomer_arrowhead_offset(
         second_item, first_pos, second_monomer, first_monomer, true);
-    const auto expected_y = first_item.boundingRect().top() -
-                            MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
+    const auto expected_y =
+        first_item.boundingRect().top() - MONOMER_CONNECTOR_ARROWHEAD_RADIUS;
     check_point_close(first_offset, {0.0, expected_y});
     check_point_close(second_offset, {0.0, expected_y});
 }
 
 BOOST_AUTO_TEST_CASE(test_interchain_connection_avoids_crossing_other_bond)
 {
-    auto mol = rdkit_extensions::to_rdkit(
-        "PEPTIDE1{C.C}|PEPTIDE2{C.C}"
-        "$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$");
+    auto mol = rdkit_extensions::to_rdkit("PEPTIDE1{C.C}|PEPTIDE2{C.C}"
+                                          "$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$");
     prepare_mol(*mol);
     auto& conf = mol->getConformer();
     conf.setAtomPos(0, {0.0, 0.0, 0.0});

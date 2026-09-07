@@ -305,11 +305,11 @@ get_ranked_placement_directions(const QPointF& relative_pos)
                    direction_closeness(second, relative_pos);
         });
     ranked_directions.resize(MAX_PLACEMENT_DIRECTIONS);
-    std::stable_partition(
-        ranked_directions.begin() + 1, ranked_directions.end(),
-        [](const Direction direction) {
-            return is_cardinal_direction(direction);
-        });
+    std::stable_partition(ranked_directions.begin() + 1,
+                          ranked_directions.end(),
+                          [](const Direction direction) {
+                              return is_cardinal_direction(direction);
+                          });
     return ranked_directions;
 }
 
@@ -375,8 +375,8 @@ get_occupied_directions(const RDKit::Atom* monomer,
 static bool monomers_are_in_same_chain(const RDKit::Atom* first,
                                        const RDKit::Atom* second)
 {
-    const auto* first_info = dynamic_cast<const RDKit::AtomPDBResidueInfo*>(
-        first->getMonomerInfo());
+    const auto* first_info =
+        dynamic_cast<const RDKit::AtomPDBResidueInfo*>(first->getMonomerInfo());
     const auto* second_info = dynamic_cast<const RDKit::AtomPDBResidueInfo*>(
         second->getMonomerInfo());
     return first_info != nullptr && second_info != nullptr &&
@@ -488,10 +488,11 @@ static std::optional<Direction> get_shared_perpendicular_side(
     return std::nullopt;
 }
 
-static size_t count_candidate_bond_crossings(
-    const QGraphicsItem& monomer_item, const QPointF& bound_coords,
-    const RDKit::Atom* monomer, const RDKit::Atom* bound_monomer,
-    const Direction direction)
+static size_t count_candidate_bond_crossings(const QGraphicsItem& monomer_item,
+                                             const QPointF& bound_coords,
+                                             const RDKit::Atom* monomer,
+                                             const RDKit::Atom* bound_monomer,
+                                             const Direction direction)
 {
     const auto offset =
         get_offset_for_direction(monomer_item.boundingRect(), direction);
@@ -650,9 +651,9 @@ QPointF get_monomer_arrowhead_offset(const QGraphicsItem& monomer_item,
         occupied_directions.contains(nearest_side) &&
         bound_monomer_occupied_directions.contains(
             bound_monomer_nearest_side)) {
-        const auto shared_side = get_shared_perpendicular_side(
-            relative_pos, occupied_directions,
-            bound_monomer_occupied_directions);
+        const auto shared_side =
+            get_shared_perpendicular_side(relative_pos, occupied_directions,
+                                          bound_monomer_occupied_directions);
         if (shared_side.has_value()) {
             return get_offset_for_side(monomer_item.boundingRect(),
                                        *shared_side);
