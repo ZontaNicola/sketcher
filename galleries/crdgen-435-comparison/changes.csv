@@ -1,0 +1,1024 @@
+index,changed,changed_pixels,percent,description,origin,helm_string
+1,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"CHEM1{[*CCC(N1CN(C(CC*)=O)CN(C(CC*)=O)C1)=O |$_R1;;;;;;;;;;_R2;;;;;;;_R3;;;;$|]}|PEPTIDE1{A.R.D.C.P.L.V.N.P.L.C.L.H.P.G.W.T.C.[dV].[Orn]}$PEPTIDE1,CHEM1,4:R3-1:R1|PEPTIDE1,CHEM1,11:R3-1:R2|CHEM1,PEPTIDE1,1:R3-18:R3$$$V2.0"
+2,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,PEPTIDE1{A.R.D.C.P.L.V.N.P.L.C.L.H.P.G.W.T.C.[dV].[Orn]}$$$$V2.0
+3,True,20865,13.041,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{C}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+4,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,PEPTIDE1{C}$$$$V2.0
+5,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1$$$V2.0"
+6,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+7,True,18141,11.338,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{F}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}|PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+8,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+9,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1$$$V2.0"
+10,True,19611,12.257,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{[Asp_OMe]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+11,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,PEPTIDE1{[Asp_OMe]}$$$$V2.0
+12,True,19182,11.989,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{E}|PEPTIDE2{[dI].S.[Asp_OMe].[dI].[meG].[Phe_3Cl].C.[meY].[dI].S.N.G.[meD].[xiIle].R.[Ala_tBu]}|PEPTIDE3{[meY].C.[Met_O].[meD].G.[3Pal].[xiIle].R.[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].K}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+13,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE2{[dI].S.[Asp_OMe].[dI].[meG].[Phe_3Cl].C.[meY].[dI].S.N.G.[meD].[xiIle].R.[Ala_tBu]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1$$$V2.0"
+14,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE3{[meY].C.[Met_O].[meD].G.[3Pal].[xiIle].R.[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].K}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+15,True,19678,12.299,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{D}|PEPTIDE2{[dI].[Phg].[Asp_OMe].[dI].[meG].[Phe_3Cl].Q.C.[dI].[Ser_PO3H2].[NMe2Abz].[Tyr_Ph4OH].[3Pal].Q.D.[Ala_tBu]}|PEPTIDE3{[meY].[dN].[Met_O].[NMe2Abz].[D-Pen].[Pro_4Me3OH].[xiIle].[Pro_4Me3OH].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].K.[meG].[Phe_34diCl].[Ser_PO3H2]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+16,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE2{[dI].[Phg].[Asp_OMe].[dI].[meG].[Phe_3Cl].Q.C.[dI].[Ser_PO3H2].[NMe2Abz].[Tyr_Ph4OH].[3Pal].Q.D.[Ala_tBu]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1$$$V2.0"
+17,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE3{[meY].[dN].[Met_O].[NMe2Abz].[D-Pen].[Pro_4Me3OH].[xiIle].[Pro_4Me3OH].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].K.[meG].[Phe_34diCl].[Ser_PO3H2]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+18,True,20241,12.651,Bicyclic peptides,Bicyclic peptides test set,"PEPTIDE1{[meG]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+19,False,0,0.000,Bicyclic peptides,Bicyclic peptides test set,PEPTIDE1{[meG]}$$$$V2.0
+20,False,0,0.000,CHEMBL440060,ChEMBL21 1k test set,PEPTIDE1{M.T.L.I.G.A.A.H.N.G.A.A.Q.L.L.R.Q.L.R.G.Q.L.G.P.P.G.S.R.[am]}$$$$
+21,False,0,0.000,CHEMBL501567,ChEMBL21 1k test set,PEPTIDE1{C.P.W.H.L.L.P.F.C}$$$$
+22,False,0,0.000,CHEMBL500702,ChEMBL21 1k test set,PEPTIDE1{T.P.R.K.R.R.R.K.K.R.G.[am]}$$$$
+23,False,0,0.000,CHEMBL500709,ChEMBL21 1k test set,PEPTIDE1{F.Y.I.G.R.L}$$$$
+24,False,0,0.000,CHEMBL501093,ChEMBL21 1k test set,PEPTIDE1{T.P.R.A.R.R.R.K.K.R.L.[am]}$$$$
+25,False,0,0.000,CHEMBL501094,ChEMBL21 1k test set,PEPTIDE1{R.F.[Pen].T.G.[*N[C@H](C(=O)*)Cc1ccsc1 |$_R1;;;;;_R2;;;;;;$|].F.G.[Sar].[meL].Y.P.C}$$$$
+26,False,0,0.000,CHEMBL438015,ChEMBL21 1k test set,PEPTIDE1{R.P.[dK].P.[dQ].[dQ].F.F.G.[dL].M.[am]}$$$$
+27,False,0,0.000,CHEMBL440252,ChEMBL21 1k test set,PEPTIDE1{[dR].[dP].[dK].P.[dQ].[dQ].[dF].F.G.L.M.[am]}$$$$
+28,False,0,0.000,CHEMBL438997,ChEMBL21 1k test set,PEPTIDE1{[ac].L.N.[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].I.D.L.D.L.V.[am]}$$$$
+29,False,0,0.000,CHEMBL438541,ChEMBL21 1k test set,PEPTIDE1{S.Q.E.P.P.I.S.A.D.L.T.F.H.L.L.R.E.V.L.E.M.T.K.A.D.Q.L.A.Q.Q.A.H.S.N.R.K.L.L.D.I.A.[am]}$$$$
+30,False,0,0.000,CHEMBL438027,ChEMBL21 1k test set,"PEPTIDE1{[dC].[dS].C.[dS].S.[dL].M.[dD].K.[dE].C.[dV].Y.[dF].[dC].H.A.D.I.I.W}$PEPTIDE1,PEPTIDE1,3:R3-11:R3|PEPTIDE1,PEPTIDE1,1:R3-15:R3$$$"
+31,False,0,0.000,CHEMBL438032,ChEMBL21 1k test set,PEPTIDE1{R.S.G.P.P.G.L.Q.G.R.L.Q.R.L.[meL].Q.A.S.G.N.H.A.A.G.I}$$$$
+32,False,0,0.000,CHEMBL439094,ChEMBL21 1k test set,PEPTIDE1{L.P.N.Y.N.W.N.S.F.G.I.R.F.[am]}$$$$
+33,False,0,0.000,CHEMBL440426,ChEMBL21 1k test set,PEPTIDE1{G.L.Q.G.R.L.Q.R.L.L.Q.A.S.G.N.H.A.A.G.I.L.T.M}$$$$
+34,False,0,0.000,CHEMBL154655,ChEMBL21 1k test set,"PEPTIDE1{[dC].[dQ].I.[dD].S.[dP].[dC]}$PEPTIDE1,PEPTIDE1,1:R3-7:R3$$$"
+35,False,0,0.000,CHEMBL444155,ChEMBL21 1k test set,PEPTIDE1{K.I.L.R.G.V.S.K.K.I.M.R.R.I.S.K.D.I.L.T.G.K.K.[am]}$$$$
+36,False,0,0.000,CHEMBL441924,ChEMBL21 1k test set,PEPTIDE1{G.L.P.G.R.L.Q.R.L.L.Q.A.S.G.N.H.A.A.G.I.L.T.M}$$$$
+37,False,0,0.000,CHEMBL439288,ChEMBL21 1k test set,PEPTIDE1{M.T.L.I.G.A.[dA].H.N.G.S.A.Q.L.L.R.Q.L.R.G.Q.L.G.P.P.G.S.R.[am]}$$$$
+38,False,0,0.000,CHEMBL445253,ChEMBL21 1k test set,PEPTIDE1{K.S.G.Y.E.K.L.S.S.I.E.S.D.V}$$$$
+39,False,0,0.000,CHEMBL439528,ChEMBL21 1k test set,PEPTIDE1{F.G.G.[dF].T.G.A.R.K.S.A.R.K.[am]}$$$$
+40,False,0,0.000,CHEMBL443591,ChEMBL21 1k test set,"PEPTIDE1{F.G.G.F.T.G.A.R.K.C.A.R.K.C.[am]}$PEPTIDE1,PEPTIDE1,10:R3-14:R3$$$"
+41,False,0,0.000,CHEMBL438455,ChEMBL21 1k test set,PEPTIDE1{[dR].P.[dK].[dP].Q.Q.F.[dF].G.L.M.[am]}$$$$
+42,False,0,0.000,CHEMBL438460,ChEMBL21 1k test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].P.[dR].G.[dD].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dR].[dC].[am]}$PEPTIDE1,PEPTIDE1,2:R3-10:R3$$$"
+43,False,0,0.000,CHEMBL437975,ChEMBL21 1k test set,"PEPTIDE1{S.S.[dC].G.[dF].G.G.[dR].I.[dD].R.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[dC].[dF].G}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+44,False,0,0.000,CHEMBL441574,ChEMBL21 1k test set,PEPTIDE1{Q.D.A.S.T.K.K.L.S.E.C.L.K.R.I.G.D.E.L.D.S.N.M.E.L.Q}$$$$
+45,False,0,0.000,CHEMBL441576,ChEMBL21 1k test set,PEPTIDE1{S.[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].R.N.G.V.G.T.G.M.K.K.T.S.F.Q.R.A.K.S}$$$$
+46,False,0,0.000,CHEMBL444510,ChEMBL21 1k test set,PEPTIDE1{[dK].[dF].[dA].[dK].[dF].[dA].[dK].[dK].[dF].[dA].[dK].[dF].[dA].[dK]}$$$$
+47,False,0,0.000,CHEMBL438006,ChEMBL21 1k test set,"PEPTIDE1{A.Y.V.[Orn].L.[dF].P.F.[dF].N}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+48,False,0,0.000,CHEMBL437858,ChEMBL21 1k test set,PEPTIDE1{N.R.W.A.A.Q.R.Y.G.R.E.L.R.R.M.S.D.E.F.E.G.S.F.K.G.L}$$$$
+49,False,0,0.000,CHEMBL437860,ChEMBL21 1k test set,PEPTIDE1{[ac].F.T.S.D.Y.S.K.Y.L.D.S.R.R.A.Q.D.F.V.Q.W.L.M.N.T.[am]}$$$$
+50,False,0,0.000,CHEMBL502053,ChEMBL21 1k test set,"PEPTIDE1{A.A.G.F.P.V.F.F}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+51,False,0,0.000,CHEMBL444924,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)F |$;;;_R2;;;;;;;;$|].[Hse]}$$$$
+52,False,0,0.000,CHEMBL498862,ChEMBL21 1k test set,PEPTIDE1{S.F.R.N.W.V.G.T.G.M.K.K.T.S.F.Q.R.A.K.S}$$$$
+53,False,0,0.000,CHEMBL502642,ChEMBL21 1k test set,PEPTIDE1{T.P.R.A.R.R.R.K.K.R.T.[am]}$$$$
+54,False,0,0.000,CHEMBL439704,ChEMBL21 1k test set,"PEPTIDE1{[ac].W.E.R.W.L.M.D.C.R.[dS].D.[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|].L.C.G.E.S.H.Q.E.[am]}$PEPTIDE1,PEPTIDE1,9:R3-15:R3$$$"
+55,False,0,0.000,CHEMBL500058,ChEMBL21 1k test set,PEPTIDE1{T.P.R.D.R.R.R.K.K.R.G}$$$$
+56,False,0,0.000,CHEMBL500184,ChEMBL21 1k test set,PEPTIDE1{T.P.Q.R.A.R.R.R.K.K.R.F}$$$$
+57,False,0,0.000,CHEMBL440443,ChEMBL21 1k test set,PEPTIDE1{T.T.W.E.E.W.D.R.E.I.N.E.Y.T.S.R.I.E.S.L.I.R.E.S.Q.E.Q.Q.E.K.N.E.Q.E.L.R.E.L}$$$$
+58,False,0,0.000,CHEMBL439892,ChEMBL21 1k test set,"PEPTIDE1{[ac].[Nal].[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].C.R.[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].L.R.P.C.[am]}$PEPTIDE1,PEPTIDE1,5:R3-11:R3$$$"
+59,False,0,0.000,CHEMBL505824,ChEMBL21 1k test set,PEPTIDE1{F.G.G.F.T.G.A.R.K.S.A.R.K.R.K.R.K}$$$$
+60,False,0,0.000,CHEMBL505930,ChEMBL21 1k test set,PEPTIDE1{[ac].G.[meF].[meF].[meF].[am]}$$$$
+61,False,0,0.000,CHEMBL440438,ChEMBL21 1k test set,PEPTIDE1{Y.A.D.A.I.W.T.N.S.Y.R.K.V.L.G.Q.L.S.A.R.K.L.L.Q.D.I.M.S.R}$$$$
+62,False,0,0.000,CHEMBL439551,ChEMBL21 1k test set,"PEPTIDE1{D.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].F.[dW].[*N[C@@H](C(=O)*)CCCN |$_R1;;;;;_R2;;;;$|].Y.C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+63,False,0,0.000,CHEMBL526373,ChEMBL21 1k test set,PEPTIDE1{R.F.[Pen].T.G.[Tza].F.G.[Sar].[meL].Y.P.C}$$$$
+64,False,0,0.000,CHEMBL499980,ChEMBL21 1k test set,PEPTIDE1{G.W.T.L.N.S.A.G.Y.L.L.G.P.H.A.I}$$$$
+65,False,0,0.000,CHEMBL502655,ChEMBL21 1k test set,"PEPTIDE1{R.[dP].K.K.K}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+66,False,0,0.000,CHEMBL500076,ChEMBL21 1k test set,PEPTIDE1{G.C.C.S.D.P.R.C.A.W.R.C.[am]}$$$$
+67,False,0,0.000,CHEMBL508221,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Orn].T.G.H.F.G.G.L.Y.P.E.N.G.P}$$$$
+68,False,0,0.000,CHEMBL507127,ChEMBL21 1k test set,"PEPTIDE1{F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dP]}$PEPTIDE1,PEPTIDE1,4:R2-1:R1$$$"
+69,False,0,0.000,CHEMBL507128,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.K.W.W.P.G.I.F.D.[am]}$$$$
+70,False,0,0.000,CHEMBL525750,ChEMBL21 1k test set,PEPTIDE1{S.F.R.N.[dV].V.G.T.G.M.K.K.T.S.F.Q.R.A.K.S}$$$$
+71,False,0,0.000,CHEMBL503567,ChEMBL21 1k test set,"PEPTIDE1{R.G.G.R.L.C.Y.C.R.R.R.F.C.V.C.V.G.R}$PEPTIDE1,PEPTIDE1,8:R3-13:R3|PEPTIDE1,PEPTIDE1,6:R3-15:R3$$$"
+72,False,0,0.000,CHEMBL503489,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Pen].T.G.H.F.[dA].G.[meL].Y.P.C.N.G.P}$$$$
+73,False,0,0.000,CHEMBL503666,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)*)CCCCN |$;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)O)CCCCN |$_R1;;;;;;;;;;$|]}$$$$
+74,False,0,0.000,CHEMBL525940,ChEMBL21 1k test set,PEPTIDE1{T.P.A.A.R.R.R.K.K.R.[Sar]}$$$$
+75,False,0,0.000,CHEMBL525941,ChEMBL21 1k test set,"PEPTIDE1{C.C.[dN].C.S.S.K.W.C.R.D.A.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+76,False,0,0.000,CHEMBL500734,ChEMBL21 1k test set,PEPTIDE1{[ac].R.K.P.W.[Tle].L}$$$$
+77,False,0,0.000,CHEMBL527042,ChEMBL21 1k test set,PEPTIDE1{[ac].[dS].N.W.K.W.W.P.G.I.F.D.[am]}$$$$
+78,False,0,0.000,CHEMBL526130,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.D.T.G.H.F.G.G.L.Y.P.[Dab].N.G.P}$$$$
+79,False,0,0.000,CHEMBL507315,ChEMBL21 1k test set,PEPTIDE1{V.H.F.F.R.N.I.V.T.A.R.T.P}$$$$
+80,False,0,0.000,CHEMBL503986,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N(C)[C@H](C(=O)*)CC1CCCCC1 |$_R1;;;;;;_R2;;;;;;;$|].[meF].[meF].[meF].[am]}$$$$
+81,False,0,0.000,CHEMBL507601,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.K.[dW].W.P.G.I.F.D.[am]}$$$$
+82,False,0,0.000,CHEMBL504095,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Pen].T.G.H.[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].G.G.L.Y.P.C}$$$$
+83,False,0,0.000,CHEMBL504097,ChEMBL21 1k test set,"PEPTIDE1{F.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+84,False,0,0.000,CHEMBL525962,ChEMBL21 1k test set,"PEPTIDE1{A.C.D.T.A.T.C.V.T.H.R.L.A.G.L.L.S.R.S.G.G.V.V.K.N.N.F.V.P.T.N.V.G.S.K.A.F.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+85,False,0,0.000,CHEMBL525951,ChEMBL21 1k test set,PEPTIDE1{H.S.D.G.[meI].F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.[am]}$$$$
+86,False,0,0.000,CHEMBL526360,ChEMBL21 1k test set,PEPTIDE1{H.S.D.G.I.Y.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.G.K.R.Y.K.Q.R.V.K.N.K.[am]}$$$$
+87,False,0,0.000,CHEMBL501266,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Pen].T.G.H.[*N[C@H](C(=O)*)Cc1ccc(cc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].G.G.L.Y.P.C}$$$$
+88,False,0,0.000,CHEMBL503261,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.K.W.W.P.G.I.F.[am]}$$$$
+89,False,0,0.000,CHEMBL526689,ChEMBL21 1k test set,PEPTIDE1{T.P.R.A.A.R.R.K.K.R}$$$$
+90,False,0,0.000,CHEMBL526906,ChEMBL21 1k test set,"PEPTIDE1{A.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].V.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].C.P.I.F.V.C.S.E.G.C.P.I.S.N.K.Y.C.V.K.S.K.C.S.C.G.L.L}$PEPTIDE1,PEPTIDE1,31:R2-1:R1$$$"
+91,False,0,0.000,CHEMBL504561,ChEMBL21 1k test set,"PEPTIDE1{G.C.C.S.L.P.R.C.A.L.N.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-12:R3$$$"
+92,False,0,0.000,CHEMBL500002,ChEMBL21 1k test set,PEPTIDE1{G.Q.V.G.R.Q.[Cha].A.I.I.G.D.D.I.N.R}$$$$
+93,False,0,0.000,CHEMBL499996,ChEMBL21 1k test set,"PEPTIDE1{[dD].D.I.K.E.I.Y.D.P.G}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+94,False,0,0.000,CHEMBL524521,ChEMBL21 1k test set,PEPTIDE1{H.S.D.G.I.A.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.[am]}$$$$
+95,False,0,0.000,CHEMBL508019,ChEMBL21 1k test set,PEPTIDE1{S.F.R.N.[*N[C@@H](C(=O)*)CSCNC(=O)C |$_R1;;;;;_R2;;;;;;;$|].V.G.T.G.M.K.K.T.S.F.Q.R.A.K.S}$$$$
+96,False,0,0.000,CHEMBL505128,ChEMBL21 1k test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)S* |$_R1;;;;;_R2;;_R3$|].F.F.[dW].K.T.F.C}$PEPTIDE1,PEPTIDE1,2:R3-9:R3$$$"
+97,False,0,0.000,CHEMBL526113,ChEMBL21 1k test set,PEPTIDE1{A.L.Y.K.T.M.L.K.K.L.G.T.M.A.L.[am]}$$$$
+98,False,0,0.000,CHEMBL526121,ChEMBL21 1k test set,PEPTIDE1{T.P.Q.R.A.R.R.R.K.K.R.[Bal]}$$$$
+99,False,0,0.000,CHEMBL526181,ChEMBL21 1k test set,PEPTIDE1{T.P.R.A.R.R.R.K.K.R.N.[am]}$$$$
+100,False,0,0.000,CHEMBL502411,ChEMBL21 1k test set,"PEPTIDE1{F.[dP].F.[dW]}$PEPTIDE1,PEPTIDE1,4:R2-1:R1$$$"
+101,False,0,0.000,CHEMBL502601,ChEMBL21 1k test set,"PEPTIDE1{N.D.W.V.[Orn].L.[dY].P.W.[dF]}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+102,False,0,0.000,CHEMBL502603,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.K.W.[dW].P.G.I.F.D.[am]}$$$$
+103,False,0,0.000,CHEMBL503449,ChEMBL21 1k test set,PEPTIDE1{[ac].H.[*N[C@@H](C(=O)*)Cc1ccc(cc1)C |$_R1;;;;;_R2;;;;;;;;$|].R.W.[am]}$$$$
+104,False,0,0.000,CHEMBL503695,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[*N[C@@H](C(=O)*)C(C)(C)S |$_R1;;;;;_R2;;;;$|].T.G.H.[dF].G.G.L.Y.P.[dC].N.G.P}$$$$
+105,False,0,0.000,CHEMBL526190,ChEMBL21 1k test set,PEPTIDE1{T.P.R.S.R.R.R.K.K.R.G.[am]}$$$$
+106,False,0,0.000,CHEMBL526301,ChEMBL21 1k test set,PEPTIDE1{S.T.Y.L.G.R.P.A.E.P.V.P.L.Q.L}$$$$
+107,False,0,0.000,CHEMBL502208,ChEMBL21 1k test set,PEPTIDE1{H.[dW].F.[dW].L.L.[am]}$$$$
+108,False,0,0.000,CHEMBL504417,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.K.W.W.P.G.I.[dF].D.[am]}$$$$
+109,False,0,0.000,CHEMBL502990,ChEMBL21 1k test set,PEPTIDE1{[ac].R.D.K.D.R}$$$$
+110,False,0,0.000,CHEMBL500367,ChEMBL21 1k test set,"PEPTIDE1{G.C.C.S.L.P.P.C.A.L.N.N.P.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-14:R3$$$"
+111,False,0,0.000,CHEMBL526336,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[*N[C@@H](C(=O)*)C(C)(C)S |$_R1;;;;;_R2;;;;$|].T.G.H.[*N[C@H](C(=O)*)Cc1ccccn1 |$_R1;;;;;_R2;;;;;;;$|].G.G.L.Y.P.[dC].N.G.P}$$$$
+112,False,0,0.000,CHEMBL525083,ChEMBL21 1k test set,"PEPTIDE1{L.K.V.K.L.[dY].P.V.K.L.K.V.K.[dY].P}$PEPTIDE1,PEPTIDE1,15:R2-1:R1$$$"
+113,False,0,0.000,CHEMBL525089,ChEMBL21 1k test set,PEPTIDE1{H.S.D.G.I.[meF].T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.[am]}$$$$
+114,False,0,0.000,CHEMBL525212,ChEMBL21 1k test set,"PEPTIDE1{[Pen].S.I.Y.D.P.G.D.D.I.[dK].C}$PEPTIDE1,PEPTIDE1,1:R3-12:R3$$$"
+115,False,0,0.000,CHEMBL503304,ChEMBL21 1k test set,PEPTIDE1{F.T.F.N.E.D.F}$$$$
+116,False,0,0.000,CHEMBL503037,ChEMBL21 1k test set,"PEPTIDE1{E.T.[dP].D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,5:R3-10:R3$$$"
+117,False,0,0.000,CHEMBL502678,ChEMBL21 1k test set,PEPTIDE1{R.K.W.R.R.K.W.K.K.[am]}$$$$
+118,False,0,0.000,CHEMBL501583,ChEMBL21 1k test set,"PEPTIDE1{I.P.Y.V.P.L.T.P}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+119,False,0,0.000,CHEMBL507824,ChEMBL21 1k test set,PEPTIDE1{D.Y.[dW].V.[dW].[dW].K.[am]}$$$$
+120,False,0,0.000,CHEMBL500788,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Pen].T.G.H.F.G.G.L.[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].P.C.N.G.P}$$$$
+121,False,0,0.000,CHEMBL503461,ChEMBL21 1k test set,"PEPTIDE1{N.G.V.C.C.G.Y.K.L.C.H.[Hyp].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+122,False,0,0.000,CHEMBL525073,ChEMBL21 1k test set,PEPTIDE1{[dH].S.D.G.I.F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.G.K.R.Y.K.Q.R.V.K.N.K.[am]}$$$$
+123,False,0,0.000,CHEMBL526871,ChEMBL21 1k test set,PEPTIDE1{K.I.S.K.K.I.M.R.T.F.L.R.R.I.S.K.D.I.L.T.G.K.K.[am]}$$$$
+124,False,0,0.000,CHEMBL524487,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[*N[C@@H](C(=O)*)C(C)(C)S |$_R1;;;;;_R2;;;;$|].T.G.H.F.G.G.L.Y.[dP].[dC].N.G.P}$$$$
+125,False,0,0.000,CHEMBL524488,ChEMBL21 1k test set,PEPTIDE1{T.P.Q.R.A.R.R.R.K.K.R.[dK]}$$$$
+126,False,0,0.000,CHEMBL576306,ChEMBL21 1k test set,"PEPTIDE1{R.N.Y.I.[dS].S.R.N.Y.I.[dS].S}$PEPTIDE1,PEPTIDE1,12:R2-1:R1$$$"
+127,False,0,0.000,CHEMBL576309,ChEMBL21 1k test set,"PEPTIDE1{R.D.P.G.Y.I.[dE].S}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+128,False,0,0.000,CHEMBL527050,ChEMBL21 1k test set,PEPTIDE1{K.I.L.R.G.V.S.K.K.I.M.R.R.I.L.T.G.K.K.[am]}$$$$
+129,False,0,0.000,CHEMBL524494,ChEMBL21 1k test set,PEPTIDE1{H.S.E.G.I.F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.G.K.R.Y.K.Q.R.V.K.N.K.[am]}$$$$
+130,False,0,0.000,CHEMBL525403,ChEMBL21 1k test set,"PEPTIDE1{C.K.G.K.G.A.K.C.S.R.L.M.Y.D.C.C.T.G.S.C.R.S.G.K.C}$PEPTIDE1,PEPTIDE1,1:R3-16:R3|PEPTIDE1,PEPTIDE1,8:R3-20:R3|PEPTIDE1,PEPTIDE1,15:R3-25:R3$$$"
+131,False,0,0.000,CHEMBL527084,ChEMBL21 1k test set,PEPTIDE1{Q.R.F.[Pen].T.G.H.W.G.G.L.Y.P.C.N.G.P}$$$$
+132,False,0,0.000,CHEMBL578183,ChEMBL21 1k test set,PEPTIDE1{D.L.D.L.E.M.L.A.P.Y.I.P.M.D.D.D.F.Q.L}$$$$
+133,False,0,0.000,CHEMBL592150,ChEMBL21 1k test set,PEPTIDE1{G.L.P.V.C.G.E.T.C.V.G.G.T.C.N.T.P.G.C.T.C.S.E.P.V.C.T.R.N}$$$$
+134,False,0,0.000,CHEMBL1208990,ChEMBL21 1k test set,PEPTIDE1{H.F.R.W.R.Q.I.K.I.W.F.Q.N.R.R.M.K.W.K.K.[am]}$$$$
+135,False,0,0.000,CHEMBL573427,ChEMBL21 1k test set,PEPTIDE1{[ac].[meI].[Sar].[meL].M.[meV].[Sar].[am]}$$$$
+136,False,0,0.000,CHEMBL524539,ChEMBL21 1k test set,PEPTIDE1{[ac].S.N.W.[dK].W.W.P.G.I.F.D.[am]}$$$$
+137,False,0,0.000,CHEMBL156168,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].I.N.Q.S.V.[am]}$$$$
+138,False,0,0.000,CHEMBL558754,ChEMBL21 1k test set,PEPTIDE1{[ac].M.M.I.W.N.T.D.E.I.L.T.N.E.S.Y.R.W.C.[am]}$$$$
+139,False,0,0.000,CHEMBL583328,ChEMBL21 1k test set,PEPTIDE1{D.A.E.F.R.H.D.S.G.Y.E.V.H.H.Q.K.L.V.F.F.A.K.D.V.G.S.N.K.G.A.I.I.G.L.M.V.G.G.V.V.I.A}$$$$
+140,True,9307,5.817,CHEMBL558546,ChEMBL21 1k test set,"PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$"
+141,False,0,0.000,CHEMBL525397,ChEMBL21 1k test set,"PEPTIDE1{[ac].C.F.F.[dW].K.T.F.[*N[C@H](C(=O)O)S* |$_R1;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-9:R3$$$"
+142,False,0,0.000,CHEMBL526891,ChEMBL21 1k test set,PEPTIDE1{W.[Aib].G.W.D.[Aib].G.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.Q.Q.K.K.N}$$$$
+143,False,0,0.000,CHEMBL558940,ChEMBL21 1k test set,PEPTIDE1{D.L.D.L.E.A.L.A.[Hyp].Y.[*N[C@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P.A.D.D.D.F.Q.L.R.[am]}$$$$
+144,False,0,0.000,CHEMBL525223,ChEMBL21 1k test set,"PEPTIDE1{G.E.S.C.V.W.I.P.C.I.S.S.A.I.G.C.S.C.K.S.K.V.C.Y.R.N.G.I.P.C}$PEPTIDE1,PEPTIDE1,4:R3-18:R3|PEPTIDE1,PEPTIDE1,9:R3-23:R3|PEPTIDE1,PEPTIDE1,16:R3-30:R3$$$"
+145,False,0,0.000,CHEMBL525776,ChEMBL21 1k test set,"PEPTIDE1{C.C.[dN].C.S.S.K.L.C.R.D.H.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+146,False,0,0.000,CHEMBL526131,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1cncn1C |$;;;;_R2;;;;;;;$|].S.D.G.I.F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.[am]}$$$$
+147,False,0,0.000,CHEMBL596000,ChEMBL21 1k test set,PEPTIDE1{N.E.E.L.G.K.K.Y.E.E.T.K.K.K.Q.E.E.F.Y.K.K.I.E.E.I.E.K.K.N.E.E.V.K.K.K.L.E.E.L.Q.K.K}$$$$
+148,False,0,0.000,CHEMBL525419,ChEMBL21 1k test set,PEPTIDE1{H.S.D.G.I.F.A.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.G.K.R.Y.K.Q.R.V.K.N.K.[am]}$$$$
+149,False,0,0.000,CHEMBL525991,ChEMBL21 1k test set,PEPTIDE1{G.R.[Abu].[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].F.S.I.P.P.I.[Abu].F.P.D}$$$$
+150,False,0,0.000,CHEMBL575372,ChEMBL21 1k test set,"PEPTIDE1{L.F.[*N(C)[C@@H](C(=O)*)CC(C)C |$_R1;;;;;;_R2;;;;$|].L.[dV]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+151,False,0,0.000,CHEMBL575374,ChEMBL21 1k test set,"PEPTIDE1{[Cha].V.[*N(C)[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].F.[*N[C@H](C(=O)*)COCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;;$|]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+152,False,0,0.000,CHEMBL595999,ChEMBL21 1k test set,PEPTIDE1{L.E.E.W.Y.K.K.T.E.E.L.Q.K.K.F.E.E.I.I.K.K.I.E.E.N.S.K.K.G.E.E.G.I.K.K}$$$$
+153,False,0,0.000,CHEMBL526916,ChEMBL21 1k test set,PEPTIDE1{[ac].W.V.T.H.[Cit].L.A.G.L.L.S.[Cit].S.G.G.V.V.[Har].K.N.F.V.P.T.D.V.G.[dP].[*N[C@H](C(=O)*)Cc1ccc(cc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].A.F.[am]}$$$$
+154,False,0,0.000,CHEMBL539918,ChEMBL21 1k test set,"PEPTIDE1{C.[*N[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].F.V.N.C.P.R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+155,False,0,0.000,CHEMBL525076,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.T.S.L.I.H.S.L.I.E.E.S.Q.N.Q.Q.E.K.N.E.Q.E.L.L.E.L.D.K.W.A.S.L.W.N.W.F.[am]}$$$$
+156,False,0,0.000,CHEMBL525237,ChEMBL21 1k test set,PEPTIDE1{[ac].W.V.T.H.[Cit].L.A.G.L.L.S.[Cit].S.G.G.V.V.[Har].K.N.F.V.P.T.D.V.G.[dP].F.A.F.[am]}$$$$
+157,False,0,0.000,CHEMBL530345,ChEMBL21 1k test set,PEPTIDE1{L.L.G.D.F.F.R.K.S.K.E.K.I.G.K.E.F.K.R.I.V.Q.R.I.K.D.F.L.R.N.L.V.P.R.T.E.S}$$$$
+158,False,0,0.000,CHEMBL1089589,ChEMBL21 1k test set,PEPTIDE1{[ac].S.H.A.L.L.A.R}$$$$
+159,False,0,0.000,CHEMBL605624,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+160,False,0,0.000,CHEMBL1076958,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.A.L.E.G.R.R.V.V.V.S.F.A.W.D.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+161,False,0,0.000,CHEMBL1076988,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.P.L.E.G.Y.V.S.A.G.S.Q.L.W.D.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+162,False,0,0.000,CHEMBL584399,ChEMBL21 1k test set,"PEPTIDE1{L.L.[dV].L.[dF]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+163,False,0,0.000,CHEMBL584401,ChEMBL21 1k test set,"PEPTIDE1{L.[dL].[dV].L.F}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+164,False,0,0.000,CHEMBL584402,ChEMBL21 1k test set,"PEPTIDE1{[Cha].V.[*N(C)[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].F.L}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+165,False,0,0.000,CHEMBL1076601,ChEMBL21 1k test set,PEPTIDE1{[Sar].[*N[C@H](C(=O)*)Cc1ccc(cc1)C(=O)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].V.Y.I.H.P.F}$$$$
+166,False,0,0.000,CHEMBL608706,ChEMBL21 1k test set,"PEPTIDE1{C.V.F.R.V.F.G.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+167,False,0,0.000,CHEMBL264711,ChEMBL21 1k test set,PEPTIDE1{[dR].P.K.[dP].Q.[dQ].F.[dF].G.[dL].M.[am]}$$$$
+168,False,0,0.000,CHEMBL1098970,ChEMBL21 1k test set,PEPTIDE1{N.K.T.D.N.G.S.S.F.F.F.A.M.S.N.A.L.L.V.I.Y}$$$$
+169,False,0,0.000,CHEMBL583929,ChEMBL21 1k test set,"PEPTIDE1{L.[dL].[dV].[dL].F.L.L.[dV].[dL].[dF]}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+170,False,0,0.000,CHEMBL1076963,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.A.L.E.G.S.V.A.Q.L.G.L.L.L.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+171,False,0,0.000,CHEMBL1076376,ChEMBL21 1k test set,"PEPTIDE1{[Glp].G.V.C.C.G.Y.K.L.C.H.[dD].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+172,False,0,0.000,CHEMBL1098965,ChEMBL21 1k test set,PEPTIDE1{E.E.Q.E.N.E.D.S.T.D.A.E.A.I.D.K.E.E.V.E.Y}$$$$
+173,False,0,0.000,CHEMBL1076969,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.A.L.E.G.A.P.C.L.V.M.T.T.A.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+174,False,0,0.000,CHEMBL595769,ChEMBL21 1k test set,PEPTIDE1{L.G.E.W.Y.N.Q.T.K.D.L.Q.Q.K.F.Y.E.I.I.M.D.I.E.Q.N.N.V.Q.G.K.K.G.I.Q.Q}$$$$
+175,False,0,0.000,CHEMBL595776,ChEMBL21 1k test set,PEPTIDE1{P.V.L.D.E.F.R.[*N[C@H](C(=O)*)CC(C(=O)O)C(=O)O |$_R1;;;;;_R2;;;;;;;;$|].K.L.N.E.A.L.E.A.L.K.Q.K.L.K}$$$$
+176,True,8503,5.314,CHEMBL562966,ChEMBL21 1k test set,"PEPTIDE1{W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,12:R3-9:R3$$$"
+177,False,0,0.000,CHEMBL1089592,ChEMBL21 1k test set,PEPTIDE1{S.H.L.[*N[C@H](C(=O)*)CCC1CCCCC1 |$_R1;;;;;_R2;;;;;;;;$|].L.A.R}$$$$
+178,False,0,0.000,CHEMBL1078833,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].L.R.[am]}$$$$
+179,False,0,0.000,CHEMBL263010,ChEMBL21 1k test set,PEPTIDE1{[ac].L.N.[*N[C@H](C(=O)*)Cc1ccc(cc1)OC(C(=O)O)C(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].I.D.L.D.L.V.[am]}$$$$
+180,False,0,0.000,CHEMBL1089576,ChEMBL21 1k test set,PEPTIDE1{[ac].L.H.L.G.L.A.R}$$$$
+181,False,0,0.000,CHEMBL1089585,ChEMBL21 1k test set,PEPTIDE1{[ac].S.H.[Nle].L.L.A.R}$$$$
+182,False,0,0.000,CHEMBL1076976,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.A.L.E.G.W.G.G.L.M.G.W.I.S.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+183,False,0,0.000,CHEMBL1089574,ChEMBL21 1k test set,PEPTIDE1{[ac].S.H.L.G.L.A.R}$$$$
+184,False,0,0.000,CHEMBL1077410,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].C.V.[am]}$$$$
+185,False,0,0.000,CHEMBL1082284,ChEMBL21 1k test set,PEPTIDE1{A.R.T.[meK].Q.T.A.R.K.S.[am]}$$$$
+186,False,0,0.000,CHEMBL609012,ChEMBL21 1k test set,"PEPTIDE1{N.N.L.V.[Orn].L.F.P.Y.[dF]}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+187,False,0,0.000,CHEMBL1097979,ChEMBL21 1k test set,PEPTIDE1{S.K.I.N.K.E.L.A.H.R.T.A.L.F.N.K.L.A.D.N.Y}$$$$
+188,False,0,0.000,CHEMBL1077444,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].N.F.[am]}$$$$
+189,False,0,0.000,CHEMBL1160429,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].A.[dA]}$$$$
+190,False,0,0.000,CHEMBL1098966,ChEMBL21 1k test set,PEPTIDE1{T.E.E.K.G.K.D.E.Q.K.K.D.E.Q.K.E.Q.D.E.E.Y}$$$$
+191,False,0,0.000,CHEMBL609471,ChEMBL21 1k test set,PEPTIDE1{[dD].[dW].[dF].[dK].[dA].[dF].[dY].[dD].[dK].[dV].[dA].[dE].[dK].[dF].[dK].[dE].[dA].[dF]}$$$$
+192,False,0,0.000,CHEMBL1085208,ChEMBL21 1k test set,PEPTIDE1{V.D.K.P.P.Y.L.P.R.P.R.P.P.R.[Orn].I.Y.N.[Orn].[am]}$$$$
+193,False,0,0.000,CHEMBL1159678,ChEMBL21 1k test set,PEPTIDE1{G.D.Y.E.E.I.[dP].E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.Q}$$$$
+194,False,0,0.000,CHEMBL1159681,ChEMBL21 1k test set,PEPTIDE1{D.F.E.E.I.[dP].E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.[am]}$$$$
+195,False,0,0.000,CHEMBL3347286,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.A.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+196,False,0,0.000,CHEMBL1097646,ChEMBL21 1k test set,PEPTIDE1{D.N.N.K.E.C.L.I.D.P.L.D.V.Q.K.N.L.L.N.E.Y}$$$$
+197,False,0,0.000,CHEMBL608415,ChEMBL21 1k test set,PEPTIDE1{P.V.L.D.E.F.R.E.K.L.N.E.[Aib].L.[*N[C@H](C(=O)*)CC(C(=O)O)C(=O)O |$_R1;;;;;_R2;;;;;;;;$|].A.L.K.Q.K.L.K}$$$$
+198,False,0,0.000,CHEMBL611968,ChEMBL21 1k test set,"PEPTIDE1{N.[dD].W.V.[Orn].L.[dY].P.W.F}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+199,False,0,0.000,CHEMBL3347295,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.T.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+200,False,0,0.000,CHEMBL3347296,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.V.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+201,False,0,0.000,CHEMBL3347287,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.D.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+202,False,0,0.000,CHEMBL1076637,ChEMBL21 1k test set,PEPTIDE1{[dY]}$$$$
+203,False,0,0.000,CHEMBL163965,ChEMBL21 1k test set,"PEPTIDE1{[ac].[dC].G.[*N(C)[C@@H](C(=O)*)CCCN=C(N)N |$_R1;;;;;;_R2;;;;;;;$|].G.[dD].[*N[C@@H](C(=O)N)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+204,False,0,0.000,CHEMBL1076605,ChEMBL21 1k test set,PEPTIDE1{[Sar].R.V.[*N[C@H](C(=O)*)Cc1ccc(cc1)C(=O)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].I.H.P.F}$$$$
+205,False,0,0.000,CHEMBL3347294,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.R.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+206,False,0,0.000,CHEMBL1076603,ChEMBL21 1k test set,PEPTIDE1{[Sar].R.[*N[C@H](C(=O)*)Cc1ccc(cc1)C(=O)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].Y.I.H.P.F}$$$$
+207,False,0,0.000,CHEMBL3347278,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.T.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+208,False,0,0.000,CHEMBL3347305,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.E.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+209,False,0,0.000,CHEMBL1163477,ChEMBL21 1k test set,"PEPTIDE1{[ac].C.F.[dW].K.Y.C.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+210,False,0,0.000,CHEMBL1163470,ChEMBL21 1k test set,"PEPTIDE1{A.N.C.F.A.K.Y.C.V}$PEPTIDE1,PEPTIDE1,3:R3-8:R3$$$"
+211,False,0,0.000,CHEMBL1163326,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.Q.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+212,False,0,0.000,CHEMBL1172252,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].G.F.H.[*N[C@@H](C(=O)*)Cc1ccc2ccccc2c1 |$_R1;;;;;_R2;;;;;;;;;;;$|].R.W.[Nle].D.F.[am]}$$$$
+213,False,0,0.000,CHEMBL1172253,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1c(cc(cc1C)O)C |$;;;;_R2;;;;;;;;;;$|].[dA].G.F.H.[*N[C@@H](C(=O)*)Cc1ccc2ccccc2c1 |$_R1;;;;;_R2;;;;;;;;;;;$|].R.W.[Nle].D.F.[am]}$$$$
+214,False,0,0.000,CHEMBL1215817,ChEMBL21 1k test set,PEPTIDE1{G.F.H.T.A.S.G.K.K.V.K.I.S.K.E.S.L.D.K.V.K.N.L.F}$$$$
+215,False,0,0.000,CHEMBL3347316,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.F.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+216,False,0,0.000,CHEMBL3347322,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.I.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+217,False,0,0.000,CHEMBL1172429,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].F.H.[*N[C@@H](C(=O)*)Cc1ccc2ccccc2c1 |$_R1;;;;;_R2;;;;;;;;;;;$|].R.W.[Nle].D.F.[am]}$$$$
+218,False,0,0.000,CHEMBL3347307,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.G.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+219,False,0,0.000,CHEMBL1163473,ChEMBL21 1k test set,"PEPTIDE1{C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+220,False,0,0.000,CHEMBL3347317,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.G.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+221,False,0,0.000,CHEMBL3347318,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.S.E.E.H.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+222,False,0,0.000,CHEMBL1076974,ChEMBL21 1k test set,PEPTIDE1{A.E.L.A.A.L.E.A.E.L.A.A.L.E.G.V.G.E.F.S.V.S.L.L.G.K.L.A.A.L.K.A.K.L.A.A.L.K.A}$$$$
+223,False,0,0.000,CHEMBL1160100,ChEMBL21 1k test set,PEPTIDE1{D.F.E.E.I.P.E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.A}$$$$
+224,False,0,0.000,CHEMBL1160104,ChEMBL21 1k test set,PEPTIDE1{D.[dF].E.E.I.P.E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.Q}$$$$
+225,False,0,0.000,CHEMBL1164325,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.P.G.P.E.G.P.R.G.P.R.G.P.P.G.P.P.G.P.P.G.P.P.G.[am]}$$$$
+226,False,0,0.000,CHEMBL3347323,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.T.S.L.I.E.E.L.I.K.K.S.E.E.Q.Q.K.K.N.E.E.E.L.K.K.L.E.E.W.A.K.K.W.N.W.F.[am]}$$$$
+227,False,0,0.000,CHEMBL1186010,ChEMBL21 1k test set,PEPTIDE1{V.D.G.R.V.D.G.R}$$$$
+228,False,0,0.000,CHEMBL3347308,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.H.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+229,False,0,0.000,CHEMBL1222310,ChEMBL21 1k test set,"PEPTIDE1{[dC].S.C.K.D.M.T.D.K.E.C.L.Y.F.C.H.Q.D.V.I.W}$PEPTIDE1,PEPTIDE1,3:R3-11:R3|PEPTIDE1,PEPTIDE1,1:R3-15:R3$$$"
+230,False,0,0.000,CHEMBL163871,ChEMBL21 1k test set,PEPTIDE1{Y.P.W.[*N[C@@H](C(=O)N)[C@@H](C)c1ccccc1 |$_R1;;;;;;;;;;;;;$|]}$$$$
+231,False,0,0.000,CHEMBL1187422,ChEMBL21 1k test set,PEPTIDE1{H.S.D.[Aib].I.F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.[am]}$$$$
+232,False,0,0.000,CHEMBL3347306,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.F.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+233,False,0,0.000,CHEMBL1164326,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+234,False,0,0.000,CHEMBL1221884,ChEMBL21 1k test set,PEPTIDE1{G.D.D.M.Y.R.I.R.E.F.L.A.N.Y.R.P.I.W.V.M.R.S.N.L.A.Q.L}$$$$
+235,False,0,0.000,CHEMBL1165737,ChEMBL21 1k test set,PEPTIDE1{[fmoc].W.[*N[C@@H](CO)Cc1ccccc1 |$_R1;;;;;;;;;;;$|]}$$$$
+236,False,0,0.000,CHEMBL3347297,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.W.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+237,False,0,0.000,CHEMBL1213203,ChEMBL21 1k test set,PEPTIDE1{R.E.P.R.I.L.S.E.E.E.Q.E.M.F.R.D.F.D.Y.I.A.D.W.C}$$$$
+238,False,0,0.000,CHEMBL1096654,ChEMBL21 1k test set,PEPTIDE1{R.L.S.D.Y.G.G.K.I.L.V.K.G.T.N.A.Q.N.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].L}$$$$
+239,False,0,0.000,CHEMBL1169618,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCCCNC |$;;;_R2;;;;;;$|].R.P.Y.[Tle].L}$$$$
+240,False,0,0.000,CHEMBL3347319,ChEMBL21 1k test set,PEPTIDE1{[ac].W.E.E.W.D.K.K.I.E.E.Y.T.K.K.I.E.E.L.I.K.K.Y.E.E.Q.Q.K.K.N.E.E.E.L.K.K.[am]}$$$$
+241,False,0,0.000,CHEMBL1229041,ChEMBL21 1k test set,PEPTIDE1{K.W.K.L.F.[Tml].K.I.G.A.V.L.K.V.L.[am]}$$$$
+242,False,0,0.000,CHEMBL414787,ChEMBL21 1k test set,PEPTIDE1{R.[dP].[dK].P.Q.[dQ].F.[dF].G.[dL].M.[am]}$$$$
+243,False,0,0.000,CHEMBL438751,ChEMBL21 1k test set,PEPTIDE1{A.R.Y.Y.S.A.L.R.H.Y.I.[dN].L.I.T.R.Q.R.Y.[am]}$$$$
+244,False,0,0.000,CHEMBL438753,ChEMBL21 1k test set,PEPTIDE1{R.L.Y.E.L.L.H.G.A.A.N.H.A.A.G.I.L.T.L.[am]}$$$$
+245,False,0,0.000,CHEMBL439489,ChEMBL21 1k test set,PEPTIDE1{C.S.C.S.S.L.M.D.K.E.C.V.Y.F.C.H.L.D.[*N[C@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].[Phg].W}$$$$
+246,False,0,0.000,CHEMBL429546,ChEMBL21 1k test set,"PEPTIDE1{[dC].G.R.[dV].Y.[dR].P.C.[dW].[dE].[dV]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+247,False,0,0.000,CHEMBL439123,ChEMBL21 1k test set,PEPTIDE1{P.D.C.C.R.Q.K.T.C.S.C.R.L.Y.E.L.L.H.G.A.G.N.H.A.A.G.I.L.T.L}$$$$
+248,False,0,0.000,CHEMBL439128,ChEMBL21 1k test set,"PEPTIDE1{Y.V.[Nle].[dC].G.H.[dF].R.W.C.R.F.G.[am]}$PEPTIDE1,PEPTIDE1,4:R3-10:R3$$$"
+249,False,0,0.000,CHEMBL412724,ChEMBL21 1k test set,PEPTIDE1{A.S.C.D.K.C.Q.L.K.G.[am]}$$$$
+250,False,0,0.000,CHEMBL410596,ChEMBL21 1k test set,PEPTIDE1{[dF].F.Y.[dW].K.V.F.[*N[C@@H](C(=O)N)Cc1ccc2ccccc2c1 |$_R1;;;;;;;;;;;;;;;;$|]}$$$$
+251,False,0,0.000,CHEMBL410794,ChEMBL21 1k test set,"PEPTIDE1{[dA].P.F.[dF].N.Q.Y.V.[Orn].L}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+252,False,0,0.000,CHEMBL410795,ChEMBL21 1k test set,PEPTIDE1{Y.V.M.G.H.F.R.W.[dD].R.F.G}$$$$
+253,False,0,0.000,CHEMBL410797,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.A.G.T.[dV].[*N[C@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].N.D.L}$$$$
+254,False,0,0.000,CHEMBL410802,ChEMBL21 1k test set,PEPTIDE1{Q.E.D.I.I.R.N.I.A.R.H.L.A.Q.V.G.D.S.M.D.R}$$$$
+255,False,0,0.000,CHEMBL410806,ChEMBL21 1k test set,PEPTIDE1{R.[dW].[dF].I.[dF].H.K.K.Y.[am]}$$$$
+256,False,0,0.000,CHEMBL415617,ChEMBL21 1k test set,PEPTIDE1{Y.G.G.F.L.R.R.I.K.P.K.L.K.[am]}$$$$
+257,False,0,0.000,CHEMBL415619,ChEMBL21 1k test set,"PEPTIDE1{[ac].I.C.V.[dS].Q.[dD].W.G.H.[dH].R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+258,False,0,0.000,CHEMBL439137,ChEMBL21 1k test set,PEPTIDE1{[ac].R.V.H.W.A.G.L.D.[am]}$$$$
+259,False,0,0.000,CHEMBL1215815,ChEMBL21 1k test set,PEPTIDE1{G.F.Y.T.A.S.G.K.K.V.K.I.A.K.E.S.L.D.K.V.K.N.L.F}$$$$
+260,False,0,0.000,CHEMBL438760,ChEMBL21 1k test set,PEPTIDE1{[Glp].G.P.P.I.S.I.D.L.P.Q.L.L.L.R.K.M.I.E.I.E.K.Q.E.K.E.K.Q.Q.A.A.N.N.R.L.L.L.D.T.I}$$$$
+261,False,0,0.000,CHEMBL412531,ChEMBL21 1k test set,PEPTIDE1{[dC].[dS].[dD].A.A.[dV].[dD].[dV].[dS].[dS].[dE].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[*N[C@@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].[dV].[dK].[dD].[dL].[dK].[dE].[dK].[dK].[dE].[dV].[dV].[dE].[dE].A.[dE]}$$$$
+262,False,0,0.000,CHEMBL414476,ChEMBL21 1k test set,PEPTIDE1{[Glp].L.Y.E.N.K.P.R.R.P.[dY].I.L}$$$$
+263,False,0,0.000,CHEMBL429374,ChEMBL21 1k test set,PEPTIDE1{A.L.Q.G.R.L.Q.R.L.L.Q.A.S.G.N.H.A.A.G.I.L.T.M}$$$$
+264,False,0,0.000,CHEMBL414718,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.R.M.E.H.[dF].R.W.G.S.P.P.K.D.[am]}$$$$
+265,False,0,0.000,CHEMBL414947,ChEMBL21 1k test set,PEPTIDE1{Y.P.S.K.P.A.[Nva].[meR].H.Y.I.N.L.I.T.R.Q.R.Y.[am]}$$$$
+266,False,0,0.000,CHEMBL410816,ChEMBL21 1k test set,PEPTIDE1{M.T.L.I.G.A.A.H.N.G.S.A.Q.L.L.R.Q.L.R.G.Q.L.G.P.P.G.S.[dR].[am]}$$$$
+267,False,0,0.000,CHEMBL441945,ChEMBL21 1k test set,PEPTIDE1{Y.A.D.A.I.F.T.N.S.Y.R.K.V.L.A.Q.L.S.A.R.K.L.L.Q.D.I.M.S.[*N[C@H](C=O)CCCN=C(N)N |$_R1;;;;;;;;;;;$|]}$$$$
+268,False,0,0.000,CHEMBL503290,ChEMBL21 1k test set,"PEPTIDE1{C.C.[dN].C.S.A.K.W.C.R.D.H.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+269,False,0,0.000,CHEMBL412982,ChEMBL21 1k test set,PEPTIDE1{D.Y.W.V.[dW].W.K.[am]}$$$$
+270,False,0,0.000,CHEMBL412537,ChEMBL21 1k test set,PEPTIDE1{F.G.G.[*N[C@H](C(=O)*)Cc1cccc(c1)F |$_R1;;;;;_R2;;;;;;;;$|].T.G.A.R.K.S.A.R.K.[am]}$$$$
+271,False,0,0.000,CHEMBL412553,ChEMBL21 1k test set,PEPTIDE1{Y.Y.G.A.R.I.Y.R.[dP].D.K.M}$$$$
+272,False,0,0.000,CHEMBL410197,ChEMBL21 1k test set,"PEPTIDE1{[ac].[dC].[dN].P.[dK].G.[dD].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dR].[dC].[am]}$PEPTIDE1,PEPTIDE1,2:R3-10:R3$$$"
+273,True,7436,4.647,CHEMBL6497,ChEMBL21 1k test set,RNA1{[dR](T)}$$$$
+274,False,0,0.000,CHEMBL1169603,ChEMBL21 1k test set,PEPTIDE1{F.[Cha].P.L.A.R}$$$$
+275,False,0,0.000,CHEMBL414953,ChEMBL21 1k test set,PEPTIDE1{N.L.E.R.E.[*N[C@H](C(=O)*)CSCNC(=O)C |$_R1;;;;;_R2;;;;;;;$|].L.E.E.P.[*N[C@H](C(=O)*)CSCNC(=O)C |$_R1;;;;;_R2;;;;;;;$|].S.R.E.E.A.F}$$$$
+276,False,0,0.000,CHEMBL415583,ChEMBL21 1k test set,PEPTIDE1{F.G.G.[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].T.G.A.R.K.S.A.R.K.[am]}$$$$
+277,False,0,0.000,CHEMBL415584,ChEMBL21 1k test set,PEPTIDE1{F.G.G.F.T.G.A.R.K.S.[Abu].R.K.L.A.N.Q}$$$$
+278,False,0,0.000,CHEMBL415587,ChEMBL21 1k test set,PEPTIDE1{R.P.K.P.[dQ].Q.F.[dF].G.[dL].M.[am]}$$$$
+279,False,0,0.000,CHEMBL412490,ChEMBL21 1k test set,PEPTIDE1{[Glp].L.Y.E.N.K.P.R.[dR].P.Y.I.L}$$$$
+280,False,0,0.000,CHEMBL412494,ChEMBL21 1k test set,"PEPTIDE1{[ac].Y.[Cit].[dC].[dE].H.F.R.[dW].[dC].[am]}$PEPTIDE1,PEPTIDE1,4:R3-10:R3$$$"
+281,False,0,0.000,CHEMBL414310,ChEMBL21 1k test set,PEPTIDE1{H.[dF].R.W.G.K.[dF].V.[am]}$$$$
+282,False,0,0.000,CHEMBL414312,ChEMBL21 1k test set,PEPTIDE1{M.T.L.I.G.A.A.H.N.G.S.A.A.L.L.R.Q.L.R.G.Q.L.G.P.P.G.S.R.[am]}$$$$
+283,False,0,0.000,CHEMBL414323,ChEMBL21 1k test set,PEPTIDE1{[dD].R.V.Y.I.H.P.L}$$$$
+284,False,0,0.000,CHEMBL1229043,ChEMBL21 1k test set,PEPTIDE1{K.W.K.L.F.K.K.I.G.A.V.L.[Tml].V.L.[am]}$$$$
+285,False,0,0.000,CHEMBL1229046,ChEMBL21 1k test set,PEPTIDE1{K.W.K.L.F.[Tml].[Tml].I.G.A.V.L.K.V.L.[am]}$$$$
+286,False,0,0.000,CHEMBL414293,ChEMBL21 1k test set,"PEPTIDE1{R.S.S.[dC].F.G.G.R.I.D.R.I.G.A.[dC]}$PEPTIDE1,PEPTIDE1,4:R3-15:R3$$$"
+287,False,0,0.000,CHEMBL414296,ChEMBL21 1k test set,PEPTIDE1{[dR].P.[dK].P.Q.[dQ].[dF].[dF].G.L.M.[am]}$$$$
+288,False,0,0.000,CHEMBL503500,ChEMBL21 1k test set,PEPTIDE1{T.P.R.A.R.R.R.K.K.R.V.[am]}$$$$
+289,False,0,0.000,CHEMBL415373,ChEMBL21 1k test set,PEPTIDE1{Y.A.D.A.I.F.T.N.S.Y.R.V.L.G.Q.L.S.A.R.K.L.L.Q.D.I.M.S.R.[am]}$$$$
+290,False,0,0.000,CHEMBL414300,ChEMBL21 1k test set,PEPTIDE1{R.[dW].[dF].I.[dF].H.K.R.Q.[am]}$$$$
+291,False,0,0.000,CHEMBL413604,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].E.A.V.G.F.[dA].H.L.D.I.I.W}$$$$
+292,False,0,0.000,CHEMBL413606,ChEMBL21 1k test set,"PEPTIDE1{[ac].I.C.V.V.Q.D.W.G.A.H.R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+293,False,0,0.000,CHEMBL413607,ChEMBL21 1k test set,"PEPTIDE1{[ac].I.C.V.V.N.D.W.G.H.H.R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+294,False,0,0.000,CHEMBL413612,ChEMBL21 1k test set,PEPTIDE1{[ac].A.S.L.R.H.F.L.N.L.V.T.R.Q.R.Y.[am]}$$$$
+295,False,0,0.000,CHEMBL1208991,ChEMBL21 1k test set,PEPTIDE1{R.Q.P.K.I.[dW].F.P.N.R.R.K.P.W.K.K.[am]}$$$$
+296,True,15215,9.509,CHEMBL440063,ChEMBL21 1k test set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
+297,False,0,0.000,CHEMBL414332,ChEMBL21 1k test set,PEPTIDE1{M.T.L.I.G.A.A.H.N.G.S.A.Q.L.L.R.Q.L.R.G.Q.L.G.P.P.G.A.R.[am]}$$$$
+298,False,0,0.000,CHEMBL414344,ChEMBL21 1k test set,PEPTIDE1{[ac].[Nal].[*N[C@@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[*N[C@@H](C(=O)*)Cc1cccnc1 |$_R1;;;;;_R2;;;;;;;$|].S.[*N[C@H](C(=O)*)Cc1ccc(cc1)NC(=O)C |$_R1;;;;;_R2;;;;;;;;;;;$|].[*N[C@@H](C(=O)*)Cc1ccc(cc1)NC(=O)C |$_R1;;;;;_R2;;;;;;;;;;;$|].L.[*N[C@H](C(=O)*)CCCCNC(C)C |$_R1;;;;;_R2;;;;;;;;$|].P.[dA].[am]}$$$$
+299,False,0,0.000,CHEMBL438545,ChEMBL21 1k test set,PEPTIDE1{Y.A.D.A.I.F.T.N.S.Y.R.K.V.L.G.Q.L.S.A.R.K.L.L.Q.D.I.M.R.[am]}$$$$
+300,True,21345,13.341,CHEMBL438548,ChEMBL21 1k test set,"PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$"
+301,False,0,0.000,CHEMBL412558,ChEMBL21 1k test set,PEPTIDE1{Y.A.D.A.I.F.T.S.Y.R.K.V.L.G.Q.L.S.A.R.K.L.L.Q.D.I.M.S.R.[am]}$$$$
+302,False,0,0.000,CHEMBL413405,ChEMBL21 1k test set,"PEPTIDE1{[ac].R.C.V.V.Q.D.W.G.H.H.R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+303,False,0,0.000,CHEMBL413409,ChEMBL21 1k test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].C.V.W.Q.D.W.G.A.H.R.C.T}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+304,False,0,0.000,CHEMBL415385,ChEMBL21 1k test set,PEPTIDE1{[ac].M.W.D.F.D.D.L.A.F.T.G.M.P.P.A.D.E.D.Y.S.P.[am]}$$$$
+305,False,0,0.000,CHEMBL415395,ChEMBL21 1k test set,PEPTIDE1{R.P.K.P.[dQ].Q.[dF].F.G.L.M.[am]}$$$$
+306,False,0,0.000,CHEMBL409993,ChEMBL21 1k test set,PEPTIDE1{[dR].P.K.[dP].[dQ].[dQ].F.[dF].G.L.M.[am]}$$$$
+307,False,0,0.000,CHEMBL1215935,ChEMBL21 1k test set,PEPTIDE1{W.V.N.Q.L.A.V.L.G.L.P.A.V.D.A.A.V.A}$$$$
+308,False,0,0.000,CHEMBL406875,ChEMBL21 1k test set,PEPTIDE1{R.P.P.G.[meF].S.P.F.R}$$$$
+309,False,0,0.000,CHEMBL415406,ChEMBL21 1k test set,"PEPTIDE1{Y.G.G.F.[dC].[dR].R.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[dC].[dR].[dK]}$PEPTIDE1,PEPTIDE1,5:R3-9:R3$$$"
+310,False,0,0.000,CHEMBL413622,ChEMBL21 1k test set,PEPTIDE1{R.[dP].[dK].P.Q.Q.F.F.G.[dL].M.[am]}$$$$
+311,False,0,0.000,CHEMBL440065,ChEMBL21 1k test set,PEPTIDE1{A.R.F.Y.S.A.L.R.H.F.I.N.L.I.T.R.Q.R.F.[am]}$$$$
+312,False,0,0.000,CHEMBL414355,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].Y.[*N[C@H](C(=O)*)COS(=O)(=O)O |$_R1;;;;;_R2;;;;;;$|].P.I.P.[*N[C@H](C(=O)*)COS(=O)(=O)O |$_R1;;;;;_R2;;;;;;$|].[*N[C@H](C(=O)*)COS(=O)(=O)O |$_R1;;;;;_R2;;;;;;$|].A.[*N[C@H](C(=O)*)C1CCCCC1 |$_R1;;;;;_R2;;;;;;$|].[*N[C@H](C(=O)O)COS(=O)(=O)O |$_R1;;;;;;;;;;;$|]}$$$$
+313,False,0,0.000,CHEMBL413414,ChEMBL21 1k test set,PEPTIDE1{[Glp].G.P.P.I.S.I.D.L.P.F.F.L.L.R.K.M.I.E.I.E.K.Q.E.K.E.K.Q.Q.A.A.N.N.R.L.L.L.D.T.I}$$$$
+314,False,0,0.000,CHEMBL414363,ChEMBL21 1k test set,PEPTIDE1{A.[meV].S.E.I.Q.L.M.H.N.L.G.K.H.L.N.S.M.E.R.V.E.W.L.R.K.K.L.Q.D.V.H.N.F.V.A.[am]}$$$$
+315,False,0,0.000,CHEMBL410411,ChEMBL21 1k test set,PEPTIDE1{[ac].M.E.H.F.R.W.G.[am]}$$$$
+316,False,0,0.000,CHEMBL410577,ChEMBL21 1k test set,PEPTIDE1{[dY].[dL].F.Q.P.Q.R.F.[am]}$$$$
+317,False,0,0.000,CHEMBL410578,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)CCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;$|].A.G.T.V.[*N[C@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].N.D.L}$$$$
+318,False,0,0.000,CHEMBL414740,ChEMBL21 1k test set,"PEPTIDE1{A.[dP].D.[dW].F.[dF].N.[dY].Y.[dW].G.[dN].W.[dH].G.[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|]}$PEPTIDE1,PEPTIDE1,16:R2-1:R1$$$"
+319,False,0,0.000,CHEMBL406535,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@@H](C(=O)*)Cc1ccc2ccccc2c1 |$_R1;;;;;_R2;;;;;;;;;;;$|].[*N[C@@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[*N[C@H](C(=O)*)Cc1cccnc1 |$_R1;;;;;_R2;;;;;;;$|].S.[*N[C@H](C(=O)*)Cc1ccc(cc1)NC(=O)[C@@H]2CC(=O)NC(=O)N2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;;;;$|].[*N[C@H](C(=O)*)Cc1ccc(cc1)NC(=O)N |$_R1;;;;;_R2;;;;;;;;;;;$|].[*N[C@H](C(=O)*)CC(=O)N(C)C |$_R1;;;;;_R2;;;;;;$|].[*N[C@H](C(=O)*)CCCCNC(C)C |$_R1;;;;;_R2;;;;;;;;$|].P.[dA].[am]}$$$$
+320,False,0,0.000,CHEMBL407358,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].[dW].I.Q.N.[dC].P.R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+321,False,0,0.000,CHEMBL414773,ChEMBL21 1k test set,PEPTIDE1{Y.G.G.F.L.R.R.I.R.[dP].K.L.K.[am]}$$$$
+322,False,0,0.000,CHEMBL412002,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].E.A.V.Y.G.[dA].H.L.D.I.I.W}$$$$
+323,False,0,0.000,CHEMBL412011,ChEMBL21 1k test set,"PEPTIDE1{[ac].I.C.V.H.Q.D.W.G.H.H.R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+324,False,0,0.000,CHEMBL414384,ChEMBL21 1k test set,PEPTIDE1{D.R.[Spg].Y.[Spg].H.P.F}$$$$
+325,False,0,0.000,CHEMBL439904,ChEMBL21 1k test set,PEPTIDE1{I.K.P.E.A.P.G.E.D.A.S.P.E.E.L.N.R.Y.Y.A.S.L.R.H.Y.L.N.L.V.T.R.Q.R.Y.[am]}$$$$
+326,False,0,0.000,CHEMBL440078,ChEMBL21 1k test set,PEPTIDE1{A.R.Y.Y.S.A.L.R.H.Y.I.N.L.I.T.R.Q.R.[dY].[am]}$$$$
+327,False,0,0.000,CHEMBL440082,ChEMBL21 1k test set,PEPTIDE1{[ac].H.S.D.A.V.F.T.D.Q.Y.T.R.L.R.K.Q.V.A.A.K.K.Y.L.Q.S.I.K.Q.K.R.Y.C}$$$$
+328,False,0,0.000,CHEMBL1170644,ChEMBL21 1k test set,PEPTIDE1{F.L.T.[Cha].A.R}$$$$
+329,False,0,0.000,CHEMBL3309602,ChEMBL21 1k test set,PEPTIDE1{[fmoc].H.Q.P}$$$$
+330,False,0,0.000,CHEMBL7519,ChEMBL21 1k test set,PEPTIDE1{[ac].D.[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].V.P.M.L.[am]}$$$$
+331,False,0,0.000,CHEMBL7957,ChEMBL21 1k test set,PEPTIDE1{[ac].D.[*N[C@H](C(=O)*)Cc1ccc(cc1)OC(C(=O)O)C(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].V.P.M.L.[am]}$$$$
+332,False,0,0.000,CHEMBL8687,ChEMBL21 1k test set,"PEPTIDE1{[meL].[*O[C@@H](C(=O)*)C |$_R1;;;;;_R2;$|].[meL].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@H](C(=O)*)C |$_R1;;;;;_R2;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|]}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+333,False,0,0.000,CHEMBL8108,ChEMBL21 1k test set,PEPTIDE1{[CN[C@H](C(=O)*)c1ccccc1 |$;;;;;_R2;;;;;;$|].P.R}$$$$
+334,False,0,0.000,CHEMBL8085,ChEMBL21 1k test set,PEPTIDE1{K}$$$$
+335,False,0,0.000,CHEMBL8284,ChEMBL21 1k test set,PEPTIDE1{[ac].D.A.D.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OC(C(=O)O)C(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].L.[am]}$$$$
+336,False,0,0.000,CHEMBL459,ChEMBL21 1k test set,PEPTIDE1{[N[C@](C)(C(=O)O)Cc1ccc(c(c1)O)O]}$$$$
+337,False,0,0.000,CHEMBL8072,ChEMBL21 1k test set,PEPTIDE1{F.P.S.K.P}$$$$
+338,False,0,0.000,CHEMBL8486,ChEMBL21 1k test set,PEPTIDE1{V.F}$$$$
+339,False,0,0.000,CHEMBL8711,ChEMBL21 1k test set,"PEPTIDE1{[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)C |$_R1;;;;;_R2;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@H](C(=O)*)C |$_R1;;;;;_R2;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|]}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+340,False,0,0.000,CHEMBL1163295,ChEMBL21 1k test set,PEPTIDE1{C.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+341,False,0,0.000,CHEMBL1163292,ChEMBL21 1k test set,PEPTIDE1{C.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Har].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+342,False,0,0.000,CHEMBL1163307,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[meS].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+343,False,0,0.000,CHEMBL1163303,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Abu].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+344,False,0,0.000,CHEMBL1163301,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[meA].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+345,False,0,0.000,CHEMBL1163308,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+346,False,0,0.000,CHEMBL1163305,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.P.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+347,False,0,0.000,CHEMBL1163311,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+348,False,0,0.000,CHEMBL1163312,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.V.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+349,False,0,0.000,CHEMBL1163321,ChEMBL21 1k test set,PEPTIDE1{[dP].[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.Y.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+350,False,0,0.000,CHEMBL1163319,ChEMBL21 1k test set,PEPTIDE1{[dP].[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.N.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+351,False,0,0.000,CHEMBL1163315,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.A.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+352,False,0,0.000,CHEMBL1163316,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Sar].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+353,False,0,0.000,CHEMBL1163323,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.K.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+354,False,0,0.000,CHEMBL1163320,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.M.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+355,False,0,0.000,CHEMBL1163324,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.F.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+356,True,6450,4.031,CHEMBL78,ChEMBL21 1k test set,RNA1{R(C)}$$$$
+357,False,0,0.000,CHEMBL1163334,ChEMBL21 1k test set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.E.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+358,False,0,0.000,CHEMBL1163328,ChEMBL21 1k test set,PEPTIDE1{[dP].[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Nva].G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+359,False,0,0.000,CHEMBL11257,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)C(C)C]}$$$$
+360,False,0,0.000,CHEMBL11722,ChEMBL21 1k test set,PEPTIDE1{[Hse]}$$$$
+361,True,6298,3.936,CHEMBL11909,ChEMBL21 1k test set,RNA1{R(A)}$$$$
+362,False,0,0.000,CHEMBL12198,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)C]}$$$$
+363,False,0,0.000,CHEMBL1163460,ChEMBL21 1k test set,"PEPTIDE1{A.D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,3:R3-8:R3$$$"
+364,False,0,0.000,CHEMBL1163463,ChEMBL21 1k test set,"PEPTIDE1{A.G.T.A.D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,6:R3-11:R3$$$"
+365,False,0,0.000,CHEMBL1163467,ChEMBL21 1k test set,"PEPTIDE1{G.T.A.D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,5:R3-10:R3$$$"
+366,False,0,0.000,CHEMBL1163475,ChEMBL21 1k test set,"PEPTIDE1{[ac].C.F.[Nal].K.Y.C.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+367,False,0,0.000,CHEMBL13239,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)C(C)(C)S]}$$$$
+368,False,0,0.000,CHEMBL13665,ChEMBL21 1k test set,PEPTIDE1{[N[C@@](C)(C(=O)*)Cc1ccc(cc1)O |$;;;;;_R2;;;;;;;;$|].A.G.[dF].[dL]}$$$$
+369,False,0,0.000,CHEMBL13767,ChEMBL21 1k test set,PEPTIDE1{Y.A.G.[Cha].L}$$$$
+370,False,0,0.000,CHEMBL14150,ChEMBL21 1k test set,PEPTIDE1{[ac].G.[meD].F.[meK].[am]}$$$$
+371,False,0,0.000,CHEMBL14263,ChEMBL21 1k test set,PEPTIDE1{[ac].K.[Sar].Y.[meD].[am]}$$$$
+372,False,0,0.000,CHEMBL14132,ChEMBL21 1k test set,PEPTIDE1{[ac].D.Q.L.F.[am]}$$$$
+373,False,0,0.000,CHEMBL1174,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].[Har].G.D.W.P.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-7:R3$$$"
+374,False,0,0.000,CHEMBL13695,ChEMBL21 1k test set,PEPTIDE1{Y.A.G.[*N[C@](C)(C(=O)O)Cc1ccccc1 |$_R1;;;;;;;;;;;;;$|]}$$$$
+375,False,0,0.000,CHEMBL14147,ChEMBL21 1k test set,PEPTIDE1{[ac].V.[meY].L.Q.[am]}$$$$
+376,False,0,0.000,CHEMBL14301,ChEMBL21 1k test set,PEPTIDE1{[ac].F.L.V.[meL].[am]}$$$$
+377,False,0,0.000,CHEMBL14570,ChEMBL21 1k test set,PEPTIDE1{Y.A.G.[*N[C@](C)(C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].[dL]}$$$$
+378,False,0,0.000,CHEMBL14382,ChEMBL21 1k test set,PEPTIDE1{[ac].S.[meF].G.G.[am]}$$$$
+379,False,0,0.000,CHEMBL14313,ChEMBL21 1k test set,PEPTIDE1{[ac].Q.Q.F.[Sar].[am]}$$$$
+380,False,0,0.000,CHEMBL14529,ChEMBL21 1k test set,PEPTIDE1{[ac].K.[meF].G.[meL].[am]}$$$$
+381,False,0,0.000,CHEMBL14825,ChEMBL21 1k test set,PEPTIDE1{[ac].L.V.Y.G.[am]}$$$$
+382,False,0,0.000,CHEMBL15261,ChEMBL21 1k test set,PEPTIDE1{[dF].G.G.F.L}$$$$
+383,False,0,0.000,CHEMBL2112245,ChEMBL21 1k test set,"PEPTIDE1{C.K.N.F.F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].T.F.T.S.[dC]}$PEPTIDE1,PEPTIDE1,1:R3-12:R3$$$"
+384,False,0,0.000,CHEMBL2112246,ChEMBL21 1k test set,"PEPTIDE1{G.A.C.K.N.F.F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].T.F.T.S.[dC]}$PEPTIDE1,PEPTIDE1,3:R3-14:R3$$$"
+385,False,0,0.000,CHEMBL15368,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)O |$;;;_R2;;;;;;;;$|].G.G.F.L}$$$$
+386,False,0,0.000,CHEMBL15557,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)O)Cc1cc(c(c(c1)I)O)I]}$$$$
+387,False,0,0.000,CHEMBL15695,ChEMBL21 1k test set,PEPTIDE1{Y.G.F.L}$$$$
+388,False,0,0.000,CHEMBL15908,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCC1CCCCC1 |$;;;_R2;;;;;;;;$|].[*NC(C(=O)O)CCO |$_R1;;;;;;;;$|]}$$$$
+389,False,0,0.000,CHEMBL15876,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCc1ccccc1 |$;;;_R2;;;;;;;;$|].[*NC(C(=O)O)CCO |$_R1;;;;;;;;$|]}$$$$
+390,False,0,0.000,CHEMBL16475,ChEMBL21 1k test set,"PEPTIDE1{[ac].Y.[dC].[dD].[dP].[dC]}$PEPTIDE1,PEPTIDE1,3:R3-6:R3$$$"
+391,False,0,0.000,CHEMBL16438,ChEMBL21 1k test set,PEPTIDE1{E.E.I.V.[dP].N}$$$$
+392,False,0,0.000,CHEMBL17449,ChEMBL21 1k test set,PEPTIDE1{[ac].D.D}$$$$
+393,False,0,0.000,CHEMBL17452,ChEMBL21 1k test set,PEPTIDE1{[ac].D.A}$$$$
+394,False,0,0.000,CHEMBL17420,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.[*NC(C(=O)*)C(C)C |$_R1;;;;;_R2;;;$|].Y.A}$$$$
+395,False,0,0.000,CHEMBL17485,ChEMBL21 1k test set,PEPTIDE1{G.Y.I.E.A.E.V.I.[am]}$$$$
+396,False,0,0.000,CHEMBL17711,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$;;;_R2;;;;;;;;;;;;;$|].V.V.N.D.L}$$$$
+397,False,0,0.000,CHEMBL17855,ChEMBL21 1k test set,PEPTIDE1{D.A.D}$$$$
+398,False,0,0.000,CHEMBL17948,ChEMBL21 1k test set,PEPTIDE1{[meA].D.S.D.G.K}$$$$
+399,False,0,0.000,CHEMBL17936,ChEMBL21 1k test set,PEPTIDE1{Y.V.[dP].G.F.[dP].[am]}$$$$
+400,False,0,0.000,CHEMBL18545,ChEMBL21 1k test set,PEPTIDE1{[Bal].[*NC(C(=O)O)Cc1c[nH]cn1 |$_R1;;;;;;;;;;;$|]}$$$$
+401,False,0,0.000,CHEMBL18872,ChEMBL21 1k test set,PEPTIDE1{[Aib].[*N[C@@H](C(=O)*)Cc1c([nH]c2c1cccc2)C |$_R1;;;;;_R2;;;;;;;;;;;$|].[*N[C@@H](C(=O)N)Cc1c([nH]c2c1cccc2)C |$_R1;;;;;;;;;;;;;;;;$|]}$$$$
+402,False,0,0.000,CHEMBL600,ChEMBL21 1k test set,PEPTIDE1{[ac].C}$$$$
+403,False,0,0.000,CHEMBL18476,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.N.Y.A}$$$$
+404,False,0,0.000,CHEMBL18807,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.A.Y.A}$$$$
+405,False,0,0.000,CHEMBL18562,ChEMBL21 1k test set,"PEPTIDE1{R.G.D.G.[dP].P}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+406,False,0,0.000,CHEMBL19239,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.W.Y.A}$$$$
+407,False,0,0.000,CHEMBL18664,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.Q.Y.A}$$$$
+408,False,0,0.000,CHEMBL18751,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.D.Y.A}$$$$
+409,False,0,0.000,CHEMBL19875,ChEMBL21 1k test set,PEPTIDE1{[meY].V.V.N.D.L}$$$$
+410,False,0,0.000,CHEMBL19263,ChEMBL21 1k test set,PEPTIDE1{[fmoc].D.H.Y.A}$$$$
+411,False,0,0.000,CHEMBL19979,ChEMBL21 1k test set,PEPTIDE1{[dM].[dF].[dL].[dE].[dA]}$$$$
+412,False,0,0.000,CHEMBL19588,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](CO)Cc1c[nH]cn1]}$$$$
+413,False,0,0.000,CHEMBL19974,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].V.V.N.D.L}$$$$
+414,False,0,0.000,CHEMBL20262,ChEMBL21 1k test set,PEPTIDE1{[ac].E.A.I.[dP].[dM]}$$$$
+415,False,0,0.000,CHEMBL20016,ChEMBL21 1k test set,PEPTIDE1{[dA].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P.M}$$$$
+416,True,6298,3.936,CHEMBL20247,ChEMBL21 1k test set,RNA1{R(A)}$$$$
+417,False,0,0.000,CHEMBL20029,ChEMBL21 1k test set,PEPTIDE1{E.A.I.[dP].[dM]}$$$$
+418,False,0,0.000,CHEMBL20999,ChEMBL21 1k test set,PEPTIDE1{Y.[Nle].F.H.L.M.D.[am]}$$$$
+419,False,0,0.000,CHEMBL20193,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].F.A}$$$$
+420,False,0,0.000,CHEMBL20698,ChEMBL21 1k test set,PEPTIDE1{[dM].[dF].[dL].[dE]}$$$$
+421,False,0,0.000,CHEMBL20370,ChEMBL21 1k test set,PEPTIDE1{[ac].F.L.E}$$$$
+422,False,0,0.000,CHEMBL20422,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].F.L.M.D.[am]}$$$$
+423,False,0,0.000,CHEMBL20118,ChEMBL21 1k test set,PEPTIDE1{[ac].[dM].[dF].[dL].[dE].[dA].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P.M}$$$$
+424,False,0,0.000,CHEMBL20743,ChEMBL21 1k test set,PEPTIDE1{[dM].[dF].[dL].[dE].[*N[C@@H](C(=O)*)CC |$_R1;;;;;_R2;;$|].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P}$$$$
+425,False,0,0.000,CHEMBL20775,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].F.H.L.M.D.[am]}$$$$
+426,False,0,0.000,CHEMBL20817,ChEMBL21 1k test set,PEPTIDE1{[dY].[dM].F.H.L.M.D.[am]}$$$$
+427,False,0,0.000,CHEMBL264584,ChEMBL21 1k test set,PEPTIDE1{R.[dP].[dK].P.[dQ].[dQ].F.[dF].G.L.M.[am]}$$$$
+428,False,0,0.000,CHEMBL20956,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].F.H.L.M.D.[am]}$$$$
+429,False,0,0.000,CHEMBL20667,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)CN=C(N)N]}$$$$
+430,False,0,0.000,CHEMBL21133,ChEMBL21 1k test set,PEPTIDE1{[dM].[dF].[dL].[dE].[dA].[*N[C@@H](C(=O)O)[C@H](C)CC |$_R1;;;;;;;;;$|]}$$$$
+431,False,0,0.000,CHEMBL21028,ChEMBL21 1k test set,PEPTIDE1{[dM].[dF].[dL].[dE].[dA].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P.[dK]}$$$$
+432,False,0,0.000,CHEMBL21192,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].[dF].L.M.D.[am]}$$$$
+433,False,0,0.000,CHEMBL21361,ChEMBL21 1k test set,PEPTIDE1{Y.A.[Thi].D.V.V.G.[am]}$$$$
+434,False,0,0.000,CHEMBL21177,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].F.H.L.[dM].D.[am]}$$$$
+435,False,0,0.000,CHEMBL21603,ChEMBL21 1k test set,PEPTIDE1{Y.A.[*N[C@H](C(=O)*)Cc1ccccn1 |$_R1;;;;;_R2;;;;;;;$|].D.V.V.G.[am]}$$$$
+436,False,0,0.000,CHEMBL264585,ChEMBL21 1k test set,PEPTIDE1{R.P.[dK].P.[dQ].Q.F.F.G.L.M.[am]}$$$$
+437,False,0,0.000,CHEMBL264590,ChEMBL21 1k test set,PEPTIDE1{E.T.[dP].D.C.F.W.[dK].Y.C.V}$$$$
+438,False,0,0.000,CHEMBL21893,ChEMBL21 1k test set,PEPTIDE1{Y.A.[*N[C@H](C(=O)*)Cc1c(c(c(c(c1F)F)F)F)F |$_R1;;;;;_R2;;;;;;;;;;;;$|].D.V.V.G.[am]}$$$$
+439,False,0,0.000,CHEMBL21676,ChEMBL21 1k test set,PEPTIDE1{[NC(CO)Cc1ccccc1]}$$$$
+440,False,0,0.000,CHEMBL1075627,ChEMBL21 1k test set,"PEPTIDE1{[Glp].G.V.C.C.G.Y.K.L.C.H.[dY].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+441,False,0,0.000,CHEMBL22054,ChEMBL21 1k test set,PEPTIDE1{Y.A.[*N[C@H](C(=O)*)Cc1cccnc1 |$_R1;;;;;_R2;;;;;;;$|].D.V.V.G.[am]}$$$$
+442,False,0,0.000,CHEMBL263873,ChEMBL21 1k test set,PEPTIDE1{[ac].H.W.A.V.[dA].H.L.M.[am]}$$$$
+443,False,0,0.000,CHEMBL263874,ChEMBL21 1k test set,PEPTIDE1{[ac].H.F.R.W.[Bal].G.[Bal].G.[Bal].G.[Bal].H.F.R.W.[am]}$$$$
+444,False,0,0.000,CHEMBL22321,ChEMBL21 1k test set,PEPTIDE1{Y.[dR].F.[Bal].[am]}$$$$
+445,False,0,0.000,CHEMBL23325,ChEMBL21 1k test set,PEPTIDE1{F.[dR].F.[Bal].[am]}$$$$
+446,False,0,0.000,CHEMBL23653,ChEMBL21 1k test set,PEPTIDE1{[Orn].F.F.G.L.M.[am]}$$$$
+447,False,0,0.000,CHEMBL23362,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1c(cc(cc1C)O)C |$;;;;_R2;;;;;;;;;;$|].[dR].F.[Bal].[am]}$$$$
+448,False,0,0.000,CHEMBL25080,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)Cc1ccccc1]}$$$$
+449,False,0,0.000,CHEMBL23794,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].E.E.I}$$$$
+450,False,0,0.000,CHEMBL23805,ChEMBL21 1k test set,PEPTIDE1{R.F.W.G.L.M.[am]}$$$$
+451,False,0,0.000,CHEMBL27253,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].F.H.L.[Nle].D.[am]}$$$$
+452,False,0,0.000,CHEMBL25409,ChEMBL21 1k test set,PEPTIDE1{[dW].[am]}$$$$
+453,False,0,0.000,CHEMBL28885,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)COS(=O)(=O)O]}$$$$
+454,False,0,0.000,CHEMBL26573,ChEMBL21 1k test set,PEPTIDE1{E.G.Q.[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].E.G.I.[dP]}$$$$
+455,False,0,0.000,CHEMBL26575,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].F.E.V.V.G}$$$$
+456,False,0,0.000,CHEMBL28289,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].F.D.D.M.H.[am]}$$$$
+457,False,0,0.000,CHEMBL28541,ChEMBL21 1k test set,PEPTIDE1{[ac].C.Y.S.K.Y.C.[am]}$$$$
+458,False,0,0.000,CHEMBL28401,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].F.Q.V.V.G}$$$$
+459,False,0,0.000,CHEMBL28488,ChEMBL21 1k test set,PEPTIDE1{[dP].S.K.V.I.L}$$$$
+460,False,0,0.000,CHEMBL28328,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)CCCCN]}$$$$
+461,False,0,0.000,CHEMBL718,ChEMBL21 1k test set,PEPTIDE1{[NC(C)(C(=O)O)Cc1ccc(c(c1)O)O]}$$$$
+462,False,0,0.000,CHEMBL28745,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)Cc1ccc(cc1)CP(=O)(O)O]}$$$$
+463,False,0,0.000,CHEMBL28502,ChEMBL21 1k test set,PEPTIDE1{I.L.[dP].R.G.G}$$$$
+464,False,0,0.000,CHEMBL29078,ChEMBL21 1k test set,PEPTIDE1{Y.A.F.E.V.V.G.[am]}$$$$
+465,False,0,0.000,CHEMBL30037,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)C(C)O]}$$$$
+466,False,0,0.000,CHEMBL29970,ChEMBL21 1k test set,PEPTIDE1{[ac].D.T.T.P.A.[am]}$$$$
+467,False,0,0.000,CHEMBL30066,ChEMBL21 1k test set,PEPTIDE1{Y.[dM].F.H.L.D.D.[am]}$$$$
+468,False,0,0.000,CHEMBL30463,ChEMBL21 1k test set,PEPTIDE1{G.V.[meY].I.H.P.F}$$$$
+469,False,0,0.000,CHEMBL29757,ChEMBL21 1k test set,PEPTIDE1{[dD]}$$$$
+470,False,0,0.000,CHEMBL29520,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)CCCCC(C(=O)O)N]}$$$$
+471,False,0,0.000,CHEMBL31421,ChEMBL21 1k test set,"PEPTIDE1{Y.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].G.F.[*N[C@@H](C(=O)O)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+472,False,0,0.000,CHEMBL31426,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)C1CCCC1 |$;;;_R2;;;;;$|].L.[dW].[Bal]}$$$$
+473,False,0,0.000,CHEMBL30489,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1ccc(cc1)OC |$;;;;_R2;;;;;;;;;$|].A.G.[Cha].M.[am]}$$$$
+474,False,0,0.000,CHEMBL31642,ChEMBL21 1k test set,PEPTIDE1{[Ggu].[*NC(C(=O)*)CSCCCC |$_R1;;;;;_R2;;;;;;$|].G}$$$$
+475,False,0,0.000,CHEMBL32202,ChEMBL21 1k test set,PEPTIDE1{Y.M.F.H.L.M.D.[am]}$$$$
+476,False,0,0.000,CHEMBL33489,ChEMBL21 1k test set,PEPTIDE1{[Bal].[Cha].R.F.[am]}$$$$
+477,False,0,0.000,CHEMBL33659,ChEMBL21 1k test set,PEPTIDE1{Y.A.G.[Cha].L.[am]}$$$$
+478,False,0,0.000,CHEMBL32589,ChEMBL21 1k test set,PEPTIDE1{P.L.[Spg].[am]}$$$$
+479,False,0,0.000,CHEMBL32355,ChEMBL21 1k test set,PEPTIDE1{A.Y.F.G.Y.P.S.[am]}$$$$
+480,True,6450,4.031,CHEMBL803,ChEMBL21 1k test set,RNA1{R(C)}$$$$
+481,False,0,0.000,CHEMBL33000,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1ccc(cc1)OC |$;;;;_R2;;;;;;;;;$|].A.G.[*N[C@H](C(=O)*)Cc1ccc(cc1)[N+](=O)[O-] |$_R1;;;;;_R2;;;;;;;;;;$|].M.[am]}$$$$
+482,False,0,0.000,CHEMBL35773,ChEMBL21 1k test set,PEPTIDE1{C.Q.F.F.G.L.C.[am]}$$$$
+483,False,0,0.000,CHEMBL36212,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCc1ccccc1 |$;;;_R2;;;;;;;;$|].[*NC(C(=O)O)CCCCN |$_R1;;;;;;;;;;$|]}$$$$
+484,False,0,0.000,CHEMBL36402,ChEMBL21 1k test set,PEPTIDE1{[ac].L.M.Q.W.F.G}$$$$
+485,False,0,0.000,CHEMBL36743,ChEMBL21 1k test set,PEPTIDE1{[NC(C)(C(=O)O)CCCN]}$$$$
+486,False,0,0.000,CHEMBL36845,ChEMBL21 1k test set,"PEPTIDE1{Y.C.Y.[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+487,False,0,0.000,CHEMBL35838,ChEMBL21 1k test set,PEPTIDE1{Y.G.G.F.L.[am]}$$$$
+488,False,0,0.000,CHEMBL36631,ChEMBL21 1k test set,PEPTIDE1{[Glp].F.P.[am]}$$$$
+489,False,0,0.000,CHEMBL35394,ChEMBL21 1k test set,PEPTIDE1{[ac].W.[*NC(C(=O)*)CCCC |$_R1;;;;;_R2;;;;$|].D.F.[am]}$$$$
+490,False,0,0.000,CHEMBL39192,ChEMBL21 1k test set,"PEPTIDE1{Y.C.F.[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+491,False,0,0.000,CHEMBL39211,ChEMBL21 1k test set,"PEPTIDE1{Y.C.[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+492,False,0,0.000,CHEMBL39221,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)c1cc(cc(c1)O)O]}$$$$
+493,False,0,0.000,CHEMBL39562,ChEMBL21 1k test set,"PEPTIDE1{Y.C.[*N[C@H](C(=O)*)Cc1ccc(cc1)C |$_R1;;;;;_R2;;;;;;;;$|].[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+494,False,0,0.000,CHEMBL38397,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)CC(C(=O)O)C(=O)O]}$$$$
+495,False,0,0.000,CHEMBL38578,ChEMBL21 1k test set,"PEPTIDE1{Y.C.[*N[C@H](C(=O)*)Cc1ccccc1F |$_R1;;;;;_R2;;;;;;;;$|].[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+496,False,0,0.000,CHEMBL37630,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.V.A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+497,False,0,0.000,CHEMBL39647,ChEMBL21 1k test set,"PEPTIDE1{Y.C.[*N[C@H](C(=O)*)Cc1cccc(c1)O |$_R1;;;;;_R2;;;;;;;;$|].[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+498,False,0,0.000,CHEMBL38903,ChEMBL21 1k test set,PEPTIDE1{G.Q.F.F.G.L.M.[am]}$$$$
+499,False,0,0.000,CHEMBL40051,ChEMBL21 1k test set,PEPTIDE1{[NC(C)(C(=O)O)CCCN]}$$$$
+500,False,0,0.000,CHEMBL39362,ChEMBL21 1k test set,PEPTIDE1{[NC(C)(C(=O)O)CCC(=O)O]}$$$$
+501,False,0,0.000,CHEMBL38353,ChEMBL21 1k test set,PEPTIDE1{[N[C@](C)(C(=O)O)CCC(=O)O]}$$$$
+502,False,0,0.000,CHEMBL41644,ChEMBL21 1k test set,PEPTIDE1{R.W.R.[am]}$$$$
+503,False,0,0.000,CHEMBL263251,ChEMBL21 1k test set,PEPTIDE1{K.[*N[C@H](C(=O)*)CCCCN(C)C |$_R1;;;;;_R2;;;;;;;$|].K.[*N[C@H](C(=O)*)CCCCN(C)C |$_R1;;;;;_R2;;;;;;;$|].K.[*N[C@H](C(=O)*)CCCCN(C)C |$_R1;;;;;_R2;;;;;;;$|].K.[*N[C@H](C(=O)*)CCCCN(C)C |$_R1;;;;;_R2;;;;;;;$|].[*N[C@H](C=O)CCCCN |$_R1;;;;;;;;;$|]}$$$$
+504,False,0,0.000,CHEMBL263254,ChEMBL21 1k test set,PEPTIDE1{[ac].R.W.R.W.[am]}$$$$
+505,False,0,0.000,CHEMBL41101,ChEMBL21 1k test set,PEPTIDE1{W.R.Y.R.W.[am]}$$$$
+506,False,0,0.000,CHEMBL40067,ChEMBL21 1k test set,PEPTIDE1{[ac].[*NC(C(=O)O)CCCCN |$_R1;;;;;;;;;;$|]}$$$$
+507,False,0,0.000,CHEMBL41080,ChEMBL21 1k test set,"PEPTIDE1{G.G.[Bal].Y.G.F}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+508,False,0,0.000,CHEMBL42285,ChEMBL21 1k test set,"PEPTIDE1{G.G.Y.G.F}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+509,True,7436,4.647,CHEMBL42372,ChEMBL21 1k test set,RNA1{[dR](T)}$$$$
+510,False,0,0.000,CHEMBL40172,ChEMBL21 1k test set,PEPTIDE1{[dK]}$$$$
+511,False,0,0.000,CHEMBL262753,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].[*N[C@@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].F.[dV].N.C.[dP].[dR].G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+512,False,0,0.000,CHEMBL42688,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)O |$;;;_R2;;;;;;;;$|].G.[meF].G.G}$$$$
+513,False,0,0.000,CHEMBL42623,ChEMBL21 1k test set,"PEPTIDE1{G.F.G.Y}$PEPTIDE1,PEPTIDE1,4:R2-1:R1$$$"
+514,False,0,0.000,CHEMBL43202,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)O |$;;;_R2;;;;;;;;$|].[Sar].F.G.G}$$$$
+515,False,0,0.000,CHEMBL43233,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].[*NC(C(=O)O)Cc1ccccc1 |$_R1;;;;;;;;;;;;$|]}$$$$
+516,False,0,0.000,CHEMBL42221,ChEMBL21 1k test set,"PEPTIDE1{G.G.[dY].G.[dF]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+517,False,0,0.000,CHEMBL44307,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)O |$;;;_R2;;;;;;;;$|].G.F.G.[Sar]}$$$$
+518,False,0,0.000,CHEMBL45002,ChEMBL21 1k test set,PEPTIDE1{[ac].[*NC(C(=O)O)CCSC |$_R1;;;;;;;;;$|]}$$$$
+519,False,0,0.000,CHEMBL46540,ChEMBL21 1k test set,PEPTIDE1{Y.M.F.F.L.M.D.[am]}$$$$
+520,False,0,0.000,CHEMBL44172,ChEMBL21 1k test set,PEPTIDE1{Y.A.F.D.[am]}$$$$
+521,False,0,0.000,CHEMBL44258,ChEMBL21 1k test set,"PEPTIDE1{D.Y.G.F.G}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+522,False,0,0.000,CHEMBL44500,ChEMBL21 1k test set,PEPTIDE1{[dF].P.[*N[C@H](C=O)CCCN=C(N)N |$_R1;;;;;;;;;;;$|]}$$$$
+523,False,0,0.000,CHEMBL45541,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A}$$$$
+524,False,0,0.000,CHEMBL45557,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)Cc1cn(cn1)C]}$$$$
+525,False,0,0.000,CHEMBL43967,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)O |$;;;_R2;;;;;;;;$|].G.F.[Sar].G}$$$$
+526,False,0,0.000,CHEMBL46575,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)CC(C)C]}$$$$
+527,False,0,0.000,CHEMBL47708,ChEMBL21 1k test set,PEPTIDE1{[ac].H.[dP].F.[dA].[Sta].L.F.[am]}$$$$
+528,False,0,0.000,CHEMBL45324,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)Cc1cn(cn1)C(C)C]}$$$$
+529,True,5928,3.705,CHEMBL48084,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A.A}|PEPTIDE2{P}$$$$
+530,False,0,0.000,CHEMBL47051,ChEMBL21 1k test set,PEPTIDE1{[fmoc].[*NC(C(=O)O)Cc1ccccc1 |$_R1;;;;;;;;;;;;$|]}$$$$
+531,False,0,0.000,CHEMBL49581,ChEMBL21 1k test set,PEPTIDE1{[dA].F.D.V.V.G.[am]}$$$$
+532,False,0,0.000,CHEMBL48185,ChEMBL21 1k test set,PEPTIDE1{[meM]}$$$$
+533,False,0,0.000,CHEMBL48687,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A.A}$$$$
+534,False,0,0.000,CHEMBL48501,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A}$$$$
+535,False,0,0.000,CHEMBL47860,ChEMBL21 1k test set,PEPTIDE1{[N[C@@](C)(C(=O)O)CCSC]}$$$$
+536,False,0,0.000,CHEMBL47684,ChEMBL21 1k test set,PEPTIDE1{[ac].H.[dP].[dA].H.[Sta].L.F.[am]}$$$$
+537,False,0,0.000,CHEMBL48784,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccc(cc1)O |$;;;_R2;;;;;;;$|].[dF].[*NC(C)(C(=O)N)Cc1ccccc1 |$_R1;;;;;;;;;;;;;$|]}$$$$
+538,False,0,0.000,CHEMBL48877,ChEMBL21 1k test set,PEPTIDE1{[ac].H.[dF].R.[am]}$$$$
+539,False,0,0.000,CHEMBL46758,ChEMBL21 1k test set,PEPTIDE1{[fmoc].[*NC(C(=O)O)C |$_R1;;;;;;$|]}$$$$
+540,False,0,0.000,CHEMBL46851,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$;;;;_R2;;;;;;;;;;;;$|].E.E.I}$$$$
+541,False,0,0.000,CHEMBL49134,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A.A}$$$$
+542,False,0,0.000,CHEMBL48360,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].M.M}$$$$
+543,False,0,0.000,CHEMBL49574,ChEMBL21 1k test set,PEPTIDE1{[N[C@](C)(C(=O)O)CCSC]}$$$$
+544,False,0,0.000,CHEMBL48453,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].M.M}$$$$
+545,False,0,0.000,CHEMBL50636,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)Cc1cccc(c1)F]}$$$$
+546,False,0,0.000,CHEMBL48470,ChEMBL21 1k test set,PEPTIDE1{C.V.F.[meM]}$$$$
+547,False,0,0.000,CHEMBL49783,ChEMBL21 1k test set,PEPTIDE1{[ac].V.Q.A.G.P.[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].[dA].[am]}$$$$
+548,False,0,0.000,CHEMBL48732,ChEMBL21 1k test set,PEPTIDE1{[Nva].P.Y.I.L}$$$$
+549,False,0,0.000,CHEMBL49942,ChEMBL21 1k test set,PEPTIDE1{C.V.F.[Nle]}$$$$
+550,False,0,0.000,CHEMBL50624,ChEMBL21 1k test set,PEPTIDE1{[dK].[*N[C@H](C(=O)*)S |$_R1;;;;;_R2;$|].[meV].F.M}$$$$
+551,False,0,0.000,CHEMBL50922,ChEMBL21 1k test set,PEPTIDE1{P.Y.[*N[C@H](C(=O)O)[C@H](C)CC |$_R1;;;;;;;;;$|]}$$$$
+552,False,0,0.000,CHEMBL51106,ChEMBL21 1k test set,PEPTIDE1{K.L.A.N.Q.[am]}$$$$
+553,False,0,0.000,CHEMBL51369,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)O)CC#C]}$$$$
+554,False,0,0.000,CHEMBL51556,ChEMBL21 1k test set,PEPTIDE1{F.G.G.F.T.G.A.R.K.[am]}$$$$
+555,False,0,0.000,CHEMBL50056,ChEMBL21 1k test set,PEPTIDE1{[ac].H.F.R.W.[am]}$$$$
+556,False,0,0.000,CHEMBL52165,ChEMBL21 1k test set,PEPTIDE1{[ac].V.H.A.G.P.[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].[dA].[am]}$$$$
+557,False,0,0.000,CHEMBL51386,ChEMBL21 1k test set,PEPTIDE1{[ac].V.M.[Sta].V.A.E.F}$$$$
+558,False,0,0.000,CHEMBL51436,ChEMBL21 1k test set,PEPTIDE1{[dK].[*N[C@H](C(=O)*)S |$_R1;;;;;_R2;$|].V.F.M}$$$$
+559,True,7436,4.647,CHEMBL52609,ChEMBL21 1k test set,RNA1{[dR](T)}$$$$
+560,False,0,0.000,CHEMBL52988,ChEMBL21 1k test set,PEPTIDE1{[ac].L.G}$$$$
+561,False,0,0.000,CHEMBL1784782,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].[*N[C@@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].[dA].[*N[C@@H](C(=O)N)COP(=O)(O)O |$_R1;;;;;;;;;;;$|]}$$$$
+562,False,0,0.000,CHEMBL53354,ChEMBL21 1k test set,PEPTIDE1{[Orn].P.Y.I.L}$$$$
+563,False,0,0.000,CHEMBL52461,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)*)C |$;;;;_R2;$|].[*NC(C(=O)O)C |$_R1;;;;;;$|]}$$$$
+564,False,0,0.000,CHEMBL52813,ChEMBL21 1k test set,"PEPTIDE1{I.[dP].P.[*N(C)[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].P.[dF]}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+565,False,0,0.000,CHEMBL54622,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCN |$;;;_R2;;;$|].F.F.G.L.M.[am]}$$$$
+566,False,0,0.000,CHEMBL54943,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)CS]}$$$$
+567,False,0,0.000,CHEMBL56053,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)[C@H](C)CC]}$$$$
+568,False,0,0.000,CHEMBL53813,ChEMBL21 1k test set,PEPTIDE1{G.[dL]}$$$$
+569,False,0,0.000,CHEMBL56394,ChEMBL21 1k test set,PEPTIDE1{Y.[*N[C@@H](C(=O)*)[C@@H](C)OC(C)(C)C |$_R1;;;;;_R2;;;;;;;$|].G.F.L.T}$$$$
+570,False,0,0.000,CHEMBL55242,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)CC]}$$$$
+571,False,0,0.000,CHEMBL56404,ChEMBL21 1k test set,PEPTIDE1{I.[*N[C@H](C(=O)O)[C@H](C)CC |$_R1;;;;;;;;;$|]}$$$$
+572,False,0,0.000,CHEMBL54170,ChEMBL21 1k test set,PEPTIDE1{[ac].W}$$$$
+573,False,0,0.000,CHEMBL55612,ChEMBL21 1k test set,PEPTIDE1{[Nva]}$$$$
+574,False,0,0.000,CHEMBL55498,ChEMBL21 1k test set,PEPTIDE1{Y.T.G.F.L.[*N[C@H](C(=O)O)[C@@H](C)OC(C)(C)C |$_R1;;;;;;;;;;;;$|]}$$$$
+575,False,0,0.000,CHEMBL55743,ChEMBL21 1k test set,PEPTIDE1{[ac].F}$$$$
+576,False,0,0.000,CHEMBL56753,ChEMBL21 1k test set,PEPTIDE1{[ac].C.[Thi].[am]}$$$$
+577,False,0,0.000,CHEMBL55843,ChEMBL21 1k test set,PEPTIDE1{[ac].C.F.[am]}$$$$
+578,True,46633,29.146,CHEMBL56265,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$"
+579,True,46633,29.146,CHEMBL56953,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$"
+580,False,0,0.000,CHEMBL56021,ChEMBL21 1k test set,PEPTIDE1{[ac].L}$$$$
+581,False,0,0.000,CHEMBL56351,ChEMBL21 1k test set,PEPTIDE1{G.[*NC(C(=O)O)C |$_R1;;;;;;$|]}$$$$
+582,False,0,0.000,CHEMBL56192,ChEMBL21 1k test set,PEPTIDE1{[ac].C.V.[am]}$$$$
+583,False,0,0.000,CHEMBL57315,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1cccc2c1cccc2 |$_R1;;;;;_R2;;;;;;;;;;;$|].R.A.D.A.T.L.[am]}$$$$
+584,False,0,0.000,CHEMBL55209,ChEMBL21 1k test set,PEPTIDE1{[dL].G}$$$$
+585,True,55913,34.946,CHEMBL57387,ChEMBL21 1k test set,"PEPTIDE1{C.[dV]}|PEPTIDE2{C.[dV]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$"
+586,False,0,0.000,CHEMBL56603,ChEMBL21 1k test set,PEPTIDE1{G.[*N[C@H](C(=O)*)Cc1ccc(cc1)CP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].V.P.M.L}$$$$
+587,False,0,0.000,CHEMBL58129,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)Cc1cccc(c1)c2ccccc2]}$$$$
+588,False,0,0.000,CHEMBL57354,ChEMBL21 1k test set,PEPTIDE1{[Ggu].C.[dV]}$$$$
+589,False,0,0.000,CHEMBL57363,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].E}$$$$
+590,False,0,0.000,CHEMBL58488,ChEMBL21 1k test set,PEPTIDE1{R.D.G.F.[am]}$$$$
+591,False,0,0.000,CHEMBL58337,ChEMBL21 1k test set,PEPTIDE1{Y.R.F.F.[am]}$$$$
+592,False,0,0.000,CHEMBL3315150,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[*N[C@H](C(=O)*)Cc1ccc(cc1)C#N |$_R1;;;;;_R2;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+593,False,0,0.000,CHEMBL3315151,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[*N[C@H](C(=O)*)Cc1ccc(cc1)C#N |$_R1;;;;;_R2;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+594,False,0,0.000,CHEMBL3315152,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[*N[C@H](C(=O)*)Cc1ccc(cc1)[N+](=O)[O-] |$_R1;;;;;_R2;;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+595,False,0,0.000,CHEMBL3315153,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[*N[C@H](C(=O)*)Cc1ccc(cc1)[N+](=O)[O-] |$_R1;;;;;_R2;;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+596,False,0,0.000,CHEMBL58178,ChEMBL21 1k test set,PEPTIDE1{Y.A.F.F.[am]}$$$$
+597,False,0,0.000,CHEMBL58093,ChEMBL21 1k test set,PEPTIDE1{[dA].Q}$$$$
+598,False,0,0.000,CHEMBL3315315,ChEMBL21 1k test set,PEPTIDE1{Y.N.W.N.S.F.G.L.R.W.[am]}$$$$
+599,False,0,0.000,CHEMBL3315316,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.[Dpr].P.R.N.[am]}$$$$
+600,False,0,0.000,CHEMBL3315317,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.[Dab].P.R.N.[am]}$$$$
+601,False,0,0.000,CHEMBL3315318,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.K.P.R.N.[am]}$$$$
+602,False,0,0.000,CHEMBL3315319,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.[*N[C@H](C(=O)*)CN=C(N)N |$_R1;;;;;_R2;;;;;$|].P.R.N.[am]}$$$$
+603,False,0,0.000,CHEMBL3315321,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.[Har].P.R.N.[am]}$$$$
+604,False,0,0.000,CHEMBL3315322,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.A.[am]}$$$$
+605,False,0,0.000,CHEMBL3315323,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.Q.[am]}$$$$
+606,False,0,0.000,CHEMBL3315324,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.D.[am]}$$$$
+607,False,0,0.000,CHEMBL58617,ChEMBL21 1k test set,"PEPTIDE1{[dR].F.W.P.[*N[C@@H](C(=O)*)CC1CCCCC1 |$_R1;;;;;_R2;;;;;;;$|].W}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+608,False,0,0.000,CHEMBL3315325,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.[Dab].[am]}$$$$
+609,False,0,0.000,CHEMBL58547,ChEMBL21 1k test set,PEPTIDE1{[Aib].H.[*N[C@@H](C(=O)*)Cc1ccc2ccccc2c1 |$_R1;;;;;_R2;;;;;;;;;;;$|].[dF].K.[am]}$$$$
+610,False,0,0.000,CHEMBL3315326,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.L.[am]}$$$$
+611,False,0,0.000,CHEMBL3315328,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.Y.R.P.R.N.[am]}$$$$
+612,False,0,0.000,CHEMBL3315329,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.[Phg].R.P.R.N.[am]}$$$$
+613,False,0,0.000,CHEMBL3315330,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.[*N[C@H](C(=O)*)CCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;$|].R.P.R.N.[am]}$$$$
+614,False,0,0.000,CHEMBL3315331,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.[Cha].R.P.R.N.[am]}$$$$
+615,False,0,0.000,CHEMBL3315332,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.[Cha].R.P.R.N.[am]}$$$$
+616,False,0,0.000,CHEMBL3315333,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.[Cha].[Dpr].P.R.N.[am]}$$$$
+617,False,0,0.000,CHEMBL3315334,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.[*N[C@H](C(=O)*)C1CCCCC1 |$_R1;;;;;_R2;;;;;;$|].[Dpr].P.R.N.[am]}$$$$
+618,False,0,0.000,CHEMBL3315335,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.L.[Dpr].P.R.N.[am]}$$$$
+619,False,0,0.000,CHEMBL3315336,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.I.[Dpr].P.R.N.[am]}$$$$
+620,False,0,0.000,CHEMBL3315337,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.[Nle].[Dpr].P.R.N.[am]}$$$$
+621,False,0,0.000,CHEMBL3315338,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.[Nva].[Dpr].P.R.N.[am]}$$$$
+622,False,0,0.000,CHEMBL59039,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccc(cc1)O |$;;;_R2;;;;;;;$|].C.[dV]}$$$$
+623,False,0,0.000,CHEMBL3315339,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1cccnc1 |$;;;_R2;;;;;;;$|].F.F.R.P.R.N.[am]}$$$$
+624,False,0,0.000,CHEMBL3315343,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccccn1 |$;;;_R2;;;;;;$|].F.F.R.P.R.N.[am]}$$$$
+625,False,0,0.000,CHEMBL3315344,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1cccnc1 |$;;;_R2;;;;;;$|].F.F.R.P.R.N.[am]}$$$$
+626,False,0,0.000,CHEMBL3315345,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccncc1 |$;;;_R2;;;;;;$|].F.F.R.P.R.N.[am]}$$$$
+627,False,0,0.000,CHEMBL3315346,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1cccnc1 |$;;;_R2;;;;;;;$|].W.F.R.P.R.N.[am]}$$$$
+628,False,0,0.000,CHEMBL3315347,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1cccnc1 |$;;;_R2;;;;;;;$|].[*N[C@H](C(=O)*)Cc1cccc2c1cccc2 |$_R1;;;;;_R2;;;;;;;;;;;$|].F.R.P.R.N.[am]}$$$$
+629,False,0,0.000,CHEMBL3315348,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1cccnc1 |$;;;_R2;;;;;;;$|].[Nal].F.R.P.R.N.[am]}$$$$
+630,False,0,0.000,CHEMBL3315349,ChEMBL21 1k test set,PEPTIDE1{F.R.V.D.E.E.F.Q.S.P.F.A.S.Q.S.R.G.Y.F.L.F.R.P.R.N.[am]}$$$$
+631,False,0,0.000,CHEMBL3315139,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+632,False,0,0.000,CHEMBL3315140,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[Nal].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+633,False,0,0.000,CHEMBL3315277,ChEMBL21 1k test set,PEPTIDE1{F.L.F.R.P.R.N.[am]}$$$$
+634,False,0,0.000,CHEMBL3315278,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+635,False,0,0.000,CHEMBL3315141,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[Nal].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+636,False,0,0.000,CHEMBL3315142,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[*N[C@H](C(=O)*)Cc1cccc2c1cccc2 |$_R1;;;;;_R2;;;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+637,False,0,0.000,CHEMBL3315143,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[*N[C@H](C(=O)*)Cc1cccc2c1cccc2 |$_R1;;;;;_R2;;;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+638,False,0,0.000,CHEMBL3315146,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+639,False,0,0.000,CHEMBL3315147,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+640,False,0,0.000,CHEMBL59238,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)[C@H](C)O]}$$$$
+641,False,0,0.000,CHEMBL3315148,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.W.K.[*N[C@H](C(=O)*)Cc1ccc(c(c1)Cl)Cl |$_R1;;;;;_R2;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+642,False,0,0.000,CHEMBL3315149,ChEMBL21 1k test set,"PEPTIDE1{D.[Pen].F.[dW].[Orn].[*N[C@H](C(=O)*)Cc1ccc(c(c1)Cl)Cl |$_R1;;;;;_R2;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+643,False,0,0.000,CHEMBL60444,ChEMBL21 1k test set,PEPTIDE1{Y.[dR].F.K.[am]}$$$$
+644,False,0,0.000,CHEMBL3315280,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+645,False,0,0.000,CHEMBL3315281,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCc1ccccc1 |$;;;_R2;;;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+646,False,0,0.000,CHEMBL3315282,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1cccnc1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+647,False,0,0.000,CHEMBL3315283,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC1CCCCC1 |$;;;_R2;;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+648,False,0,0.000,CHEMBL3315284,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCC1CCCCC1 |$;;;_R2;;;;;;;;$|].L.F.R.P.R.N.[am]}$$$$
+649,False,0,0.000,CHEMBL60275,ChEMBL21 1k test set,PEPTIDE1{[ac].[dH].[*N[C@@H](C(=O)*)Cc1ccc(cc1)OCc2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].[*N[C@@H](C(=O)*)COCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;;$|].[dW].A.[am]}$$$$
+650,False,0,0.000,CHEMBL60475,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)CSCC]}$$$$
+651,False,0,0.000,CHEMBL60512,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].[Cha].[dC]}$$$$
+652,False,0,0.000,CHEMBL59641,ChEMBL21 1k test set,PEPTIDE1{[ac].L.F.[*N[C@H](C=O)CCC(=O)N |$_R1;;;;;;;;;$|]}$$$$
+653,False,0,0.000,CHEMBL59944,ChEMBL21 1k test set,PEPTIDE1{[dH].[*N[C@@H](C(=O)*)Cc1ccc(cc1)OCc2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;;;$|].[*N[C@@H](C(=O)*)COCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;;$|].[dW].A.[am]}$$$$
+654,False,0,0.000,CHEMBL60105,ChEMBL21 1k test set,PEPTIDE1{L.F.[*N[C@H](C=O)CCC(=O)N |$_R1;;;;;;;;;$|]}$$$$
+655,False,0,0.000,CHEMBL59865,ChEMBL21 1k test set,PEPTIDE1{G.W.[*N(C)[C@H](C(=O)*)CCCC |$_R1;;;;;;_R2;;;;$|].D.F.[am]}$$$$
+656,False,0,0.000,CHEMBL61023,ChEMBL21 1k test set,PEPTIDE1{[ac].V.A.D}$$$$
+657,False,0,0.000,CHEMBL61047,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1ccc(cc1)OP(=O)(O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].G.N.[am]}$$$$
+658,False,0,0.000,CHEMBL61390,ChEMBL21 1k test set,PEPTIDE1{[ac].D.E.[*N[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].[*N[C@@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].[Cha].[dC]}$$$$
+659,False,0,0.000,CHEMBL60936,ChEMBL21 1k test set,PEPTIDE1{[dY].[*N[C@@](C)(C(=O)*)CO |$_R1;;;;;;_R2;;$|].G.[dF].[dL]}$$$$
+660,False,0,0.000,CHEMBL62717,ChEMBL21 1k test set,PEPTIDE1{[ac].D.E.M.E.E.C}$$$$
+661,False,0,0.000,CHEMBL63902,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)CC(=O)NO]}$$$$
+662,False,0,0.000,CHEMBL63130,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)CSCc1ccccc1]}$$$$
+663,False,0,0.000,CHEMBL62394,ChEMBL21 1k test set,PEPTIDE1{[ac].G.R.G.D.V.[am]}$$$$
+664,False,0,0.000,CHEMBL63151,ChEMBL21 1k test set,PEPTIDE1{[dA].L.[Bal].A.D.[Ggu].A}$$$$
+665,False,0,0.000,CHEMBL265165,ChEMBL21 1k test set,PEPTIDE1{[ac].H.P.F.H.F.F.V.[*N[C@H](C(=O)N)Cc1cn(c2c1cccc2)C=O |$_R1;;;;;;;;;;;;;;;;;$|]}$$$$
+666,False,0,0.000,CHEMBL265166,ChEMBL21 1k test set,"PEPTIDE1{D.C.F.W.K.[*N[C@H](C(=O)*)Cc1ccc(c(c1)[N+](=O)[O-])O |$_R1;;;;;_R2;;;;;;;;;;;$|].C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+667,False,0,0.000,CHEMBL62433,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].E.[Cha].C}$$$$
+668,False,0,0.000,CHEMBL64867,ChEMBL21 1k test set,PEPTIDE1{[ac].D.E.M.E.[Nal].C}$$$$
+669,False,0,0.000,CHEMBL62519,ChEMBL21 1k test set,PEPTIDE1{[ac].G.R.G.D.V}$$$$
+670,False,0,0.000,CHEMBL62610,ChEMBL21 1k test set,PEPTIDE1{[ac].G.F.[*N[C@H](C=O)CCC(=O)N |$_R1;;;;;;;;;$|]}$$$$
+671,False,0,0.000,CHEMBL62688,ChEMBL21 1k test set,PEPTIDE1{[dY].[*N[C@](C)(C(=O)*)CO |$_R1;;;;;;_R2;;$|].G.[dF].[dL]}$$$$
+672,False,0,0.000,CHEMBL64601,ChEMBL21 1k test set,PEPTIDE1{[dW].F.[dW]}$$$$
+673,True,7811,4.882,CHEMBL66115,ChEMBL21 1k test set,RNA1{[dR](C)}$$$$
+674,False,0,0.000,CHEMBL66464,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].[dR].[dW].[am]}$$$$
+675,False,0,0.000,CHEMBL64118,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.M.A.[meS].L.[am]}$$$$
+676,False,0,0.000,CHEMBL64966,ChEMBL21 1k test set,PEPTIDE1{[ac].[*NC(C(=O)*)CC(=O)O |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)O)CCC(=O)O |$_R1;;;;;;;;;;$|]}$$$$
+677,False,0,0.000,CHEMBL65057,ChEMBL21 1k test set,PEPTIDE1{[dA].L.[dD].A.D.[dE].A}$$$$
+678,False,0,0.000,CHEMBL65350,ChEMBL21 1k test set,PEPTIDE1{[ac].D.M.Q.L.G.R}$$$$
+679,False,0,0.000,CHEMBL65543,ChEMBL21 1k test set,PEPTIDE1{[ac].Y}$$$$
+680,False,0,0.000,CHEMBL65707,ChEMBL21 1k test set,PEPTIDE1{[dA].L.[Bal].A.[dD].[dE].A}$$$$
+681,False,0,0.000,CHEMBL65969,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1cccc(c1)I |$_R1;;;;;_R2;;;;;;;;$|].R.A.M.A.S.L.[am]}$$$$
+682,False,0,0.000,CHEMBL66062,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)Cc1ccc(cc1)OC(C(=O)O)C(=O)O]}$$$$
+683,False,0,0.000,CHEMBL66066,ChEMBL21 1k test set,PEPTIDE1{[ac].F.[dR].[dW].[am]}$$$$
+684,False,0,0.000,CHEMBL65750,ChEMBL21 1k test set,PEPTIDE1{R.[dY].[*N(C)[C@@H](C(=O)*)CC(C)C |$_R1;;;;;;_R2;;;;$|].[dP].[*N[C@H](C(=O)O)[C@H](C)O |$_R1;;;;;;;;$|]}$$$$
+685,False,0,0.000,CHEMBL66403,ChEMBL21 1k test set,"PEPTIDE1{F.C.Y.N.[Pen].T.[am]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+686,False,0,0.000,CHEMBL66005,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.L.A.S.L.[am]}$$$$
+687,False,0,0.000,CHEMBL66105,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)c1cc(cc(c1)O)O]}$$$$
+688,False,0,0.000,CHEMBL65339,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].R.[dW].[am]}$$$$
+689,False,0,0.000,CHEMBL67335,ChEMBL21 1k test set,PEPTIDE1{[ac].K.[am]}$$$$
+690,False,0,0.000,CHEMBL67596,ChEMBL21 1k test set,PEPTIDE1{[dA].L.[dD].A.C.[dE].D.[am]}$$$$
+691,False,0,0.000,CHEMBL67514,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.[Nle].A.S.L.[am]}$$$$
+692,False,0,0.000,CHEMBL67449,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.M.M.A.[am]}$$$$
+693,False,0,0.000,CHEMBL67929,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)*)c1ccc(cc1)O |$;;;;_R2;;;;;;;$|].P.[*N[C@@H](C(=O)O)Cc1ccc(c(c1)O)O |$_R1;;;;;;;;;;;;;;$|]}$$$$
+694,False,0,0.000,CHEMBL67644,ChEMBL21 1k test set,PEPTIDE1{Y.I.Y.G.S.F.K.[am]}$$$$
+695,False,0,0.000,CHEMBL67900,ChEMBL21 1k test set,PEPTIDE1{[ac].S.D}$$$$
+696,False,0,0.000,CHEMBL66693,ChEMBL21 1k test set,PEPTIDE1{[dA]}$$$$
+697,False,0,0.000,CHEMBL66929,ChEMBL21 1k test set,PEPTIDE1{[ac].K.P.V.[am]}$$$$
+698,False,0,0.000,CHEMBL66678,ChEMBL21 1k test set,PEPTIDE1{[ac].S.D.[Orn].P}$$$$
+699,False,0,0.000,CHEMBL66901,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.M.[dA].S.[am]}$$$$
+700,False,0,0.000,CHEMBL69463,ChEMBL21 1k test set,PEPTIDE1{[ac].F.R.W.G.[am]}$$$$
+701,False,0,0.000,CHEMBL68566,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.[am]}$$$$
+702,False,0,0.000,CHEMBL68243,ChEMBL21 1k test set,PEPTIDE1{[ac].S.E.K.P}$$$$
+703,False,0,0.000,CHEMBL68252,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.[*N[C@@H](C(=O)*)C(C)(C)C |$_R1;;;;;_R2;;;;$|].[dM].[meA].S.[Tle].[am]}$$$$
+704,False,0,0.000,CHEMBL69477,ChEMBL21 1k test set,PEPTIDE1{[ac].E.H.F.R.W.G.[am]}$$$$
+705,False,0,0.000,CHEMBL68583,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.V.A.D}$$$$
+706,False,0,0.000,CHEMBL68941,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.M.[dA].S.[meL].[am]}$$$$
+707,False,0,0.000,CHEMBL68779,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.[meM].A.S.L.[am]}$$$$
+708,True,7970,4.981,CHEMBL68908,ChEMBL21 1k test set,RNA1{[dR](G)}$$$$
+709,False,0,0.000,CHEMBL69146,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](CO)CCCCN]}$$$$
+710,False,0,0.000,CHEMBL69004,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].[meR].A.M.A.S.L.[am]}$$$$
+711,False,0,0.000,CHEMBL69244,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.M.[meA].S.L.[am]}$$$$
+712,False,0,0.000,CHEMBL69424,ChEMBL21 1k test set,PEPTIDE1{[ac].I.G.P.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+713,False,0,0.000,CHEMBL70089,ChEMBL21 1k test set,PEPTIDE1{[ac].H.F.R.[am]}$$$$
+714,False,0,0.000,CHEMBL70602,ChEMBL21 1k test set,PEPTIDE1{[ac].I.E.P.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+715,False,0,0.000,CHEMBL70233,ChEMBL21 1k test set,PEPTIDE1{[ac].[Cha].R.A.M.[am]}$$$$
+716,False,0,0.000,CHEMBL71687,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccccc1 |$;;;_R2;;;;;;;$|].V.A.D}$$$$
+717,False,0,0.000,CHEMBL1009,ChEMBL21 1k test set,PEPTIDE1{[N[C@H](C(=O)O)Cc1ccc(c(c1)O)O]}$$$$
+718,False,0,0.000,CHEMBL72695,ChEMBL21 1k test set,PEPTIDE1{[ac].D.D.I.V.P.[Nva]}$$$$
+719,False,0,0.000,CHEMBL74987,ChEMBL21 1k test set,PEPTIDE1{[N[C@@H](C(=O)O)c1cc(cc(c1)O)O]}$$$$
+720,False,0,0.000,CHEMBL76199,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@H](C(=O)*)Cc1cc(c(c(c1)I)O)I |$_R1;;;;;_R2;;;;;;;;;;$|].V.A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+721,False,0,0.000,CHEMBL76565,ChEMBL21 1k test set,PEPTIDE1{[ac].A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+722,False,0,0.000,CHEMBL75643,ChEMBL21 1k test set,PEPTIDE1{[ac].V.A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+723,False,0,0.000,CHEMBL76972,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.V.A.[*N(C)[C@H](C=O)CC(=O)O |$_R1;;;;;;;;;$|]}$$$$
+724,False,0,0.000,CHEMBL76890,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)Cc1ccc(cc1)OC |$;;;_R2;;;;;;;;;$|].V.H.P.I}$$$$
+725,False,0,0.000,CHEMBL78074,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].[Sar]}$$$$
+726,False,0,0.000,CHEMBL76232,ChEMBL21 1k test set,PEPTIDE1{[dE]}$$$$
+727,False,0,0.000,CHEMBL77260,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.[meV].A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+728,False,0,0.000,CHEMBL77345,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.V.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+729,False,0,0.000,CHEMBL76414,ChEMBL21 1k test set,PEPTIDE1{[ac].T.I.[Nle].[Nle].[Orn].R.[am]}$$$$
+730,False,0,0.000,CHEMBL77475,ChEMBL21 1k test set,PEPTIDE1{[ac].[meY].V.A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+731,False,0,0.000,CHEMBL77838,ChEMBL21 1k test set,PEPTIDE1{[Sar].R.V.Y.V.H.P.I}$$$$
+732,False,0,0.000,CHEMBL77677,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].G}$$$$
+733,False,0,0.000,CHEMBL78953,ChEMBL21 1k test set,PEPTIDE1{[dA].F}$$$$
+734,False,0,0.000,CHEMBL78472,ChEMBL21 1k test set,PEPTIDE1{S.T.[dP].P.[am]}$$$$
+735,False,0,0.000,CHEMBL79130,ChEMBL21 1k test set,PEPTIDE1{[meF].L.L.R.N}$$$$
+736,False,0,0.000,CHEMBL78965,ChEMBL21 1k test set,PEPTIDE1{[ac].S.T.[dP].P.[am]}$$$$
+737,False,0,0.000,CHEMBL78812,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].V}$$$$
+738,False,0,0.000,CHEMBL78028,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.A.[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+739,False,0,0.000,CHEMBL79159,ChEMBL21 1k test set,PEPTIDE1{S.T.[dP].P}$$$$
+740,False,0,0.000,CHEMBL79008,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].[*N[C@H](C(=O)O)C(C)CC |$_R1;;;;;;;;;$|]}$$$$
+741,False,0,0.000,CHEMBL77137,ChEMBL21 1k test set,PEPTIDE1{P.P.[dP].[am]}$$$$
+742,False,0,0.000,CHEMBL77056,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].A}$$$$
+743,False,0,0.000,CHEMBL78355,ChEMBL21 1k test set,PEPTIDE1{[dP].S.[dP].S}$$$$
+744,False,0,0.000,CHEMBL78358,ChEMBL21 1k test set,PEPTIDE1{[dP].T.[dP].S}$$$$
+745,False,0,0.000,CHEMBL78440,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].A}$$$$
+746,False,0,0.000,CHEMBL78365,ChEMBL21 1k test set,"PEPTIDE1{[N[C@H](C(=O)*)Cc1ccc(c(c1)N)O |$;;;;_R2;;;;;;;;;$|].[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].G.F.[*N[C@@H](C(=O)O)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+747,False,0,0.000,CHEMBL80657,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].[meF]}$$$$
+748,False,0,0.000,CHEMBL78758,ChEMBL21 1k test set,PEPTIDE1{[ac].T.P.S.P}$$$$
+749,False,0,0.000,CHEMBL80101,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CC(=O)O |$;;;_R2;;;;$|].F}$$$$
+750,False,0,0.000,CHEMBL79016,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].A.P}$$$$
+751,False,0,0.000,CHEMBL78855,ChEMBL21 1k test set,PEPTIDE1{C.V.[dF].M}$$$$
+752,False,0,0.000,CHEMBL79946,ChEMBL21 1k test set,PEPTIDE1{[ac].L.[dD].T.S.L.[am]}$$$$
+753,False,0,0.000,CHEMBL80384,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].C}$$$$
+754,False,0,0.000,CHEMBL80304,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CS |$;;;_R2;;$|].[Bal]}$$$$
+755,False,0,0.000,CHEMBL79634,ChEMBL21 1k test set,PEPTIDE1{[ac].K.L.F.G}$$$$
+756,False,0,0.000,CHEMBL80242,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].D}$$$$
+757,False,0,0.000,CHEMBL80257,ChEMBL21 1k test set,PEPTIDE1{[dP]}$$$$
+758,False,0,0.000,CHEMBL80514,ChEMBL21 1k test set,PEPTIDE1{[ac].T.P.[dP].T.[am]}$$$$
+759,False,0,0.000,CHEMBL81786,ChEMBL21 1k test set,PEPTIDE1{[dP].S.[dP].S.[am]}$$$$
+760,False,0,0.000,CHEMBL80694,ChEMBL21 1k test set,PEPTIDE1{[ac].Y.V.[meA].[*N[C@H](C=O)CC(=O)O |$_R1;;;;;;;;$|]}$$$$
+761,False,0,0.000,CHEMBL80877,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].Y.[dF].G.[dN].[dC].[dP].R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+762,False,0,0.000,CHEMBL81919,ChEMBL21 1k test set,PEPTIDE1{[Glp].F.[meF].G.L.M.[am]}$$$$
+763,False,0,0.000,CHEMBL82007,ChEMBL21 1k test set,PEPTIDE1{[ac].L.N.T.S.L.[am]}$$$$
+764,False,0,0.000,CHEMBL82019,ChEMBL21 1k test set,PEPTIDE1{[ac].T.P.S.P.[am]}$$$$
+765,False,0,0.000,CHEMBL82179,ChEMBL21 1k test set,PEPTIDE1{[ac].L.A.T.S.L.[am]}$$$$
+766,False,0,0.000,CHEMBL83007,ChEMBL21 1k test set,PEPTIDE1{Y.[dA].A.D.V.V.G.[am]}$$$$
+767,False,0,0.000,CHEMBL81332,ChEMBL21 1k test set,PEPTIDE1{[ac].T.P.[dP].T}$$$$
+768,False,0,0.000,CHEMBL83811,ChEMBL21 1k test set,PEPTIDE1{F.F.H.[am]}$$$$
+769,False,0,0.000,CHEMBL83907,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@@H](C(=O)O)Cc1cc(c(c(c1)I)O)I |$_R1;;;;;;;;;;;;;;;$|]}$$$$
+770,False,0,0.000,CHEMBL83467,ChEMBL21 1k test set,PEPTIDE1{[ac].G.L.D.T.S.L.G.S.[am]}$$$$
+771,False,0,0.000,CHEMBL83383,ChEMBL21 1k test set,PEPTIDE1{[ac].F.F.H.[am]}$$$$
+772,False,0,0.000,CHEMBL83659,ChEMBL21 1k test set,PEPTIDE1{[[C@H](C(=O)*)CCCN=C(N)N |$;;;_R2;;;;;;;$|].G.D.V}$$$$
+773,False,0,0.000,CHEMBL85341,ChEMBL21 1k test set,PEPTIDE1{[ac].[dY].L.D.I.I.W}$$$$
+774,False,0,0.000,CHEMBL85023,ChEMBL21 1k test set,"PEPTIDE1{A.[dA].L.[dD].T.[dP]}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+775,False,0,0.000,CHEMBL86737,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].L.D.I.A.W}$$$$
+776,False,0,0.000,CHEMBL86320,ChEMBL21 1k test set,"PEPTIDE1{[dA].I.[dD].T.[dA].[dP]}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+777,False,0,0.000,CHEMBL87296,ChEMBL21 1k test set,"PEPTIDE1{[dD].P.[dV].L.[dF]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+778,False,0,0.000,CHEMBL86703,ChEMBL21 1k test set,PEPTIDE1{[ac].[*N[C@@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].L.D.I.V.W}$$$$
+779,False,0,0.000,CHEMBL87512,ChEMBL21 1k test set,"PEPTIDE1{[dA].L.[dD].T.[dA].[dP]}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+780,False,0,0.000,CHEMBL87766,ChEMBL21 1k test set,PEPTIDE1{[Ggu].L.G}$$$$
+781,False,0,0.000,CHEMBL265403,ChEMBL21 1k test set,PEPTIDE1{G.K.P.R.P.[dY].[dS].P.R.P.T.S.H.P.R.P.I.R.[*N[C@H](C=O)C(C)C |$_R1;;;;;;;$|]}$$$$
+782,False,0,0.000,CHEMBL86819,ChEMBL21 1k test set,"PEPTIDE1{[dA].A.I.[dD].T}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+783,False,0,0.000,CHEMBL87952,ChEMBL21 1k test set,"PEPTIDE1{[dA].[dP].[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|].L.[dD].T}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+784,False,0,0.000,CHEMBL264846,ChEMBL21 1k test set,PEPTIDE1{F.G.G.[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].T.G.A.R.K.S.A.R.K.L.A.N.Q.[am]}$$$$
+785,False,0,0.000,CHEMBL85624,ChEMBL21 1k test set,PEPTIDE1{[ac].A.A.A.S.L.[am]}$$$$
+786,False,0,0.000,CHEMBL88124,ChEMBL21 1k test set,PEPTIDE1{[NC(C(=O)O)c1cccc(c1)O]}$$$$
+787,False,0,0.000,CHEMBL88056,ChEMBL21 1k test set,"PEPTIDE1{[dA].[dP].[dR].L.[dD].T}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+788,False,0,0.000,CHEMBL265400,ChEMBL21 1k test set,PEPTIDE1{R.[dW].[dF].I.[dF].H.K.R.T.[am]}$$$$
+789,False,0,0.000,CHEMBL86954,ChEMBL21 1k test set,PEPTIDE1{G.[am]}$$$$
+790,False,0,0.000,CHEMBL86869,ChEMBL21 1k test set,"PEPTIDE1{[dA].[dP].[dD].L.[dD].T}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+791,False,0,0.000,CHEMBL87149,ChEMBL21 1k test set,"PEPTIDE1{[dA].L.[dD].V.[dA].[dP]}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+792,False,0,0.000,CHEMBL88476,ChEMBL21 1k test set,PEPTIDE1{[NC(C=O)CC(C)C]}$$$$
+793,False,0,0.000,CHEMBL88804,ChEMBL21 1k test set,PEPTIDE1{[Aad]}$$$$
+794,False,0,0.000,CHEMBL87636,ChEMBL21 1k test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].F.I.Q.N.[dC].[Sar].R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+795,False,0,0.000,CHEMBL87724,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].L.D.I.W}$$$$
+796,False,0,0.000,CHEMBL89495,ChEMBL21 1k test set,"PEPTIDE1{[dA].A.[dP].L.[dD].T}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+797,False,0,0.000,CHEMBL90853,ChEMBL21 1k test set,PEPTIDE1{[Ggu].L.D}$$$$
+798,False,0,0.000,CHEMBL89736,ChEMBL21 1k test set,PEPTIDE1{[ac].[dF].L.D.I.I.Y}$$$$
+799,False,0,0.000,CHEMBL88638,ChEMBL21 1k test set,PEPTIDE1{[Ggu].L.[Dpr]}$$$$
+800,False,0,0.000,CHEMBL88570,ChEMBL21 1k test set,"PEPTIDE1{[dL].P.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].P.[dF].P.[dW]}$PEPTIDE1,PEPTIDE1,7:R2-1:R1$$$"
+801,False,0,0.000,CHEMBL89884,ChEMBL21 1k test set,"PEPTIDE1{[dA].[dD].[dD].L.[dD].T}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+802,True,25555,15.972,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{[Asp_OMe]}|PEPTIDE2{C.[Dsu].[meI].[Phe_4F]}|PEPTIDE3{[meA].[Gly_cPr].[His_1Me].[Abu_23dehydro].[Val_3OH].[Dha].[aThr].[bAla].[meQ].C.[dN].[meL].[App].[seC].C.[Tza]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE1,10:R3-1:R2|PEPTIDE2,PEPTIDE3,1:R3-15:R3$$$V2.0"
+803,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE2{C.[Dsu].[meI].[Phe_4F]}$$$$V2.0
+804,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[Asp_OMe]}$$$$V2.0
+805,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE3{[meA].[Gly_cPr].[His_1Me].[Abu_23dehydro].[Val_3OH].[Dha].[aThr].[bAla].[meQ].C.[dN].[meL].[App].[seC].C.[Tza]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+806,True,5304,3.315,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0"
+807,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}$$$$V2.0
+808,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE3{[aIle].[dH].[Lys_iPr]}$$$$V2.0
+809,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}$$$$V2.0
+810,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[Val_3OH].[D-nTyr].[D-Cha].[Hyp].[Phe_bbdiMe].[Thz].[dS].[Gly_cPr].[meM].[Tyr_3I].[Sta_3xi4xi].[meR].[D-Dip].P}$$$$V2.0
+811,True,12440,7.775,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{[Me-].[Oic_3aR-7aS].[pnG].[dD]}|PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}|PEPTIDE3{[D-2Thi].[Cys_Me].[dE].[Phe_4Me].G.[Hsl]}$PEPTIDE1,PEPTIDE3,4:R3-1:R1|PEPTIDE2,PEPTIDE1,5:R3-4:R2$$$V2.0"
+812,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE3{[D-2Thi].[Cys_Me].[dE].[Phe_4Me].G.[Hsl]}$$$$V2.0
+813,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[Me-].[Oic_3aR-7aS].[pnG].[dD]}$$$$V2.0
+814,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}$$$$V2.0
+815,True,15563,9.727,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{C.[Phe_2F].[meF].[Hse].[Ala_tBu].[Met_O].[Phe_4Sdihydroorotamido].[Gly_cPr].[meM].[meL].[Cys_Bn].[meR].[D-Dip].[hArg]}|PEPTIDE2{D.E.G}$PEPTIDE1,PEPTIDE1,14:R2-1:R1|PEPTIDE1,PEPTIDE2,1:R3-1:R1$$$V2.0"
+816,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{C.[Phe_2F].[meF].[Hse].[Ala_tBu].[Met_O].[Phe_4Sdihydroorotamido].[Gly_cPr].[meM].[meL].[Cys_Bn].[meR].[D-Dip].[hArg]}$PEPTIDE1,PEPTIDE1,14:R2-1:R1$$$V2.0"
+817,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE2{D.E.G}$$$$V2.0
+818,True,6016,3.760,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}|PEPTIDE2{[dE].[D-Nle].[meL]}$PEPTIDE1,PEPTIDE2,3:R3-1:R1$$$V2.0"
+819,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}$$$$V2.0
+820,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE2{[dE].[D-Nle].[meL]}$$$$V2.0
+821,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{[Phe_4F].[Nle].[D-Ser_tBu].[bAla].[Cys_Me].T.[dS].[Gly_cPr].[meM].[meH].[Pqa].[meR].[D-Dip].[D-2Pal]}$PEPTIDE1,PEPTIDE1,14:R2-1:R1$$$V2.0"
+822,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{[Tyr_35diI].[Ac6c].[Aoda].[bAla].[Tic].[Met_O].[Phe_4Sdihydroorotamido].[dF].[meM].[Cit].[meI].[meR].[D-Dip].T}$$$$V2.0
+823,True,15719,9.824,Mixed branch peptides,Mixed branch peptides test set,"CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,4:R3-13:R2|PEPTIDE1,CHEM1,1:R1-1:R1$$$V2.0"
+824,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,CHEM1{[PEG2]}$$$$V2.0
+825,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,4:R3-13:R2$$$V2.0"
+826,True,5084,3.178,Mixed branch peptides,Mixed branch peptides test set,"PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0"
+827,False,0,0.000,Mixed branch peptides,Mixed branch peptides test set,PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}$$$$V2.0
+828,True,9307,5.817,Chains,Original test set,"PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$V2.0"
+829,True,5475,3.422,Chains,Original test set,RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$
+830,True,8651,5.407,Chains,Original test set,RNA1{P.R(U)P.R(T)}$$$$
+831,True,5331,3.332,Chains,Original test set,RNA1{P.R(U)P.R(T)P.P.P}$$$$
+832,False,0,0.000,Chains,Original test set,PEPTIDE1{A.L.C}$$$$
+833,True,26185,16.366,Chains,Original test set,"PEPTIDE1{D.E.F.G}|PEPTIDE2{C.E}$PEPTIDE1,PEPTIDE2,2:R3-1:R1$$$V2.0"
+834,True,8409,5.256,Chains,Original test set,PEPTIDE1{L.V.A}|PEPTIDE2{L.V.A}$$$$
+835,True,29902,18.689,Chains,Original test set,"RNA1{R(A)P.R(C)P.R(G)P}|RNA2{P.R(C)P.R(G)P.R(T)}$RNA1,RNA2,2:pair-9:pair|RNA1,RNA2,5:pair-6:pair|RNA1,RNA2,8:pair-3:pair$$$"
+836,True,14923,9.327,Chains,Original test set,"PEPTIDE1{A.R.C.D.K.A}|PEPTIDE2{G.A.K.A}$PEPTIDE1,PEPTIDE2,4:R3-1:R1$$$"
+837,True,7436,4.647,Chains,Original test set,RNA1{[dR](T)}$$$$
+838,True,21345,13.341,Chains,Original test set,"PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$"
+839,True,46633,29.146,Chains,Original test set,"PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$"
+840,True,55913,34.946,Chains,Original test set,"PEPTIDE1{C.[dV]}|PEPTIDE2{C.[dV]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$"
+841,True,8503,5.314,Chains,Original test set,"PEPTIDE1{W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,12:R3-9:R3$$$"
+842,True,15215,9.509,Chains,Original test set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
+843,True,33934,21.209,Chains,Original test set,"RNA1{R(U)P.R(T)P}|RNA2{P.R(A)P.R(A)}$RNA1,RNA2,2:pair-6:pair|RNA1,RNA2,5:pair-3:pair$$$"
+844,True,21870,13.669,Chains,Original test set,"RNA1{r(A)p.r(C)p.r(G)p.r(T)p.r(U)}|RNA2{r(A)p.r(A)p.r(C)p.r(G)p.r(T)}$RNA1,RNA2,5:pair-11:pair|RNA1,RNA2,8:pair-8:pair|RNA1,RNA2,11:pair-5:pair|RNA1,RNA2,14:pair-2:pair$$$V2.0"
+845,True,9327,5.829,Chains,Original test set,"RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$"
+846,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[dC].[dS].C.[dS].S.[dL].M.[dD].K.[dE].C.[dV].Y.[dF].[dC].H.A.D.I.I.W}$PEPTIDE1,PEPTIDE1,3:R3-11:R3|PEPTIDE1,PEPTIDE1,1:R3-15:R3$$$"
+847,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[dC].[dQ].I.[dD].S.[dP].[dC]}$PEPTIDE1,PEPTIDE1,1:R3-7:R3$$$"
+848,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{F.G.G.F.T.G.A.R.K.C.A.R.K.C.[am]}$PEPTIDE1,PEPTIDE1,10:R3-14:R3$$$"
+849,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].P.[dR].G.[dD].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dR].[dC].[am]}$PEPTIDE1,PEPTIDE1,2:R3-10:R3$$$"
+850,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{S.S.[dC].G.[dF].G.G.[dR].I.[dD].R.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[dC].[dF].G}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+851,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.Y.V.[Orn].L.[dF].P.F.[dF].N}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+852,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.A.G.F.P.V.F.F}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+853,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].W.E.R.W.L.M.D.C.R.[dS].D.[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|].L.C.G.E.S.H.Q.E.[am]}$PEPTIDE1,PEPTIDE1,9:R3-15:R3$$$"
+854,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].[Nal].[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].C.R.[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].L.R.P.C.[am]}$PEPTIDE1,PEPTIDE1,5:R3-11:R3$$$"
+855,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{D.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].F.[dW].[*N[C@@H](C(=O)*)CCCN |$_R1;;;;;_R2;;;;$|].Y.C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+856,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{R.[dP].K.K.K}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+857,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dP]}$PEPTIDE1,PEPTIDE1,4:R2-1:R1$$$"
+858,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{R.G.G.R.L.C.Y.C.R.R.R.F.C.V.C.V.G.R}$PEPTIDE1,PEPTIDE1,8:R3-13:R3|PEPTIDE1,PEPTIDE1,6:R3-15:R3$$$"
+859,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{C.C.[dN].C.S.S.K.W.C.R.D.A.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+860,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.C.D.T.A.T.C.V.T.H.R.L.A.G.L.L.S.R.S.G.G.V.V.K.N.N.F.V.P.T.N.V.G.S.K.A.F.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+861,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].V.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].C.P.I.F.V.C.S.E.G.C.P.I.S.N.K.Y.C.V.K.S.K.C.S.C.G.L.L}$PEPTIDE1,PEPTIDE1,31:R2-1:R1$$$"
+862,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{G.C.C.S.L.P.R.C.A.L.N.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-12:R3$$$"
+863,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)S* |$_R1;;;;;_R2;;_R3$|].F.F.[dW].K.T.F.C}$PEPTIDE1,PEPTIDE1,2:R3-9:R3$$$"
+864,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{G.C.C.S.L.P.P.C.A.L.N.N.P.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-14:R3$$$"
+865,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{L.K.V.K.L.[dY].P.V.K.L.K.V.K.[dY].P}$PEPTIDE1,PEPTIDE1,15:R2-1:R1$$$"
+866,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[Pen].S.I.Y.D.P.G.D.D.I.[dK].C}$PEPTIDE1,PEPTIDE1,1:R3-12:R3$$$"
+867,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{E.T.[dP].D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,5:R3-10:R3$$$"
+868,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{N.G.V.C.C.G.Y.K.L.C.H.[Hyp].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+869,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{C.K.G.K.G.A.K.C.S.R.L.M.Y.D.C.C.T.G.S.C.R.S.G.K.C}$PEPTIDE1,PEPTIDE1,1:R3-16:R3|PEPTIDE1,PEPTIDE1,8:R3-20:R3|PEPTIDE1,PEPTIDE1,15:R3-25:R3$$$"
+870,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{G.E.S.C.V.W.I.P.C.I.S.S.A.I.G.C.S.C.K.S.K.V.C.Y.R.N.G.I.P.C}$PEPTIDE1,PEPTIDE1,4:R3-18:R3|PEPTIDE1,PEPTIDE1,9:R3-23:R3|PEPTIDE1,PEPTIDE1,16:R3-30:R3$$$"
+871,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{C.[*N[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].F.V.N.C.P.R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+872,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{C.V.F.R.V.F.G.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+873,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].[dC].G.[*N(C)[C@@H](C(=O)*)CCCN=C(N)N |$_R1;;;;;;_R2;;;;;;;$|].G.[dD].[*N[C@@H](C(=O)N)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+874,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.N.C.F.A.K.Y.C.V}$PEPTIDE1,PEPTIDE1,3:R3-8:R3$$$"
+875,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[dC].G.R.[dV].Y.[dR].P.C.[dW].[dE].[dV]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+876,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{Y.V.[Nle].[dC].G.H.[dF].R.W.C.R.F.G.[am]}$PEPTIDE1,PEPTIDE1,4:R3-10:R3$$$"
+877,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].Y.[Cit].[dC].[dE].H.F.R.[dW].[dC].[am]}$PEPTIDE1,PEPTIDE1,4:R3-10:R3$$$"
+878,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{R.S.S.[dC].F.G.G.R.I.D.R.I.G.A.[dC]}$PEPTIDE1,PEPTIDE1,4:R3-15:R3$$$"
+879,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].C.V.W.Q.D.W.G.A.H.R.C.T}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+880,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{Y.G.G.F.[dC].[dR].R.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[dC].[dR].[dK]}$PEPTIDE1,PEPTIDE1,5:R3-9:R3$$$"
+881,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.[dP].D.[dW].F.[dF].N.[dY].Y.[dW].G.[dN].W.[dH].G.[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|]}$PEPTIDE1,PEPTIDE1,16:R2-1:R1$$$"
+882,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{A.G.T.A.D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,6:R3-11:R3$$$"
+883,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[[C@H](C(=O)*)CS* |$;;;_R2;;;_R3$|].[Har].G.D.W.P.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-7:R3$$$"
+884,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{G.A.C.K.N.F.F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].T.F.T.S.[dC]}$PEPTIDE1,PEPTIDE1,3:R3-14:R3$$$"
+885,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{[ac].Y.[dC].[dD].[dP].[dC]}$PEPTIDE1,PEPTIDE1,3:R3-6:R3$$$"
+886,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{R.G.D.G.[dP].P}$PEPTIDE1,PEPTIDE1,6:R2-1:R1$$$"
+887,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{Y.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].G.F.[*N[C@@H](C(=O)O)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+888,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{Y.C.Y.[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+889,False,0,0.000,Cyclic,Original test set,"PEPTIDE1{F.C.Y.N.[Pen].T.[am]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+890,True,21600,13.500,Cyclic,Original test set,"PEPTIDE1{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE2{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE3{C.W.N.Y.Y.W.G.Y.S.F.S.G.W.Y.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-15:R3|PEPTIDE1,PEPTIDE1,1:R1-16:R2|PEPTIDE1,PEPTIDE2,3:R1-8:R2|PEPTIDE2,PEPTIDE2,1:R3-15:R3|PEPTIDE2,PEPTIDE2,1:R1-16:R2|PEPTIDE2,PEPTIDE3,11:R3-14:R3|PEPTIDE3,PEPTIDE3,1:R3-15:R3|PEPTIDE3,PEPTIDE3,1:R1-17:R2$$$"
+891,False,0,0.000,CHEM monomer,Original test set,CHEM1{[[*:1]OCCCCC=C]}$$$$
+892,False,0,0.000,CHEM monomer,Original test set,CHEM1{[[*:2]C(=O)[C@H](C)N([*:1])CC]}$$$$
+893,False,0,0.000,CHEM monomer,Original test set,"CHEM1{[[R1]OCCCCC=C]}|CHEM2{[[R2]C(=O)[C@H](C)N([R1])CC]}$CHEM1,CHEM2,1:R1-1:R1$$$V2.0"
+894,False,0,0.000,CHEM monomer,Original test set,"CHEM1{[[*:1]OCCCCC=C]}|CHEM2{[[*:2]C(=O)[C@H](C)N([*:1])CC]}$CHEM1,CHEM2,1:R1-1:R1$$$V2.0"
+895,False,0,0.000,CHEM monomer,Original test set,CHEM1{[sDBl]}$$$$
+896,False,0,0.000,CHEM monomer,Original test set,"CHEM1{[SMCC]}|CHEM2{[EG]}$CHEM1,CHEM2,1:R1-1:R1$$$"
+897,True,22801,14.251,CHEM monomer,Original test set,"CHEM1{[SMCC]}|PEPTIDE1{L.M}|RNA1{R(C)P.R(A)P}$RNA1,PEPTIDE1,6:R2-1:R1|PEPTIDE1,CHEM1,2:R2-1:R1$$$"
+898,True,12558,7.849,CHEM monomer,Original test set,"CHEM1{[SMPEG2]}|CHEM2{[SMCC]}|CHEM3{[PEG2]}|CHEM4{[MCC]}$CHEM4,CHEM3,1:R1-1:R1|CHEM2,CHEM1,1:R1-1:R1$$$"
+899,True,2925,1.828,CHEM monomer,Original test set,CHEM1{[SMPEG2]}|PEPTIDE1{A}|RNA1{R(A)P}$$$$
+900,True,15719,9.824,CHEM monomer,Original test set,"CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,13:R2-4:R3|PEPTIDE1,CHEM1,1:R1-1:R1$$$"
+901,True,14862,9.289,CHEM monomer,Original test set,"PEPTIDE1{[X423].K.P.K.[X423].K}|CHEM1{[cRCM]}$PEPTIDE1,CHEM1,1:R3-1:R1|PEPTIDE1,CHEM1,5:R3-1:R2$$$V2.0"
+902,False,0,0.000,CHEM monomer,Original test set,"PEPTIDE1{K.[[R3]C[C@H](N[R1])C([R2])=O].W.[dF].R.H.[X73].M}|CHEM1{[14Triazole]}$PEPTIDE1,CHEM1,2:R3-1:R2|PEPTIDE1,CHEM1,7:R3-1:R1$$$V2.0"
+903,True,17700,11.062,Chains,Original test set,"PEPTIDE1{A.C.G.C.G}|PEPTIDE2{K.L}|PEPTIDE3{S.T}$PEPTIDE1,PEPTIDE2,2:R2-1:R1|PEPTIDE1,PEPTIDE3,5:R1-1:R3$$$V2.0"
+904,True,14532,9.082,Chem monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,24:R2-1:R3|RNA1,CHEM1,24:R2-1:R2$$$"
+905,True,16216,10.135,CHEM monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,12:R2-1:R3|RNA1,CHEM1,12:R2-1:R2$$$"
+906,True,23615,14.759,CHEM monomer,Original test set,"CHEM1{[ClAc]}|PEPTIDE1{F.C.C.C.C.C.C.C.C.C.C.G}|CHEM2{[NH2]}$CHEM1,PEPTIDE1,1:R1-9:R3|CHEM1,PEPTIDE1,1:R2-1:R1|PEPTIDE1,CHEM2,10:R2-1:R1$$$V2.0"
+907,True,11529,7.206,Chains,Original test set,"PEPTIDE1{A.C.D.D.E}""HC""|PEPTIDE2{G.C.S.S.S.P.K.K.V.K}""LC""$$$$V2.0"
+908,True,18141,11.338,Cyclic,Original test set,"PEPTIDE1{F}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}|PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE1,PEPTIDE2,1:R2-9:R3$$$V2.0"
+909,False,0,0.000,Validation Set,Validation Set,"CHEM1{[*CCC(N1CN(C(CC*)=O)CN(C(CC*)=O)C1)=O |$_R1;;;;;;;;;;_R2;;;;;;;_R3;;;;$|]}|PEPTIDE1{A.R.D.C.P.L.V.N.P.L.C.L.H.P.G.W.T.C.[dV].[Orn]}$PEPTIDE1,CHEM1,4:R3-1:R1|PEPTIDE1,CHEM1,11:R3-1:R2|CHEM1,PEPTIDE1,1:R3-18:R3$$$V2.0"
+910,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{A.R.D.C.P.L.V.N.P.L.C.L.H.P.G.W.T.C.[dV].[Orn]}$$$$V2.0
+911,True,20865,13.041,Validation Set,Validation Set,"PEPTIDE1{C}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+912,False,0,0.000,Validation Set,Validation Set,"PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1$$$V2.0"
+913,False,0,0.000,Validation Set,Validation Set,"PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+914,True,19611,12.257,Validation Set,Validation Set,"PEPTIDE1{[Asp_OMe]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+915,False,0,0.000,Validation Set,Validation Set,"PEPTIDE3{[meY].C.[Met_O].[meD].G.[3Pal].[xiIle].R.[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].K}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+916,True,19678,12.299,Validation Set,Validation Set,"PEPTIDE1{D}|PEPTIDE2{[dI].[Phg].[Asp_OMe].[dI].[meG].[Phe_3Cl].Q.C.[dI].[Ser_PO3H2].[NMe2Abz].[Tyr_Ph4OH].[3Pal].Q.D.[Ala_tBu]}|PEPTIDE3{[meY].[dN].[Met_O].[NMe2Abz].[D-Pen].[Pro_4Me3OH].[xiIle].[Pro_4Me3OH].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].K.[meG].[Phe_34diCl].[Ser_PO3H2]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0"
+917,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{M.T.L.I.G.A.A.H.N.G.A.A.Q.L.L.R.Q.L.R.G.Q.L.G.P.P.G.S.R.[am]}$$$$
+918,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{C.P.W.H.L.L.P.F.C}$$$$
+919,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{R.F.[Pen].T.G.[*N[C@H](C(=O)*)Cc1ccsc1 |$_R1;;;;;_R2;;;;;;$|].F.G.[Sar].[meL].Y.P.C}$$$$
+920,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[dC].[dS].C.[dS].S.[dL].M.[dD].K.[dE].C.[dV].Y.[dF].[dC].H.A.D.I.I.W}$PEPTIDE1,PEPTIDE1,3:R3-11:R3|PEPTIDE1,PEPTIDE1,1:R3-15:R3$$$"
+921,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{S.Q.E.P.P.I.S.A.D.L.T.F.H.L.L.R.E.V.L.E.M.T.K.A.D.Q.L.A.Q.Q.A.H.S.N.R.K.L.L.D.I.A.[am]}$$$$
+922,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[dC].[dQ].I.[dD].S.[dP].[dC]}$PEPTIDE1,PEPTIDE1,1:R3-7:R3$$$"
+923,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{F.G.G.F.T.G.A.R.K.C.A.R.K.C.[am]}$PEPTIDE1,PEPTIDE1,10:R3-14:R3$$$"
+924,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].P.[dR].G.[dD].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dR].[dC].[am]}$PEPTIDE1,PEPTIDE1,2:R3-10:R3$$$"
+925,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{S.S.[dC].G.[dF].G.G.[dR].I.[dD].R.[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].[dC].[dF].G}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+926,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{A.Y.V.[Orn].L.[dF].P.F.[dF].N}$PEPTIDE1,PEPTIDE1,10:R2-1:R1$$$"
+927,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].W.E.R.W.L.M.D.C.R.[dS].D.[*N[C@@H](C(=O)*)[C@@H](C)O |$_R1;;;;;_R2;;;$|].L.C.G.E.S.H.Q.E.[am]}$PEPTIDE1,PEPTIDE1,9:R3-15:R3$$$"
+928,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].[Nal].[*N[C@H](C(=O)*)Cc1ccc(cc1)Cl |$_R1;;;;;_R2;;;;;;;;$|].[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].C.R.[*N[C@H](C(=O)*)c1cccnc1 |$_R1;;;;;_R2;;;;;;$|].L.R.P.C.[am]}$PEPTIDE1,PEPTIDE1,5:R3-11:R3$$$"
+929,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{T.T.W.E.E.W.D.R.E.I.N.E.Y.T.S.R.I.E.S.L.I.R.E.S.Q.E.Q.Q.E.K.N.E.Q.E.L.R.E.L}$$$$
+930,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{D.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].F.[dW].[*N[C@@H](C(=O)*)CCCN |$_R1;;;;;_R2;;;;$|].Y.C.V}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+931,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{R.[dP].K.K.K}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+932,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)OC |$_R1;;;;;_R2;;;;;;;;;$|].[dP]}$PEPTIDE1,PEPTIDE1,4:R2-1:R1$$$"
+933,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[NC(C(=O)*)CCCCN |$;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)*)CCCCN |$_R1;;;;;_R2;;;;;$|].[*NC(C(=O)*)CC(C)C |$_R1;;;;;_R2;;;;$|].[*NC(C(=O)*)C |$_R1;;;;;_R2;$|].[*NC(C(=O)O)CCCCN |$_R1;;;;;;;;;;$|]}$$$$
+934,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{R.G.G.R.L.C.Y.C.R.R.R.F.C.V.C.V.G.R}$PEPTIDE1,PEPTIDE1,8:R3-13:R3|PEPTIDE1,PEPTIDE1,6:R3-15:R3$$$"
+935,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.C.[dN].C.S.S.K.W.C.R.D.A.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+936,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[ac].[*N(C)[C@H](C(=O)*)CC1CCCCC1 |$_R1;;;;;;_R2;;;;;;;$|].[meF].[meF].[meF].[am]}$$$$
+937,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{A.C.D.T.A.T.C.V.T.H.R.L.A.G.L.L.S.R.S.G.G.V.V.K.N.N.F.V.P.T.N.V.G.S.K.A.F.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+938,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{A.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].V.[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].C.P.I.F.V.C.S.E.G.C.P.I.S.N.K.Y.C.V.K.S.K.C.S.C.G.L.L}$PEPTIDE1,PEPTIDE1,31:R2-1:R1$$$"
+939,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{G.C.C.S.L.P.R.C.A.L.N.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-12:R3$$$"
+940,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)S* |$_R1;;;;;_R2;;_R3$|].F.F.[dW].K.T.F.C}$PEPTIDE1,PEPTIDE1,2:R3-9:R3$$$"
+941,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{G.C.C.S.L.P.P.C.A.L.N.N.P.C}$PEPTIDE1,PEPTIDE1,2:R3-8:R3|PEPTIDE1,PEPTIDE1,3:R3-14:R3$$$"
+942,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{I.P.Y.V.P.L.T.P}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+943,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{E.T.[dP].D.C.F.W.K.Y.C.V}$PEPTIDE1,PEPTIDE1,5:R3-10:R3$$$"
+944,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{N.G.V.C.C.G.Y.K.L.C.H.[Hyp].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+945,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{D.Y.[dW].V.[dW].[dW].K.[am]}$$$$
+946,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.K.G.K.G.A.K.C.S.R.L.M.Y.D.C.C.T.G.S.C.R.S.G.K.C}$PEPTIDE1,PEPTIDE1,1:R3-16:R3|PEPTIDE1,PEPTIDE1,8:R3-20:R3|PEPTIDE1,PEPTIDE1,15:R3-25:R3$$$"
+947,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{H.S.E.G.I.F.T.D.S.Y.S.R.Y.R.K.Q.M.A.V.K.K.Y.L.A.A.V.L.G.K.R.Y.K.Q.R.V.K.N.K.[am]}$$$$
+948,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[ac].[meI].[Sar].[meL].M.[meV].[Sar].[am]}$$$$
+949,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{D.L.D.L.E.A.L.A.[Hyp].Y.[*N[C@H](C(=O)*)[C@H](C)CC |$_R1;;;;;_R2;;;;$|].P.A.D.D.D.F.Q.L.R.[am]}$$$$
+950,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{G.E.S.C.V.W.I.P.C.I.S.S.A.I.G.C.S.C.K.S.K.V.C.Y.R.N.G.I.P.C}$PEPTIDE1,PEPTIDE1,4:R3-18:R3|PEPTIDE1,PEPTIDE1,9:R3-23:R3|PEPTIDE1,PEPTIDE1,16:R3-30:R3$$$"
+951,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.C.[dN].C.S.S.K.L.C.R.D.H.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+952,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].C.F.F.[dW].K.T.F.[*N[C@H](C(=O)O)S* |$_R1;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-9:R3$$$"
+953,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{N.E.E.L.G.K.K.Y.E.E.T.K.K.K.Q.E.E.F.Y.K.K.I.E.E.I.E.K.K.N.E.E.V.K.K.K.L.E.E.L.Q.K.K}$$$$
+954,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{L.F.[*N(C)[C@@H](C(=O)*)CC(C)C |$_R1;;;;;;_R2;;;;$|].L.[dV]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+955,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{G.R.[Abu].[*N[C@H](C(=O)*)[C@H](C)O |$_R1;;;;;_R2;;;$|].F.S.I.P.P.I.[Abu].F.P.D}$$$$
+956,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[Cha].V.[*N(C)[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].F.[*N[C@H](C(=O)*)COCc1ccccc1 |$_R1;;;;;_R2;;;;;;;;;$|]}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+957,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.[*N[C@H](C(=O)*)C(c1ccccc1)c2ccccc2 |$_R1;;;;;_R2;;;;;;;;;;;;;$|].F.V.N.C.P.R.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-6:R3$$$"
+958,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[Cha].V.[*N(C)[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;;_R2;;;;;;;$|].F.L}$PEPTIDE1,PEPTIDE1,5:R2-1:R1$$$"
+959,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.V.F.R.V.F.G.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+960,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[Glp].G.V.C.C.G.Y.K.L.C.H.[dD].C}$PEPTIDE1,PEPTIDE1,5:R3-10:R3|PEPTIDE1,PEPTIDE1,4:R3-13:R3$$$"
+961,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[[C@H](C(=O)*)S |$;;;_R2;$|].N.F.[am]}$$$$
+962,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].A.[dA]}$$$$
+963,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{G.D.Y.E.E.I.[dP].E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.Q}$$$$
+964,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{D.F.E.E.I.[dP].E.E.[*N[C@H](C(=O)*)Cc1ccc(cc1)OS(=O)(=O)O |$_R1;;;;;_R2;;;;;;;;;;;;$|].L.[am]}$$$$
+965,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].[dC].G.[*N(C)[C@@H](C(=O)*)CCCN=C(N)N |$_R1;;;;;;_R2;;;;;;;$|].G.[dD].[*N[C@@H](C(=O)N)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+966,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].C.F.[dW].K.Y.C.[am]}$PEPTIDE1,PEPTIDE1,2:R3-7:R3$$$"
+967,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.Q.G.P.R.G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.P.[Hyp].G.[am]}$$$$
+968,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[dC].S.C.K.D.M.T.D.K.E.C.L.Y.F.C.H.Q.D.V.I.W}$PEPTIDE1,PEPTIDE1,3:R3-11:R3|PEPTIDE1,PEPTIDE1,1:R3-15:R3$$$"
+969,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[fmoc].W.[*N[C@@H](CO)Cc1ccccc1 |$_R1;;;;;;;;;;;$|]}$$$$
+970,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[dC].G.R.[dV].Y.[dR].P.C.[dW].[dE].[dV]}$PEPTIDE1,PEPTIDE1,1:R3-8:R3$$$"
+971,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{Y.V.[Nle].[dC].G.H.[dF].R.W.C.R.F.G.[am]}$PEPTIDE1,PEPTIDE1,4:R3-10:R3$$$"
+972,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].I.C.V.[dS].Q.[dD].W.G.H.[dH].R.C.T.[am]}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+973,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.C.[dN].C.S.A.K.W.C.R.D.H.S.R.C.C.[am]}$PEPTIDE1,PEPTIDE1,1:R3-9:R3|PEPTIDE1,PEPTIDE1,2:R3-15:R3|PEPTIDE1,PEPTIDE1,4:R3-16:R3$$$"
+974,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{R.S.S.[dC].F.G.G.R.I.D.R.I.G.A.[dC]}$PEPTIDE1,PEPTIDE1,4:R3-15:R3$$$"
+975,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[ac].[*N[C@@H](C(=O)*)[C@@H](C)CC |$_R1;;;;;_R2;;;;$|].C.V.W.Q.D.W.G.A.H.R.C.T}$PEPTIDE1,PEPTIDE1,3:R3-13:R3$$$"
+976,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)C |$_R1;;;;;_R2;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@H](C(=O)*)C |$_R1;;;;;_R2;$|].[*N(C)[C@H](C(=O)*)CCC |$_R1;;;;;;_R2;;;$|].[*O[C@@H](C(=O)*)Cc1ccccc1 |$_R1;;;;;_R2;;;;;;;$|]}$PEPTIDE1,PEPTIDE1,8:R2-1:R1$$$"
+977,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[NC(C(=O)O)C(C)C]}$$$$
+978,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.K.N.F.F.[dW].[*N[C@H](C(=O)*)Cc1ccc(cc1)F |$_R1;;;;;_R2;;;;;;;;$|].T.F.T.S.[dC]}$PEPTIDE1,PEPTIDE1,1:R3-12:R3$$$"
+979,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[Aib].[*N[C@@H](C(=O)*)Cc1c([nH]c2c1cccc2)C |$_R1;;;;;_R2;;;;;;;;;;;$|].[*N[C@@H](C(=O)N)Cc1c([nH]c2c1cccc2)C |$_R1;;;;;;;;;;;;;;;;$|]}$$$$
+980,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{Y.[*N[C@@H](C(=O)*)C(C)(C)S* |$_R1;;;;;_R2;;;;;_R3$|].G.F.[*N[C@@H](C(=O)O)C(C)(C)S* |$_R1;;;;;;;;;;_R3$|]}$PEPTIDE1,PEPTIDE1,2:R3-5:R3$$$"
+981,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{Y.C.[*N[C@H](C(=O)*)Cc1ccccc1F |$_R1;;;;;_R2;;;;;;;;$|].[Pen]}$PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$"
+982,True,46633,29.146,Validation Set,Validation Set,"PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$"
+983,False,0,0.000,Validation Set,Validation Set,"PEPTIDE3{[meA].[Gly_cPr].[His_1Me].[Abu_23dehydro].[Val_3OH].[Dha].[aThr].[bAla].[meQ].C.[dN].[meL].[App].[seC].C.[Tza]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1$$$V2.0"
+984,True,5304,3.315,Validation Set,Validation Set,"PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0"
+985,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}$$$$V2.0
+986,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[Val_3OH].[D-nTyr].[D-Cha].[Hyp].[Phe_bbdiMe].[Thz].[dS].[Gly_cPr].[meM].[Tyr_3I].[Sta_3xi4xi].[meR].[D-Dip].P}$$$$V2.0
+987,True,12440,7.775,Validation Set,Validation Set,"PEPTIDE1{[Me-].[Oic_3aR-7aS].[pnG].[dD]}|PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}|PEPTIDE3{[D-2Thi].[Cys_Me].[dE].[Phe_4Me].G.[Hsl]}$PEPTIDE1,PEPTIDE3,4:R3-1:R1|PEPTIDE2,PEPTIDE1,5:R3-4:R2$$$V2.0"
+988,False,0,0.000,Validation Set,Validation Set,PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}$$$$V2.0
+989,True,15563,9.727,Validation Set,Validation Set,"PEPTIDE1{C.[Phe_2F].[meF].[Hse].[Ala_tBu].[Met_O].[Phe_4Sdihydroorotamido].[Gly_cPr].[meM].[meL].[Cys_Bn].[meR].[D-Dip].[hArg]}|PEPTIDE2{D.E.G}$PEPTIDE1,PEPTIDE1,14:R2-1:R1|PEPTIDE1,PEPTIDE2,1:R3-1:R1$$$V2.0"
+990,True,6016,3.760,Validation Set,Validation Set,"PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}|PEPTIDE2{[dE].[D-Nle].[meL]}$PEPTIDE1,PEPTIDE2,3:R3-1:R1$$$V2.0"
+991,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}$$$$V2.0
+992,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{[Tyr_35diI].[Ac6c].[Aoda].[bAla].[Tic].[Met_O].[Phe_4Sdihydroorotamido].[dF].[meM].[Cit].[meI].[meR].[D-Dip].T}$$$$V2.0
+993,True,15719,9.824,Validation Set,Validation Set,"CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,4:R3-13:R2|PEPTIDE1,CHEM1,1:R1-1:R1$$$V2.0"
+994,True,5084,3.178,Validation Set,Validation Set,"PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0"
+995,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}$$$$V2.0
+996,True,9307,5.817,Validation Set,Validation Set,"PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$V2.0"
+997,True,5475,3.422,Validation Set,Validation Set,RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$
+998,True,5331,3.332,Validation Set,Validation Set,RNA1{P.R(U)P.R(T)P.P.P}$$$$
+999,True,29902,18.689,Validation Set,Validation Set,"RNA1{R(A)P.R(C)P.R(G)P}|RNA2{P.R(C)P.R(G)P.R(T)}$RNA1,RNA2,2:pair-9:pair|RNA1,RNA2,5:pair-6:pair|RNA1,RNA2,8:pair-3:pair$$$"
+1000,True,21345,13.341,Validation Set,Validation Set,"PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$"
+1001,True,15215,9.509,Validation Set,Validation Set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
+1002,True,21870,13.669,Validation Set,Validation Set,"RNA1{r(A)p.r(C)p.r(G)p.r(T)p.r(U)}|RNA2{r(A)p.r(A)p.r(C)p.r(G)p.r(T)}$RNA1,RNA2,5:pair-11:pair|RNA1,RNA2,8:pair-8:pair|RNA1,RNA2,11:pair-5:pair|RNA1,RNA2,14:pair-2:pair$$$V2.0"
+1003,True,9327,5.829,Validation Set,Validation Set,"RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$"
+1004,True,21600,13.500,Validation Set,Validation Set,"PEPTIDE1{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE2{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE3{C.W.N.Y.Y.W.G.Y.S.F.S.G.W.Y.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-15:R3|PEPTIDE1,PEPTIDE1,1:R1-16:R2|PEPTIDE1,PEPTIDE2,3:R1-8:R2|PEPTIDE2,PEPTIDE2,1:R3-15:R3|PEPTIDE2,PEPTIDE2,1:R1-16:R2|PEPTIDE2,PEPTIDE3,11:R3-14:R3|PEPTIDE3,PEPTIDE3,1:R3-15:R3|PEPTIDE3,PEPTIDE3,1:R1-17:R2$$$"
+1005,True,12558,7.849,Validation Set,Validation Set,"CHEM1{[SMPEG2]}|CHEM2{[SMCC]}|CHEM3{[PEG2]}|CHEM4{[MCC]}$CHEM4,CHEM3,1:R1-1:R1|CHEM2,CHEM1,1:R1-1:R1$$$"
+1006,True,2925,1.828,Validation Set,Validation Set,CHEM1{[SMPEG2]}|PEPTIDE1{A}|RNA1{R(A)P}$$$$
+1007,True,22801,14.251,Validation Set,Validation Set,"CHEM1{[SMCC]}|PEPTIDE1{L.M}|RNA1{R(C)P.R(A)P}$RNA1,PEPTIDE1,6:R2-1:R1|PEPTIDE1,CHEM1,2:R2-1:R1$$$"
+1008,True,15719,9.824,Validation Set,Validation Set,"CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,13:R2-4:R3|PEPTIDE1,CHEM1,1:R1-1:R1$$$"
+1009,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{K.[[R3]C[C@H](N[R1])C([R2])=O].W.[dF].R.H.[X73].M}|CHEM1{[14Triazole]}$PEPTIDE1,CHEM1,2:R3-1:R2|PEPTIDE1,CHEM1,7:R3-1:R1$$$V2.0"
+1010,True,10045,6.278,Hairpin,Original test set,"RNA1{R(G)P.R(G)P.R(C)P.R(A)P.R(C)P.R(U)P.R(U)P.R(C)P.R(G)P.R(G)P.R(U)P.R(G)P.R(C)P.R(C)}$RNA1,RNA1,11:pair-32:pair|RNA1,RNA1,5:pair-38:pair|RNA1,RNA1,14:pair-29:pair|RNA1,RNA1,8:pair-35:pair|RNA1,RNA1,2:pair-41:pair$$$"
+1011,True,34320,21.450,Chem monomer,Original test set,"CHEM1{[[*:1]N]}|PEPTIDE1{A.C.R.K}$PEPTIDE1,CHEM1,4:R2-1:R1|PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$V2.0"
+1012,True,15215,9.509,Validation Set,Validation Set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
+1013,True,14612,9.133,Validation Set,Validation Set,"RNA1{R(C).P.R(A).P.R(T).P}|RNA2{R(C).P.R(A).P.R(T).P}$RNA1,RNA2,1:R1-5:R1|RNA1,RNA2,5:R1-1:R1$$$V2.0"
+1014,True,7268,4.543,Validation Set,Validation Set,"PEPTIDE1{R.A.Y}|RNA1{r(G).p.r(A).p.r(U).p.r(C).p.[mR](U).p.[mR](U).p.r(A).p}|RNA2{p.r(U).p.r(A).p.r(A).p.r(G).p.r(A).p.r(U).p.r(C).p.r(A).p.r(A)}$RNA1,RNA2,2:pair-21:pair|RNA1,RNA2,5:pair-18:pair|RNA1,RNA2,8:pair-15:pair|RNA1,RNA2,11:pair-12:pair|RNA1,RNA2,14:pair-9:pair|RNA1,RNA2,17:pair-6:pair|RNA1,RNA2,20:pair-3:pair|RNA1,PEPTIDE1,21:R2-1:R1$$$V2.0"
+1015,True,5475,3.422,Validation Set,Validation Set,RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$
+1016,False,0,0.000,Validation Set,Validation Set,"PEPTIDE1{C.C}$PEPTIDE1,PEPTIDE1,1:R3-2:R3$$$"
+1017,True,26185,16.366,Validation Set,Validation Set,"PEPTIDE1{D.E.F.G}|PEPTIDE2{C.E}$PEPTIDE1,PEPTIDE2,2:R3-1:R1$$$V2.0"
+1018,True,9327,5.829,Validation Set,Validation Set,"RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$"
+1019,True,15215,9.509,Validation Set,Validation Set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
+1020,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L}$$$$V2.0
+1021,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A.W.L.N.A.L.L.H}$$$$V2.0
+1022,True,5877,3.673,CValidation Set,Validation Set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,1:R2-1:R3|RNA1,CHEM1,1:R2-1:R2$$$"
+1023,True,11205,7.003,Validation Set,Validation Set,"RNA1{R(G)P.R(G)P.R(C)P.R(A)P.R(C)P.R(U)P.R(G)P.R(G)P.R(U)P.R(G)P.R(C)P.R(C)}$RNA1,RNA1,11:pair-26:pair|RNA1,RNA1,5:pair-32:pair|RNA1,RNA1,14:pair-23:pair|RNA1,RNA1,8:pair-29:pair|RNA1,RNA1,2:pair-35:pair$$$"

@@ -1,0 +1,1794 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HELM gallery comparison</title>
+    <style>
+      *{box-sizing:border-box} body{font:15px system-ui,sans-serif;background:#f5f7fa;color:#18212d;margin:0;padding:28px}
+      main{max-width:1450px;margin:auto} h1{margin:0 0 8px} .summary{color:#536173;margin:0 0 24px}
+      .controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+      button,input{font:inherit;padding:10px 14px;border:1px solid #cbd5e1;border-radius:8px;background:white}
+      button.active{background:#174c93;color:white;border-color:#174c93} input{min-width:310px;flex:1}
+      .card{background:white;border:1px solid #d6dde6;border-radius:12px;padding:16px;margin:0 0 20px}
+      .card.changed{border-left:5px solid #d45b22} header{display:flex;justify-content:space-between;gap:12px;align-items:center}
+      .flag,.stable{padding:5px 9px;border-radius:6px;font-size:12px;font-weight:700;white-space:nowrap}
+      .flag{background:#fff0e5;color:#a83f11}.stable{background:#edf7ef;color:#227444}
+      .meta{color:#607086;font-size:13px}.pictures{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+      figure{margin:0;border:1px solid #e1e6ec;border-radius:8px;overflow:hidden;background:white}
+      figcaption{padding:9px 12px;background:#f0f3f7;font-weight:600}img{width:100%;height:420px;object-fit:contain}
+      details{margin-top:12px}code{display:block;overflow-wrap:anywhere;padding:10px;background:#f4f6f8;margin-top:8px}
+      @media(max-width:700px){.pictures{grid-template-columns:1fr}}
+    </style></head><body><main><h1>HELM gallery comparison</h1><p>Changed structures from CRDGEN-435, shown beside the previous gallery.</p>
+    <p class="summary">93 changed · 930 visually unchanged · 1023 total. Pixel differences above 10 RGB levels count as changed.</p>
+    <div class="controls">
+    <input id="search" placeholder="Search changed HELM structures"></div>
+    <div id="cards">
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c}|peptide2{[di].[trp_ome].[asp_ome].[di].[meg].[phe_3cl].[phe_34dicl].[mey].[di].[met_o].[nme2abz].[tyr_ph4oh].[3pal].[xiile].[tyr_35dii].[ala_tbu]}|peptide3{[mey].[pro_4me3oh].[met_o].[nme2abz].[di].[3pal].[xiile].[tyr_35dii].[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#3 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 20,865 changed pixels (13.04%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/3.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/3.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{f}|peptide2{[di].[trp_ome].[asp_ome].[cys_bn].[meg].[phe_3cl].[dd].t.[di].t.[dk].[ag].[3pal].[xiile].[med].[ala_tbu]}|peptide3{l.[pro_4me3oh].s.[nme2abz].q.[3pal].[xiile].[d-hyp].[ala_tbu].[di].[trp_ome].[asp_ome].n.[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#7 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 18,141 changed pixels (11.34%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/7.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/7.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{F}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}|PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[asp_ome]}|peptide2{[di].[trp_ome].[asp_ome].[di].[meg].[phe_3cl].[phe_34dicl].[mey].[di].[met_o].[nme2abz].[tyr_ph4oh].[3pal].[xiile].[tyr_35dii].[ala_tbu]}|peptide3{[mey].[pro_4me3oh].[met_o].[nme2abz].[di].[3pal].[xiile].[tyr_35dii].[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#10 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 19,611 changed pixels (12.26%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/10.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/10.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Asp_OMe]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{e}|peptide2{[di].s.[asp_ome].[di].[meg].[phe_3cl].c.[mey].[di].s.n.g.[med].[xiile].r.[ala_tbu]}|peptide3{[mey].c.[met_o].[med].g.[3pal].[xiile].r.[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].k}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#12 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 19,182 changed pixels (11.99%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/12.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/12.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{E}|PEPTIDE2{[dI].S.[Asp_OMe].[dI].[meG].[Phe_3Cl].C.[meY].[dI].S.N.G.[meD].[xiIle].R.[Ala_tBu]}|PEPTIDE3{[meY].C.[Met_O].[meD].G.[3Pal].[xiIle].R.[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].K}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{d}|peptide2{[di].[phg].[asp_ome].[di].[meg].[phe_3cl].q.c.[di].[ser_po3h2].[nme2abz].[tyr_ph4oh].[3pal].q.d.[ala_tbu]}|peptide3{[mey].[dn].[met_o].[nme2abz].[d-pen].[pro_4me3oh].[xiile].[pro_4me3oh].[ala_tbu].[di].[trp_ome].[asp_ome].k.[meg].[phe_34dicl].[ser_po3h2]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#15 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 19,678 changed pixels (12.30%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/15.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/15.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{D}|PEPTIDE2{[dI].[Phg].[Asp_OMe].[dI].[meG].[Phe_3Cl].Q.C.[dI].[Ser_PO3H2].[NMe2Abz].[Tyr_Ph4OH].[3Pal].Q.D.[Ala_tBu]}|PEPTIDE3{[meY].[dN].[Met_O].[NMe2Abz].[D-Pen].[Pro_4Me3OH].[xiIle].[Pro_4Me3OH].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].K.[meG].[Phe_34diCl].[Ser_PO3H2]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[meg]}|peptide2{[di].[trp_ome].[asp_ome].[di].[meg].[phe_3cl].[phe_34dicl].[mey].[di].[met_o].[nme2abz].[tyr_ph4oh].[3pal].[xiile].[tyr_35dii].[ala_tbu]}|peptide3{[mey].[pro_4me3oh].[met_o].[nme2abz].[di].[3pal].[xiile].[tyr_35dii].[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 bicyclic peptides bicyclic peptides test set">
+          <header><strong>#18 · Bicyclic peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Bicyclic peptides test set · Full set · 20,241 changed pixels (12.65%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/18.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/18.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[meG]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}|peptide2{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}$peptide1,peptide2,13:r3-13:r3$$$ chembl558546 chembl21 1k test set">
+          <header><strong>#140 · CHEMBL558546</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 9,307 changed pixels (5.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/140.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/140.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}|peptide2{a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}$peptide1,peptide2,12:r3-9:r3$$$ chembl562966 chembl21 1k test set">
+          <header><strong>#176 · CHEMBL562966</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 8,503 changed pixels (5.31%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/176.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/176.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,12:R3-9:R3$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{[dr](t)}$$$$ chembl6497 chembl21 1k test set">
+          <header><strong>#273 · CHEMBL6497</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 7,436 changed pixels (4.65%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/273.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/273.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](T)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}|peptide2{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}$peptide1,peptide2,5:r3-3:r3|peptide1,peptide2,3:r3-5:r3$$$ chembl440063 chembl21 1k test set">
+          <header><strong>#296 · CHEMBL440063</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 15,215 changed pixels (9.51%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/296.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/296.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$</code></details>
+        </article>
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c.w.r.[nva].r.y.[am]}|peptide2{c.w.r.[nva].r.y.[am]}$peptide1,peptide2,1:r3-1:r3$$$ chembl438548 chembl21 1k test set">
+          <header><strong>#300 · CHEMBL438548</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 21,345 changed pixels (13.34%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/300.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/300.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{r(c)}$$$$ chembl78 chembl21 1k test set">
+          <header><strong>#356 · CHEMBL78</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 6,450 changed pixels (4.03%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/356.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/356.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(C)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{r(a)}$$$$ chembl11909 chembl21 1k test set">
+          <header><strong>#361 · CHEMBL11909</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 6,298 changed pixels (3.94%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/361.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/361.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{r(a)}$$$$ chembl20247 chembl21 1k test set">
+          <header><strong>#416 · CHEMBL20247</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 6,298 changed pixels (3.94%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/416.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/416.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{r(c)}$$$$ chembl803 chembl21 1k test set">
+          <header><strong>#480 · CHEMBL803</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 6,450 changed pixels (4.03%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/480.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/480.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(C)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{[dr](t)}$$$$ chembl42372 chembl21 1k test set">
+          <header><strong>#509 · CHEMBL42372</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 7,436 changed pixels (4.65%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/509.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/509.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](T)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[n[c@h](c(=o)*)cc1cccc(c1)f |$;;;;_r2;;;;;;;;$|].a.a}|peptide2{p}$$$$ chembl48084 chembl21 1k test set">
+          <header><strong>#529 · CHEMBL48084</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 5,928 changed pixels (3.71%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/529.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/529.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[N[C@H](C(=O)*)Cc1cccc(c1)F |$;;;;_R2;;;;;;;;$|].A.A}|PEPTIDE2{P}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{[dr](t)}$$$$ chembl52609 chembl21 1k test set">
+          <header><strong>#559 · CHEMBL52609</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 7,436 changed pixels (4.65%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/559.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/559.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](T)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}|peptide2{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}$peptide1,peptide2,2:r3-2:r3$$$ chembl56265 chembl21 1k test set">
+          <header><strong>#578 · CHEMBL56265</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 46,633 changed pixels (29.15%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/578.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/578.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[[c@h](c(=o)*)c1ccccc1 |$;;;_r2;;;;;;$|].c.[dv]}|peptide2{[[c@h](c(=o)*)c1ccccc1 |$;;;_r2;;;;;;$|].c.[dv]}$peptide1,peptide2,2:r3-2:r3$$$ chembl56953 chembl21 1k test set">
+          <header><strong>#579 · CHEMBL56953</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 46,633 changed pixels (29.15%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/579.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/579.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)c1ccccc1 |$;;;_R2;;;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c.[dv]}|peptide2{c.[dv]}$peptide1,peptide2,1:r3-1:r3$$$ chembl57387 chembl21 1k test set">
+          <header><strong>#585 · CHEMBL57387</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 55,913 changed pixels (34.95%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/585.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/585.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.[dV]}|PEPTIDE2{C.[dV]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{[dr](c)}$$$$ chembl66115 chembl21 1k test set">
+          <header><strong>#673 · CHEMBL66115</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 7,811 changed pixels (4.88%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/673.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/673.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](C)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="rna1{[dr](g)}$$$$ chembl68908 chembl21 1k test set">
+          <header><strong>#708 · CHEMBL68908</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">ChEMBL21 1k test set · Full set · 7,970 changed pixels (4.98%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/708.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/708.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](G)}$$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[asp_ome]}|peptide2{c.[dsu].[mei].[phe_4f]}|peptide3{[mea].[gly_cpr].[his_1me].[abu_23dehydro].[val_3oh].[dha].[athr].[bala].[meq].c.[dn].[mel].[app].[sec].c.[tza]}$peptide3,peptide3,16:r2-1:r1|peptide3,peptide1,10:r3-1:r2|peptide2,peptide3,1:r3-15:r3$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#802 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 25,555 changed pixels (15.97%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/802.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/802.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Asp_OMe]}|PEPTIDE2{C.[Dsu].[meI].[Phe_4F]}|PEPTIDE3{[meA].[Gly_cPr].[His_1Me].[Abu_23dehydro].[Val_3OH].[Dha].[aThr].[bAla].[meQ].C.[dN].[meL].[App].[seC].C.[Tza]}$PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE1,10:R3-1:R2|PEPTIDE2,PEPTIDE3,1:R3-15:R3$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[thr_po3h2].[phe_3cl].[nmebala].[tyr_tbu].[d-athr].e.[meq].[his_1bn].[dn].p.[app].[sec].[d-ntyr].d.[phe_3f].[hyp].[d-his_1bn].[thr_po3h2].[pyl].[df]}|peptide2{a.[mea].[de].[cya].[d-phe_4ureido].[phe_2me]}|peptide3{[aile].[dh].[lys_ipr]}$peptide1,peptide2,14:r3-1:r1|peptide1,peptide3,6:r3-1:r1$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#806 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 5,304 changed pixels (3.31%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/806.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/806.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[me-].[oic_3ar-7as].[png].[dd]}|peptide2{[me-].t.[ds].[gly_cpr].c.[d-nva].[d-2nal].[mer].[d-dip].[-ome]}|peptide3{[d-2thi].[cys_me].[de].[phe_4me].g.[hsl]}$peptide1,peptide3,4:r3-1:r1|peptide2,peptide1,5:r3-4:r2$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#811 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 12,440 changed pixels (7.78%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/811.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/811.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Me-].[Oic_3aR-7aS].[pnG].[dD]}|PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}|PEPTIDE3{[D-2Thi].[Cys_Me].[dE].[Phe_4Me].G.[Hsl]}$PEPTIDE1,PEPTIDE3,4:R3-1:R1|PEPTIDE2,PEPTIDE1,5:R3-4:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c.[phe_2f].[mef].[hse].[ala_tbu].[met_o].[phe_4sdihydroorotamido].[gly_cpr].[mem].[mel].[cys_bn].[mer].[d-dip].[harg]}|peptide2{d.e.g}$peptide1,peptide1,14:r2-1:r1|peptide1,peptide2,1:r3-1:r1$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#815 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 15,563 changed pixels (9.73%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/815.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/815.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.[Phe_2F].[meF].[Hse].[Ala_tBu].[Met_O].[Phe_4Sdihydroorotamido].[Gly_cPr].[meM].[meL].[Cys_Bn].[meR].[D-Dip].[hArg]}|PEPTIDE2{D.E.G}$PEPTIDE1,PEPTIDE1,14:R2-1:R1|PEPTIDE1,PEPTIDE2,1:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[3abz].[hhis].c.[hyp].[tyr_ph4oh].t.[sta_3xi4xi].[gly_cpr].[mem].[wil].[gly_allyl].[mer].[d-dip].[d-xiile]}|peptide2{[de].[d-nle].[mel]}$peptide1,peptide2,3:r3-1:r1$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#818 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 6,016 changed pixels (3.76%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/818.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/818.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}|PEPTIDE2{[dE].[D-Nle].[meL]}$PEPTIDE1,PEPTIDE2,3:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="chem1{[peg2]}|peptide1{w.n.d.[pen].g.[orn].d.a.d.g.s.g.[cap]}$peptide1,peptide1,4:r3-13:r2|peptide1,chem1,1:r1-1:r1$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#823 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 15,719 changed pixels (9.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/823.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/823.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,4:R3-13:R2|PEPTIDE1,CHEM1,1:R1-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{a.[phe_3cl].[nmebala].[tyr_tbu].[d-athr].e.[meq].[his_1bn].[dn].p.[app].[sec].[d-ntyr].d.[phe_3f].[hyp].[d-his_1bn].[thr_po3h2].[pyl].[df]}|peptide2{a.[mea].[de].[cya].[d-phe_4ureido].[phe_2me]}|peptide3{[aile].[dh].[lys_ipr]}$peptide1,peptide2,14:r3-1:r1|peptide1,peptide3,6:r3-1:r1$$$v2.0 mixed branch peptides mixed branch peptides test set">
+          <header><strong>#826 · Mixed branch peptides</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Mixed branch peptides test set · Full set · 5,084 changed pixels (3.18%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/826.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/826.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}|peptide2{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}$peptide1,peptide2,13:r3-13:r3$$$v2.0 chains original test set">
+          <header><strong>#828 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 9,307 changed pixels (5.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/828.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/828.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(u)p.r(t)p.r(g)p.r(c)p.r(a)}$$$$ chains original test set">
+          <header><strong>#829 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 5,475 changed pixels (3.42%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/829.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/829.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{p.r(u)p.r(t)}$$$$ chains original test set">
+          <header><strong>#830 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 8,651 changed pixels (5.41%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/830.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/830.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{P.R(U)P.R(T)}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{p.r(u)p.r(t)p.p.p}$$$$ chains original test set">
+          <header><strong>#831 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 5,331 changed pixels (3.33%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/831.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/831.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{P.R(U)P.R(T)P.P.P}$$$$</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{d.e.f.g}|peptide2{c.e}$peptide1,peptide2,2:r3-1:r1$$$v2.0 chains original test set">
+          <header><strong>#833 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 26,185 changed pixels (16.37%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/833.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/833.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{D.E.F.G}|PEPTIDE2{C.E}$PEPTIDE1,PEPTIDE2,2:R3-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{l.v.a}|peptide2{l.v.a}$$$$ chains original test set">
+          <header><strong>#834 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 8,409 changed pixels (5.26%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/834.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/834.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{L.V.A}|PEPTIDE2{L.V.A}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(c)p.r(g)p}|rna2{p.r(c)p.r(g)p.r(t)}$rna1,rna2,2:pair-9:pair|rna1,rna2,5:pair-6:pair|rna1,rna2,8:pair-3:pair$$$ chains original test set">
+          <header><strong>#835 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 29,902 changed pixels (18.69%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/835.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/835.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(C)P.R(G)P}|RNA2{P.R(C)P.R(G)P.R(T)}$RNA1,RNA2,2:pair-9:pair|RNA1,RNA2,5:pair-6:pair|RNA1,RNA2,8:pair-3:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{a.r.c.d.k.a}|peptide2{g.a.k.a}$peptide1,peptide2,4:r3-1:r1$$$ chains original test set">
+          <header><strong>#836 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 14,923 changed pixels (9.33%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/836.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/836.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{A.R.C.D.K.A}|PEPTIDE2{G.A.K.A}$PEPTIDE1,PEPTIDE2,4:R3-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{[dr](t)}$$$$ chains original test set">
+          <header><strong>#837 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 7,436 changed pixels (4.65%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/837.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/837.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{[dR](T)}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{c.w.r.[nva].r.y.[am]}|peptide2{c.w.r.[nva].r.y.[am]}$peptide1,peptide2,1:r3-1:r3$$$ chains original test set">
+          <header><strong>#838 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 21,345 changed pixels (13.34%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/838.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/838.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}|peptide2{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}$peptide1,peptide2,2:r3-2:r3$$$ chains original test set">
+          <header><strong>#839 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 46,633 changed pixels (29.15%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/839.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/839.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{c.[dv]}|peptide2{c.[dv]}$peptide1,peptide2,1:r3-1:r3$$$ chains original test set">
+          <header><strong>#840 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 55,913 changed pixels (34.95%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/840.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/840.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.[dV]}|PEPTIDE2{C.[dV]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}|peptide2{a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}$peptide1,peptide2,12:r3-9:r3$$$ chains original test set">
+          <header><strong>#841 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 8,503 changed pixels (5.31%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/841.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/841.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,12:R3-9:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}|peptide2{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}$peptide1,peptide2,5:r3-3:r3|peptide1,peptide2,3:r3-5:r3$$$ chains original test set">
+          <header><strong>#842 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 15,215 changed pixels (9.51%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/842.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/842.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(u)p.r(t)p}|rna2{p.r(a)p.r(a)}$rna1,rna2,2:pair-6:pair|rna1,rna2,5:pair-3:pair$$$ chains original test set">
+          <header><strong>#843 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 33,934 changed pixels (21.21%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/843.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/843.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(U)P.R(T)P}|RNA2{P.R(A)P.R(A)}$RNA1,RNA2,2:pair-6:pair|RNA1,RNA2,5:pair-3:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(c)p.r(g)p.r(t)p.r(u)}|rna2{r(a)p.r(a)p.r(c)p.r(g)p.r(t)}$rna1,rna2,5:pair-11:pair|rna1,rna2,8:pair-8:pair|rna1,rna2,11:pair-5:pair|rna1,rna2,14:pair-2:pair$$$v2.0 chains original test set">
+          <header><strong>#844 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 21,870 changed pixels (13.67%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/844.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/844.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{r(A)p.r(C)p.r(G)p.r(T)p.r(U)}|RNA2{r(A)p.r(A)p.r(C)p.r(G)p.r(T)}$RNA1,RNA2,5:pair-11:pair|RNA1,RNA2,8:pair-8:pair|RNA1,RNA2,11:pair-5:pair|RNA1,RNA2,14:pair-2:pair$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(g)p.r(c)p.r(u)p.r(c)p.r(c)p.r(c)}|rna2{r(u)p.r(g)p.r(g)p.r(g)p.r(g)p.r(a)p.r(g)}$rna1,rna2,17:pair-11:pair|rna1,rna2,20:pair-8:pair|rna1,rna2,14:pair-14:pair|rna1,rna2,11:pair-17:pair|rna1,rna2,8:pair-20:pair$$$ chains original test set">
+          <header><strong>#845 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 9,327 changed pixels (5.83%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/845.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/845.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c.f.y.s.w.g.n.y.w.s.y.y.g.w.c.[am]}|peptide2{c.f.y.s.w.g.n.y.w.s.y.y.g.w.c.[am]}|peptide3{c.w.n.y.y.w.g.y.s.f.s.g.w.y.c.g.[am]}$peptide1,peptide1,1:r3-15:r3|peptide1,peptide1,1:r1-16:r2|peptide1,peptide2,3:r1-8:r2|peptide2,peptide2,1:r3-15:r3|peptide2,peptide2,1:r1-16:r2|peptide2,peptide3,11:r3-14:r3|peptide3,peptide3,1:r3-15:r3|peptide3,peptide3,1:r1-17:r2$$$ cyclic original test set">
+          <header><strong>#890 · Cyclic</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 21,600 changed pixels (13.50%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/890.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/890.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE2{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE3{C.W.N.Y.Y.W.G.Y.S.F.S.G.W.Y.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-15:R3|PEPTIDE1,PEPTIDE1,1:R1-16:R2|PEPTIDE1,PEPTIDE2,3:R1-8:R2|PEPTIDE2,PEPTIDE2,1:R3-15:R3|PEPTIDE2,PEPTIDE2,1:R1-16:R2|PEPTIDE2,PEPTIDE3,11:R3-14:R3|PEPTIDE3,PEPTIDE3,1:R3-15:R3|PEPTIDE3,PEPTIDE3,1:R1-17:R2$$$</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="chem1{[smcc]}|peptide1{l.m}|rna1{r(c)p.r(a)p}$rna1,peptide1,6:r2-1:r1|peptide1,chem1,2:r2-1:r1$$$ chem monomer original test set">
+          <header><strong>#897 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 22,801 changed pixels (14.25%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/897.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/897.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMCC]}|PEPTIDE1{L.M}|RNA1{R(C)P.R(A)P}$RNA1,PEPTIDE1,6:R2-1:R1|PEPTIDE1,CHEM1,2:R2-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[smpeg2]}|chem2{[smcc]}|chem3{[peg2]}|chem4{[mcc]}$chem4,chem3,1:r1-1:r1|chem2,chem1,1:r1-1:r1$$$ chem monomer original test set">
+          <header><strong>#898 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 12,558 changed pixels (7.85%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/898.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/898.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMPEG2]}|CHEM2{[SMCC]}|CHEM3{[PEG2]}|CHEM4{[MCC]}$CHEM4,CHEM3,1:R1-1:R1|CHEM2,CHEM1,1:R1-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[smpeg2]}|peptide1{a}|rna1{r(a)p}$$$$ chem monomer original test set">
+          <header><strong>#899 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 2,925 changed pixels (1.83%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/899.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/899.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMPEG2]}|PEPTIDE1{A}|RNA1{R(A)P}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[peg2]}|peptide1{w.n.d.[pen].g.[orn].d.a.d.g.s.g.[cap]}$peptide1,peptide1,13:r2-4:r3|peptide1,chem1,1:r1-1:r1$$$ chem monomer original test set">
+          <header><strong>#900 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 15,719 changed pixels (9.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/900.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/900.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,13:R2-4:R3|PEPTIDE1,CHEM1,1:R1-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[x423].k.p.k.[x423].k}|chem1{[crcm]}$peptide1,chem1,1:r3-1:r1|peptide1,chem1,5:r3-1:r2$$$v2.0 chem monomer original test set">
+          <header><strong>#901 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 14,862 changed pixels (9.29%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/901.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/901.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[X423].K.P.K.[X423].K}|CHEM1{[cRCM]}$PEPTIDE1,CHEM1,1:R3-1:R1|PEPTIDE1,CHEM1,5:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{a.c.g.c.g}|peptide2{k.l}|peptide3{s.t}$peptide1,peptide2,2:r2-1:r1|peptide1,peptide3,5:r1-1:r3$$$v2.0 chains original test set">
+          <header><strong>#903 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 17,700 changed pixels (11.06%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/903.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/903.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{A.C.G.C.G}|PEPTIDE2{K.L}|PEPTIDE3{S.T}$PEPTIDE1,PEPTIDE2,2:R2-1:R1|PEPTIDE1,PEPTIDE3,5:R1-1:R3$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|rna2{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|chem1{[sdbl]}$rna2,chem1,24:r2-1:r3|rna1,chem1,24:r2-1:r2$$$ chem monomer original test set">
+          <header><strong>#904 · Chem monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 14,532 changed pixels (9.08%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/904.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/904.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,24:R2-1:R3|RNA1,CHEM1,24:R2-1:R2$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|rna2{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|chem1{[sdbl]}$rna2,chem1,12:r2-1:r3|rna1,chem1,12:r2-1:r2$$$ chem monomer original test set">
+          <header><strong>#905 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 16,216 changed pixels (10.13%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/905.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/905.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,12:R2-1:R3|RNA1,CHEM1,12:R2-1:R2$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[clac]}|peptide1{f.c.c.c.c.c.c.c.c.c.c.g}|chem2{[nh2]}$chem1,peptide1,1:r1-9:r3|chem1,peptide1,1:r2-1:r1|peptide1,chem2,10:r2-1:r1$$$v2.0 chem monomer original test set">
+          <header><strong>#906 · CHEM monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 23,615 changed pixels (14.76%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/906.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/906.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[ClAc]}|PEPTIDE1{F.C.C.C.C.C.C.C.C.C.C.G}|CHEM2{[NH2]}$CHEM1,PEPTIDE1,1:R1-9:R3|CHEM1,PEPTIDE1,1:R2-1:R1|PEPTIDE1,CHEM2,10:R2-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{a.c.d.d.e}&quot;hc&quot;|peptide2{g.c.s.s.s.p.k.k.v.k}&quot;lc&quot;$$$$v2.0 chains original test set">
+          <header><strong>#907 · Chains</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 11,529 changed pixels (7.21%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/907.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/907.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{A.C.D.D.E}&quot;HC&quot;|PEPTIDE2{G.C.S.S.S.P.K.K.V.K}&quot;LC&quot;$$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{f}|peptide2{[di].[trp_ome].[asp_ome].[cys_bn].[meg].[phe_3cl].[dd].t.[di].t.[dk].[ag].[3pal].[xiile].[med].[ala_tbu]}|peptide3{l.[pro_4me3oh].s.[nme2abz].q.[3pal].[xiile].[d-hyp].[ala_tbu].[di].[trp_ome].[asp_ome].n.[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide1,peptide2,1:r2-9:r3$$$v2.0 cyclic original test set">
+          <header><strong>#908 · Cyclic</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Full set · 18,141 changed pixels (11.34%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/908.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/908.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{F}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}|PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE1,PEPTIDE2,1:R2-9:R3$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{c}|peptide2{[di].[trp_ome].[asp_ome].[di].[meg].[phe_3cl].[phe_34dicl].[mey].[di].[met_o].[nme2abz].[tyr_ph4oh].[3pal].[xiile].[tyr_35dii].[ala_tbu]}|peptide3{[mey].[pro_4me3oh].[met_o].[nme2abz].[di].[3pal].[xiile].[tyr_35dii].[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 validation set validation set">
+          <header><strong>#911 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 20,865 changed pixels (13.04%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/911.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/911.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[asp_ome]}|peptide2{[di].[trp_ome].[asp_ome].[di].[meg].[phe_3cl].[phe_34dicl].[mey].[di].[met_o].[nme2abz].[tyr_ph4oh].[3pal].[xiile].[tyr_35dii].[ala_tbu]}|peptide3{[mey].[pro_4me3oh].[met_o].[nme2abz].[di].[3pal].[xiile].[tyr_35dii].[ala_tbu].[di].[trp_ome].[asp_ome].[di].[meg].[phe_34dicl].[phe_34dicl]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 validation set validation set">
+          <header><strong>#914 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 19,611 changed pixels (12.26%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/914.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/914.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Asp_OMe]}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_3Cl].[Phe_34diCl].[meY].[dI].[Met_O].[NMe2Abz].[Tyr_Ph4OH].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu]}|PEPTIDE3{[meY].[Pro_4Me3OH].[Met_O].[NMe2Abz].[dI].[3Pal].[xiIle].[Tyr_35diI].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].[dI].[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{d}|peptide2{[di].[phg].[asp_ome].[di].[meg].[phe_3cl].q.c.[di].[ser_po3h2].[nme2abz].[tyr_ph4oh].[3pal].q.d.[ala_tbu]}|peptide3{[mey].[dn].[met_o].[nme2abz].[d-pen].[pro_4me3oh].[xiile].[pro_4me3oh].[ala_tbu].[di].[trp_ome].[asp_ome].k.[meg].[phe_34dicl].[ser_po3h2]}$peptide2,peptide2,16:r2-1:r1|peptide3,peptide3,16:r2-1:r1|peptide3,peptide2,10:r3-1:r3|peptide2,peptide1,9:r3-1:r2$$$v2.0 validation set validation set">
+          <header><strong>#916 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 19,678 changed pixels (12.30%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/916.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/916.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{D}|PEPTIDE2{[dI].[Phg].[Asp_OMe].[dI].[meG].[Phe_3Cl].Q.C.[dI].[Ser_PO3H2].[NMe2Abz].[Tyr_Ph4OH].[3Pal].Q.D.[Ala_tBu]}|PEPTIDE3{[meY].[dN].[Met_O].[NMe2Abz].[D-Pen].[Pro_4Me3OH].[xiIle].[Pro_4Me3OH].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].K.[meG].[Phe_34diCl].[Ser_PO3H2]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE2,PEPTIDE1,9:R3-1:R2$$$V2.0</code></details>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}|peptide2{[[c@h](c(=o)*)cccn |$;;;_r2;;;;$|].c.[dv]}$peptide1,peptide2,2:r3-2:r3$$$ validation set validation set">
+          <header><strong>#982 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 46,633 changed pixels (29.15%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/982.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/982.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}|PEPTIDE2{[[C@H](C(=O)*)CCCN |$;;;_R2;;;;$|].C.[dV]}$PEPTIDE1,PEPTIDE2,2:R3-2:R3$$$</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{[thr_po3h2].[phe_3cl].[nmebala].[tyr_tbu].[d-athr].e.[meq].[his_1bn].[dn].p.[app].[sec].[d-ntyr].d.[phe_3f].[hyp].[d-his_1bn].[thr_po3h2].[pyl].[df]}|peptide2{a.[mea].[de].[cya].[d-phe_4ureido].[phe_2me]}|peptide3{[aile].[dh].[lys_ipr]}$peptide1,peptide2,14:r3-1:r1|peptide1,peptide3,6:r3-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#984 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,304 changed pixels (3.31%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/984.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/984.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Thr_PO3H2].[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="peptide1{[me-].[oic_3ar-7as].[png].[dd]}|peptide2{[me-].t.[ds].[gly_cpr].c.[d-nva].[d-2nal].[mer].[d-dip].[-ome]}|peptide3{[d-2thi].[cys_me].[de].[phe_4me].g.[hsl]}$peptide1,peptide3,4:r3-1:r1|peptide2,peptide1,5:r3-4:r2$$$v2.0 validation set validation set">
+          <header><strong>#987 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 12,440 changed pixels (7.78%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/987.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/987.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Me-].[Oic_3aR-7aS].[pnG].[dD]}|PEPTIDE2{[Me-].T.[dS].[Gly_cPr].C.[D-Nva].[D-2Nal].[meR].[D-Dip].[-OMe]}|PEPTIDE3{[D-2Thi].[Cys_Me].[dE].[Phe_4Me].G.[Hsl]}$PEPTIDE1,PEPTIDE3,4:R3-1:R1|PEPTIDE2,PEPTIDE1,5:R3-4:R2$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{c.[phe_2f].[mef].[hse].[ala_tbu].[met_o].[phe_4sdihydroorotamido].[gly_cpr].[mem].[mel].[cys_bn].[mer].[d-dip].[harg]}|peptide2{d.e.g}$peptide1,peptide1,14:r2-1:r1|peptide1,peptide2,1:r3-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#989 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,563 changed pixels (9.73%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/989.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/989.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.[Phe_2F].[meF].[Hse].[Ala_tBu].[Met_O].[Phe_4Sdihydroorotamido].[Gly_cPr].[meM].[meL].[Cys_Bn].[meR].[D-Dip].[hArg]}|PEPTIDE2{D.E.G}$PEPTIDE1,PEPTIDE1,14:R2-1:R1|PEPTIDE1,PEPTIDE2,1:R3-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[3abz].[hhis].c.[hyp].[tyr_ph4oh].t.[sta_3xi4xi].[gly_cpr].[mem].[wil].[gly_allyl].[mer].[d-dip].[d-xiile]}|peptide2{[de].[d-nle].[mel]}$peptide1,peptide2,3:r3-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#990 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 6,016 changed pixels (3.76%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/990.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/990.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[3Abz].[hHis].C.[Hyp].[Tyr_Ph4OH].T.[Sta_3xi4xi].[Gly_cPr].[meM].[Wil].[Gly_allyl].[meR].[D-Dip].[D-xiIle]}|PEPTIDE2{[dE].[D-Nle].[meL]}$PEPTIDE1,PEPTIDE2,3:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="chem1{[peg2]}|peptide1{w.n.d.[pen].g.[orn].d.a.d.g.s.g.[cap]}$peptide1,peptide1,4:r3-13:r2|peptide1,chem1,1:r1-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#993 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,719 changed pixels (9.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/993.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/993.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,4:R3-13:R2|PEPTIDE1,CHEM1,1:R1-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{a.[phe_3cl].[nmebala].[tyr_tbu].[d-athr].e.[meq].[his_1bn].[dn].p.[app].[sec].[d-ntyr].d.[phe_3f].[hyp].[d-his_1bn].[thr_po3h2].[pyl].[df]}|peptide2{a.[mea].[de].[cya].[d-phe_4ureido].[phe_2me]}|peptide3{[aile].[dh].[lys_ipr]}$peptide1,peptide2,14:r3-1:r1|peptide1,peptide3,6:r3-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#994 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,084 changed pixels (3.18%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/994.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/994.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{A.[Phe_3Cl].[NMebAla].[Tyr_tBu].[D-aThr].E.[meQ].[His_1Bn].[dN].P.[App].[seC].[D-nTyr].D.[Phe_3F].[Hyp].[D-His_1Bn].[Thr_PO3H2].[Pyl].[dF]}|PEPTIDE2{A.[meA].[dE].[Cya].[D-Phe_4ureido].[Phe_2Me]}|PEPTIDE3{[aIle].[dH].[Lys_iPr]}$PEPTIDE1,PEPTIDE2,14:R3-1:R1|PEPTIDE1,PEPTIDE3,6:R3-1:R1$$$V2.0</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}|peptide2{k.w.l.n.a.l.l.h.h.g.l.n.c.a.k.g.v.l.a}$peptide1,peptide2,13:r3-13:r3$$$v2.0 validation set validation set">
+          <header><strong>#996 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 9,307 changed pixels (5.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/996.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/996.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}|PEPTIDE2{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A}$PEPTIDE1,PEPTIDE2,13:R3-13:R3$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(u)p.r(t)p.r(g)p.r(c)p.r(a)}$$$$ validation set validation set">
+          <header><strong>#997 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,475 changed pixels (3.42%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/997.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/997.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{p.r(u)p.r(t)p.p.p}$$$$ validation set validation set">
+          <header><strong>#998 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,331 changed pixels (3.33%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/998.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/998.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{P.R(U)P.R(T)P.P.P}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(c)p.r(g)p}|rna2{p.r(c)p.r(g)p.r(t)}$rna1,rna2,2:pair-9:pair|rna1,rna2,5:pair-6:pair|rna1,rna2,8:pair-3:pair$$$ validation set validation set">
+          <header><strong>#999 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 29,902 changed pixels (18.69%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/999.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/999.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(C)P.R(G)P}|RNA2{P.R(C)P.R(G)P.R(T)}$RNA1,RNA2,2:pair-9:pair|RNA1,RNA2,5:pair-6:pair|RNA1,RNA2,8:pair-3:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{c.w.r.[nva].r.y.[am]}|peptide2{c.w.r.[nva].r.y.[am]}$peptide1,peptide2,1:r3-1:r3$$$ validation set validation set">
+          <header><strong>#1000 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 21,345 changed pixels (13.34%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1000.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1000.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.W.R.[Nva].R.Y.[am]}|PEPTIDE2{C.W.R.[Nva].R.Y.[am]}$PEPTIDE1,PEPTIDE2,1:R3-1:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}|peptide2{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}$peptide1,peptide2,5:r3-3:r3|peptide1,peptide2,3:r3-5:r3$$$ validation set validation set">
+          <header><strong>#1001 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,215 changed pixels (9.51%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1001.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1001.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(c)p.r(g)p.r(t)p.r(u)}|rna2{r(a)p.r(a)p.r(c)p.r(g)p.r(t)}$rna1,rna2,5:pair-11:pair|rna1,rna2,8:pair-8:pair|rna1,rna2,11:pair-5:pair|rna1,rna2,14:pair-2:pair$$$v2.0 validation set validation set">
+          <header><strong>#1002 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 21,870 changed pixels (13.67%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1002.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1002.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{r(A)p.r(C)p.r(G)p.r(T)p.r(U)}|RNA2{r(A)p.r(A)p.r(C)p.r(G)p.r(T)}$RNA1,RNA2,5:pair-11:pair|RNA1,RNA2,8:pair-8:pair|RNA1,RNA2,11:pair-5:pair|RNA1,RNA2,14:pair-2:pair$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(g)p.r(c)p.r(u)p.r(c)p.r(c)p.r(c)}|rna2{r(u)p.r(g)p.r(g)p.r(g)p.r(g)p.r(a)p.r(g)}$rna1,rna2,17:pair-11:pair|rna1,rna2,20:pair-8:pair|rna1,rna2,14:pair-14:pair|rna1,rna2,11:pair-17:pair|rna1,rna2,8:pair-20:pair$$$ validation set validation set">
+          <header><strong>#1003 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 9,327 changed pixels (5.83%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1003.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1003.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{c.f.y.s.w.g.n.y.w.s.y.y.g.w.c.[am]}|peptide2{c.f.y.s.w.g.n.y.w.s.y.y.g.w.c.[am]}|peptide3{c.w.n.y.y.w.g.y.s.f.s.g.w.y.c.g.[am]}$peptide1,peptide1,1:r3-15:r3|peptide1,peptide1,1:r1-16:r2|peptide1,peptide2,3:r1-8:r2|peptide2,peptide2,1:r3-15:r3|peptide2,peptide2,1:r1-16:r2|peptide2,peptide3,11:r3-14:r3|peptide3,peptide3,1:r3-15:r3|peptide3,peptide3,1:r1-17:r2$$$ validation set validation set">
+          <header><strong>#1004 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 21,600 changed pixels (13.50%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1004.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1004.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE2{C.F.Y.S.W.G.N.Y.W.S.Y.Y.G.W.C.[am]}|PEPTIDE3{C.W.N.Y.Y.W.G.Y.S.F.S.G.W.Y.C.G.[am]}$PEPTIDE1,PEPTIDE1,1:R3-15:R3|PEPTIDE1,PEPTIDE1,1:R1-16:R2|PEPTIDE1,PEPTIDE2,3:R1-8:R2|PEPTIDE2,PEPTIDE2,1:R3-15:R3|PEPTIDE2,PEPTIDE2,1:R1-16:R2|PEPTIDE2,PEPTIDE3,11:R3-14:R3|PEPTIDE3,PEPTIDE3,1:R3-15:R3|PEPTIDE3,PEPTIDE3,1:R1-17:R2$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[smpeg2]}|chem2{[smcc]}|chem3{[peg2]}|chem4{[mcc]}$chem4,chem3,1:r1-1:r1|chem2,chem1,1:r1-1:r1$$$ validation set validation set">
+          <header><strong>#1005 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 12,558 changed pixels (7.85%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1005.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1005.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMPEG2]}|CHEM2{[SMCC]}|CHEM3{[PEG2]}|CHEM4{[MCC]}$CHEM4,CHEM3,1:R1-1:R1|CHEM2,CHEM1,1:R1-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[smpeg2]}|peptide1{a}|rna1{r(a)p}$$$$ validation set validation set">
+          <header><strong>#1006 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 2,925 changed pixels (1.83%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1006.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1006.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMPEG2]}|PEPTIDE1{A}|RNA1{R(A)P}$$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[smcc]}|peptide1{l.m}|rna1{r(c)p.r(a)p}$rna1,peptide1,6:r2-1:r1|peptide1,chem1,2:r2-1:r1$$$ validation set validation set">
+          <header><strong>#1007 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 22,801 changed pixels (14.25%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1007.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1007.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[SMCC]}|PEPTIDE1{L.M}|RNA1{R(C)P.R(A)P}$RNA1,PEPTIDE1,6:R2-1:R1|PEPTIDE1,CHEM1,2:R2-1:R1$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[peg2]}|peptide1{w.n.d.[pen].g.[orn].d.a.d.g.s.g.[cap]}$peptide1,peptide1,13:r2-4:r3|peptide1,chem1,1:r1-1:r1$$$ validation set validation set">
+          <header><strong>#1008 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,719 changed pixels (9.82%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1008.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1008.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[PEG2]}|PEPTIDE1{W.N.D.[Pen].G.[Orn].D.A.D.G.S.G.[Cap]}$PEPTIDE1,PEPTIDE1,13:R2-4:R3|PEPTIDE1,CHEM1,1:R1-1:R1$$$</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="rna1{r(g)p.r(g)p.r(c)p.r(a)p.r(c)p.r(u)p.r(u)p.r(c)p.r(g)p.r(g)p.r(u)p.r(g)p.r(c)p.r(c)}$rna1,rna1,11:pair-32:pair|rna1,rna1,5:pair-38:pair|rna1,rna1,14:pair-29:pair|rna1,rna1,8:pair-35:pair|rna1,rna1,2:pair-41:pair$$$ hairpin original test set">
+          <header><strong>#1010 · Hairpin</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Validation set · 10,045 changed pixels (6.28%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1010.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1010.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(G)P.R(G)P.R(C)P.R(A)P.R(C)P.R(U)P.R(U)P.R(C)P.R(G)P.R(G)P.R(U)P.R(G)P.R(C)P.R(C)}$RNA1,RNA1,11:pair-32:pair|RNA1,RNA1,5:pair-38:pair|RNA1,RNA1,14:pair-29:pair|RNA1,RNA1,8:pair-35:pair|RNA1,RNA1,2:pair-41:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="chem1{[[*:1]n]}|peptide1{a.c.r.k}$peptide1,chem1,4:r2-1:r1|peptide1,peptide1,2:r3-4:r3$$$v2.0 chem monomer original test set">
+          <header><strong>#1011 · Chem monomer</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Original test set · Validation set · 34,320 changed pixels (21.45%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1011.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1011.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>CHEM1{[[*:1]N]}|PEPTIDE1{A.C.R.K}$PEPTIDE1,CHEM1,4:R2-1:R1|PEPTIDE1,PEPTIDE1,2:R3-4:R3$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}|peptide2{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}$peptide1,peptide2,5:r3-3:r3|peptide1,peptide2,3:r3-5:r3$$$ validation set validation set">
+          <header><strong>#1012 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,215 changed pixels (9.51%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1012.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1012.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(c).p.r(a).p.r(t).p}|rna2{r(c).p.r(a).p.r(t).p}$rna1,rna2,1:r1-5:r1|rna1,rna2,5:r1-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#1013 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 14,612 changed pixels (9.13%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1013.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1013.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(C).P.R(A).P.R(T).P}|RNA2{R(C).P.R(A).P.R(T).P}$RNA1,RNA2,1:R1-5:R1|RNA1,RNA2,5:R1-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{r.a.y}|rna1{r(g).p.r(a).p.r(u).p.r(c).p.[mr](u).p.[mr](u).p.r(a).p}|rna2{p.r(u).p.r(a).p.r(a).p.r(g).p.r(a).p.r(u).p.r(c).p.r(a).p.r(a)}$rna1,rna2,2:pair-21:pair|rna1,rna2,5:pair-18:pair|rna1,rna2,8:pair-15:pair|rna1,rna2,11:pair-12:pair|rna1,rna2,14:pair-9:pair|rna1,rna2,17:pair-6:pair|rna1,rna2,20:pair-3:pair|rna1,peptide1,21:r2-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#1014 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 7,268 changed pixels (4.54%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1014.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1014.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{R.A.Y}|RNA1{r(G).p.r(A).p.r(U).p.r(C).p.[mR](U).p.[mR](U).p.r(A).p}|RNA2{p.r(U).p.r(A).p.r(A).p.r(G).p.r(A).p.r(U).p.r(C).p.r(A).p.r(A)}$RNA1,RNA2,2:pair-21:pair|RNA1,RNA2,5:pair-18:pair|RNA1,RNA2,8:pair-15:pair|RNA1,RNA2,11:pair-12:pair|RNA1,RNA2,14:pair-9:pair|RNA1,RNA2,17:pair-6:pair|RNA1,RNA2,20:pair-3:pair|RNA1,PEPTIDE1,21:R2-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(u)p.r(t)p.r(g)p.r(c)p.r(a)}$$$$ validation set validation set">
+          <header><strong>#1015 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,475 changed pixels (3.42%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1015.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1015.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(U)P.R(T)P.R(G)P.R(C)P.R(A)}$$$$</code></details>
+        </article>
+        
+        <article class="card changed"
+                 data-search="peptide1{d.e.f.g}|peptide2{c.e}$peptide1,peptide2,2:r3-1:r1$$$v2.0 validation set validation set">
+          <header><strong>#1017 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 26,185 changed pixels (16.37%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1017.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1017.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{D.E.F.G}|PEPTIDE2{C.E}$PEPTIDE1,PEPTIDE2,2:R3-1:R1$$$V2.0</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(g)p.r(c)p.r(u)p.r(c)p.r(c)p.r(c)}|rna2{r(u)p.r(g)p.r(g)p.r(g)p.r(g)p.r(a)p.r(g)}$rna1,rna2,17:pair-11:pair|rna1,rna2,20:pair-8:pair|rna1,rna2,14:pair-14:pair|rna1,rna2,11:pair-17:pair|rna1,rna2,8:pair-20:pair$$$ validation set validation set">
+          <header><strong>#1018 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 9,327 changed pixels (5.83%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1018.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1018.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(G)P.R(C)P.R(U)P.R(C)P.R(C)P.R(C)}|RNA2{R(U)P.R(G)P.R(G)P.R(G)P.R(G)P.R(A)P.R(G)}$RNA1,RNA2,17:pair-11:pair|RNA1,RNA2,20:pair-8:pair|RNA1,RNA2,14:pair-14:pair|RNA1,RNA2,11:pair-17:pair|RNA1,RNA2,8:pair-20:pair$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="peptide1{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}|peptide2{[sar].[dr].[dc].[dy].[dc].[dh].[dp].[df]}$peptide1,peptide2,5:r3-3:r3|peptide1,peptide2,3:r3-5:r3$$$ validation set validation set">
+          <header><strong>#1019 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 15,215 changed pixels (9.51%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1019.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1019.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$</code></details>
+        </article>
+        
+        
+        <article class="card changed"
+                 data-search="rna1{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|rna2{r(a)p.r(a)p.r(g)p.r(g)p.r(c)p.r(u)p.r(a)p.r(a)p}|chem1{[sdbl]}$rna2,chem1,1:r2-1:r3|rna1,chem1,1:r2-1:r2$$$ cvalidation set validation set">
+          <header><strong>#1022 · CValidation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 5,877 changed pixels (3.67%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1022.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1022.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,1:R2-1:R3|RNA1,CHEM1,1:R2-1:R2$$$</code></details>
+        </article>
+        <article class="card changed"
+                 data-search="rna1{r(g)p.r(g)p.r(c)p.r(a)p.r(c)p.r(u)p.r(g)p.r(g)p.r(u)p.r(g)p.r(c)p.r(c)}$rna1,rna1,11:pair-26:pair|rna1,rna1,5:pair-32:pair|rna1,rna1,14:pair-23:pair|rna1,rna1,8:pair-29:pair|rna1,rna1,2:pair-35:pair$$$ validation set validation set">
+          <header><strong>#1023 · Validation Set</strong>
+            <span class="flag">Changed</span></header>
+          <p class="meta">Validation Set · Validation set · 11,205 changed pixels (7.00%)</p>
+          <div class="pictures"><figure><figcaption>Old table</figcaption><img src="old/1023.svg" loading="lazy"></figure>
+          <figure><figcaption>Regenerated table</figcaption><img src="new/1023.svg" loading="lazy"></figure></div>
+          <details><summary>HELM string</summary><code>RNA1{R(G)P.R(G)P.R(C)P.R(A)P.R(C)P.R(U)P.R(G)P.R(G)P.R(U)P.R(G)P.R(C)P.R(C)}$RNA1,RNA1,11:pair-26:pair|RNA1,RNA1,5:pair-32:pair|RNA1,RNA1,14:pair-23:pair|RNA1,RNA1,8:pair-29:pair|RNA1,RNA1,2:pair-35:pair$$$</code></details>
+        </article></div></main><script>
+    const search=document.querySelector('#search');
+    const cards=[...document.querySelectorAll('.card')];
+    search.oninput=()=>{const q=search.value.toLowerCase(); for(const card of cards) card.hidden=!card.dataset.search.includes(q)};
+    </script></body></html>
