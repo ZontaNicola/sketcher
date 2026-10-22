@@ -902,8 +902,8 @@ index,changed,changed_pixels,percent,description,origin,helm_string
 901,True,14862,9.289,CHEM monomer,Original test set,"PEPTIDE1{[X423].K.P.K.[X423].K}|CHEM1{[cRCM]}$PEPTIDE1,CHEM1,1:R3-1:R1|PEPTIDE1,CHEM1,5:R3-1:R2$$$V2.0"
 902,False,0,0.000,CHEM monomer,Original test set,"PEPTIDE1{K.[[R3]C[C@H](N[R1])C([R2])=O].W.[dF].R.H.[X73].M}|CHEM1{[14Triazole]}$PEPTIDE1,CHEM1,2:R3-1:R2|PEPTIDE1,CHEM1,7:R3-1:R1$$$V2.0"
 903,True,17700,11.062,Chains,Original test set,"PEPTIDE1{A.C.G.C.G}|PEPTIDE2{K.L}|PEPTIDE3{S.T}$PEPTIDE1,PEPTIDE2,2:R2-1:R1|PEPTIDE1,PEPTIDE3,5:R1-1:R3$$$V2.0"
-904,True,14532,9.082,Chem monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,24:R2-1:R3|RNA1,CHEM1,24:R2-1:R2$$$"
-905,True,16216,10.135,CHEM monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,12:R2-1:R3|RNA1,CHEM1,12:R2-1:R2$$$"
+904,True,14418,9.011,Chem monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,24:R2-1:R3|RNA1,CHEM1,24:R2-1:R2$$$"
+905,True,17021,10.638,CHEM monomer,Original test set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,12:R2-1:R3|RNA1,CHEM1,12:R2-1:R2$$$"
 906,True,23615,14.759,CHEM monomer,Original test set,"CHEM1{[ClAc]}|PEPTIDE1{F.C.C.C.C.C.C.C.C.C.C.G}|CHEM2{[NH2]}$CHEM1,PEPTIDE1,1:R1-9:R3|CHEM1,PEPTIDE1,1:R2-1:R1|PEPTIDE1,CHEM2,10:R2-1:R1$$$V2.0"
 907,True,11529,7.206,Chains,Original test set,"PEPTIDE1{A.C.D.D.E}""HC""|PEPTIDE2{G.C.S.S.S.P.K.K.V.K}""LC""$$$$V2.0"
 908,True,18141,11.338,Cyclic,Original test set,"PEPTIDE1{F}|PEPTIDE2{[dI].[Trp_Ome].[Asp_OMe].[Cys_Bn].[meG].[Phe_3Cl].[dD].T.[dI].T.[dK].[aG].[3Pal].[xiIle].[meD].[Ala_tBu]}|PEPTIDE3{L.[Pro_4Me3OH].S.[NMe2Abz].Q.[3Pal].[xiIle].[D-Hyp].[Ala_tBu].[dI].[Trp_Ome].[Asp_OMe].N.[meG].[Phe_34diCl].[Phe_34diCl]}$PEPTIDE2,PEPTIDE2,16:R2-1:R1|PEPTIDE3,PEPTIDE3,16:R2-1:R1|PEPTIDE3,PEPTIDE2,10:R3-1:R3|PEPTIDE1,PEPTIDE2,1:R2-9:R3$$$V2.0"
@@ -1020,5 +1020,5 @@ index,changed,changed_pixels,percent,description,origin,helm_string
 1019,True,15215,9.509,Validation Set,Validation Set,"PEPTIDE1{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}|PEPTIDE2{[Sar].[dR].[dC].[dY].[dC].[dH].[dP].[dF]}$PEPTIDE1,PEPTIDE2,5:R3-3:R3|PEPTIDE1,PEPTIDE2,3:R3-5:R3$$$"
 1020,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L}$$$$V2.0
 1021,False,0,0.000,Validation Set,Validation Set,PEPTIDE1{K.W.L.N.A.L.L.H.H.G.L.N.C.A.K.G.V.L.A.W.L.N.A.L.L.H}$$$$V2.0
-1022,True,5877,3.673,CValidation Set,Validation Set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,1:R2-1:R3|RNA1,CHEM1,1:R2-1:R2$$$"
+1022,True,9943,6.214,CValidation Set,Validation Set,"RNA1{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|RNA2{R(A)P.R(A)P.R(G)P.R(G)P.R(C)P.R(U)P.R(A)P.R(A)P}|CHEM1{[sDBl]}$RNA2,CHEM1,1:R2-1:R3|RNA1,CHEM1,1:R2-1:R2$$$"
 1023,True,11205,7.003,Validation Set,Validation Set,"RNA1{R(G)P.R(G)P.R(C)P.R(A)P.R(C)P.R(U)P.R(G)P.R(G)P.R(U)P.R(G)P.R(C)P.R(C)}$RNA1,RNA1,11:pair-26:pair|RNA1,RNA1,5:pair-32:pair|RNA1,RNA1,14:pair-23:pair|RNA1,RNA1,8:pair-29:pair|RNA1,RNA1,2:pair-35:pair$$$"
