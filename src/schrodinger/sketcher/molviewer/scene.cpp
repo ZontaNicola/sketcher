@@ -2,6 +2,7 @@
 #include "schrodinger/rdkit_extensions/monomer_database.h"
 
 #include <functional>
+#include <array>
 #include <unordered_set>
 
 #include <rdkit/GraphMol/ROMol.h>
@@ -18,9 +19,11 @@
 #include <QTransform>
 #include <QUndoStack>
 #include <QUrl>
+#include <QVariantAnimation>
 #include <QWidget>
 
 #include "schrodinger/rdkit_extensions/file_format.h"
+#include "schrodinger/rdkit_extensions/helm.h"
 #include "schrodinger/rdkit_extensions/helm/monomer_coordgen.h"
 
 #include "schrodinger/sketcher/dialog/file_import_export.h"
@@ -58,12 +61,19 @@
 #include "schrodinger/sketcher/tool/explicit_h_scene_tool.h"
 #include "schrodinger/sketcher/molviewer/halo_highlighting_item.h"
 #include "schrodinger/sketcher/molviewer/monomer_utils.h"
+#include "schrodinger/sketcher/molviewer/monomer_atomistic_preview.h"
+#include "schrodinger/sketcher/rdkit/monomeric.h"
 #include "schrodinger/rdkit_extensions/stereochemistry.h"
 
 namespace schrodinger
 {
 namespace sketcher
 {
+
+namespace
+{
+constexpr int MONOMER_PREVIEW_ANIMATION_MS = 360;
+}
 
 NullSceneTool::NullSceneTool() : AbstractSceneTool(nullptr, nullptr)
 {
@@ -133,6 +143,15 @@ Scene::~Scene()
 
 void Scene::moveInteractiveItems()
 {
+    if (!m_resizing_preview) {
+        m_suppress_preview_closing = true;
+        if (m_preview_closing) {
+            m_preview_animation.reset();
+            removePreviewGraphics();
+        }
+        clearHovered();
+        m_suppress_preview_closing = false;
+    }
     update_conf_for_mol_graphics_items(
         getInteractiveItems(InteractiveItemFlag::ATOM_OR_MONOMER),
         getInteractiveItems(InteractiveItemFlag::BOND_OR_CONNECTOR),
@@ -154,6 +173,14 @@ void Scene::updateItems(const WhatChangedType what_changed)
     Scene::SelectionChangeSignalBlocker signal_blocker(this);
 
     if (what_changed & WhatChanged::MOLECULE) {
+        // The model has already changed, so its old hovered atom may no longer
+        // exist. The normal label-size pass below sizes the new structure.
+        m_preview_resized_atom_index = -1;
+        m_preview_original_coords.clear();
+        m_preview_animation.reset();
+        if (m_preview_closing)
+            removePreviewGraphics();
+        clearHovered();
         updateMonomerLabelSizeOnModel();
         clearInteractiveItems(InteractiveItemFlag::MOLECULAR_OR_MONOMERIC);
         const auto* mol = m_mol_model->getMol();
@@ -175,7 +202,6 @@ void Scene::updateItems(const WhatChangedType what_changed)
             addItem(item);
             m_interactive_items.insert(item);
         }
-        clearHovered();
     }
     if (what_changed & WhatChanged::NON_MOL_OBJS) {
         clearInteractiveItems(InteractiveItemFlag::NON_MOLECULAR);
@@ -397,6 +423,12 @@ void Scene::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 
 void Scene::updateHovered(const QPointF& pos)
 {
+    // The source monomer is hidden while its preview is shown. Keep its
+    // original hover area active so moving within it does not flicker.
+    if (m_monomer_atomistic_preview != nullptr && !m_preview_closing &&
+        m_preview_hover_rect.contains(pos)) {
+        return;
+    }
     // update the hovered atom or bond
     auto* top_graphics_item =
         getTopInteractiveItemAt(pos, InteractiveItemFlag::ALL);
@@ -420,8 +452,135 @@ void Scene::setHovered(
         return;
     }
 
+    const bool animate_closing =
+        std::holds_alternative<std::monostate>(new_hovered) &&
+        m_monomer_atomistic_preview != nullptr &&
+        m_preview_resized_atom_index >= 0 && !m_suppress_preview_closing;
+    const auto closing_start_positions =
+        animate_closing ? currentAtomItemPositions() : std::vector<QPointF>();
+    const auto closing_start_opacity =
+        animate_closing ? m_monomer_atomistic_preview->opacity() : 1.0;
+    m_preview_animation.reset();
+    if (!animate_closing)
+        removePreviewGraphics();
+    if (m_preview_resized_atom_index >= 0) {
+        m_resizing_preview = true;
+        m_mol_model->restoreMonomerPreviewGeometry(m_preview_resized_atom_index,
+                                                   m_preview_original_coords,
+                                                   m_preview_original_size);
+        moveInteractiveItems();
+        m_resizing_preview = false;
+        m_preview_resized_atom_index = -1;
+        m_preview_original_coords.clear();
+    }
+
     auto old_hovered = m_hovered;
     m_hovered = new_hovered;
+
+    if (const auto* atom = std::get_if<const RDKit::Atom*>(&new_hovered);
+        atom != nullptr && *atom != nullptr && is_atom_monomeric(*atom)) {
+        auto* item =
+            m_atom_to_atom_item.find(*atom) == m_atom_to_atom_item.end()
+                ? nullptr
+                : m_atom_to_atom_item.at(*atom);
+        if (item != nullptr) {
+            const auto start_positions = currentAtomItemPositions();
+            const auto initial_hover_rect = item->sceneBoundingRect();
+            if (const auto preview_size =
+                    get_monomer_atomistic_preview_size(*atom)) {
+                const auto label_size = get_monomer_graphics_item_size(
+                    *atom, m_fonts,
+                    *m_sketcher_model->getAtomDisplaySettingsPtr(),
+                    *m_sketcher_model->getBondDisplaySettingsPtr());
+                auto size = label_size;
+                size.x = std::max(size.x, preview_size->x);
+                size.y = std::max(size.y, preview_size->y);
+                std::array<double, 3> stored_size{label_size.x, label_size.y,
+                                                  label_size.z};
+                (*atom)->getPropIfPresent(rdkit_extensions::MONOMER_ITEM_SIZE,
+                                          stored_size);
+                m_preview_original_size = {stored_size[0], stored_size[1],
+                                           stored_size[2]};
+                m_preview_original_coords =
+                    m_mol_model->getMol()->getConformer().getPositions();
+                m_resizing_preview = true;
+                m_mol_model->resizeMonomers(
+                    {{static_cast<int>((*atom)->getIdx()), size}});
+                moveInteractiveItems();
+                m_resizing_preview = false;
+                m_preview_resized_atom_index = (*atom)->getIdx();
+            }
+            MonomerAtomisticPreview::AttachmentDirections directions;
+            const auto center = item->sceneBoundingRect().center();
+            for (const auto* bond : (*atom)->getOwningMol().atomBonds(*atom)) {
+                std::string linkage;
+                if (!bond->getPropIfPresent(LINKAGE, linkage)) {
+                    continue;
+                }
+                const auto dash = linkage.find('-');
+                if (dash == std::string::npos)
+                    continue;
+                const auto ap_name = bond->getBeginAtom() == *atom
+                                         ? linkage.substr(0, dash)
+                                         : linkage.substr(dash + 1);
+                const auto ap_number = ap_name_to_num(ap_name);
+                if (ap_number <= 0)
+                    continue;
+                const auto neighbor =
+                    m_atom_to_atom_item.find(bond->getOtherAtom(*atom));
+                if (neighbor != m_atom_to_atom_item.end()) {
+                    const auto neighbor_rect =
+                        neighbor->second->sceneBoundingRect();
+                    directions.push_back({static_cast<unsigned int>(ap_number),
+                                          neighbor_rect.center() - center,
+                                          neighbor_rect.translated(-center)});
+                }
+            }
+            auto* preview = new MonomerAtomisticPreview(
+                *atom, directions, m_fonts,
+                *m_sketcher_model->getAtomDisplaySettingsPtr(),
+                *m_sketcher_model->getBondDisplaySettingsPtr(),
+                m_sketcher_model->hasDarkColorScheme());
+            if (!preview->boundingRect().isNull()) {
+                m_preview_hover_rect =
+                    initial_hover_rect.united(item->sceneBoundingRect());
+                preview->setPos(m_preview_hover_rect.center());
+                addItem(preview);
+                m_monomer_atomistic_preview = preview;
+                m_preview_source_item = item;
+                auto hide_item = [this](QGraphicsItem* graphics_item) {
+                    if (graphics_item == nullptr ||
+                        std::any_of(m_preview_hidden_items.begin(),
+                                    m_preview_hidden_items.end(),
+                                    [graphics_item](const auto& entry) {
+                                        return entry.first == graphics_item;
+                                    })) {
+                        return;
+                    }
+                    m_preview_hidden_items.emplace_back(
+                        graphics_item, graphics_item->isVisible());
+                    graphics_item->setVisible(false);
+                };
+                hide_item(item);
+                for (const auto* bond :
+                     (*atom)->getOwningMol().atomBonds(*atom)) {
+                    if (const auto primary = m_bond_to_bond_item.find(bond);
+                        primary != m_bond_to_bond_item.end()) {
+                        hide_item(primary->second);
+                    }
+                    if (const auto secondary =
+                            m_bond_to_secondary_connection_item.find(bond);
+                        secondary !=
+                        m_bond_to_secondary_connection_item.end()) {
+                        hide_item(secondary->second);
+                    }
+                }
+                animatePreviewLayout(start_positions, true);
+            } else {
+                delete preview;
+            }
+        }
+    }
 
     if (std::holds_alternative<const RDKit::Atom*>(old_hovered) &&
         !std::holds_alternative<const RDKit::Atom*>(new_hovered)) {
@@ -440,11 +599,89 @@ void Scene::setHovered(
         // we've just started hovering over this bond
         emit bondHovered(std::get<const RDKit::Bond*>(new_hovered));
     }
+    if (animate_closing) {
+        m_preview_closing = true;
+        animatePreviewLayout(closing_start_positions, false,
+                             closing_start_opacity);
+    }
+}
+
+void Scene::removePreviewGraphics()
+{
+    if (m_monomer_atomistic_preview != nullptr) {
+        removeItem(m_monomer_atomistic_preview);
+        delete m_monomer_atomistic_preview;
+        m_monomer_atomistic_preview = nullptr;
+    }
+    for (const auto& [item, was_visible] : m_preview_hidden_items) {
+        item->setVisible(was_visible);
+    }
+    m_preview_hidden_items.clear();
+    m_preview_hover_rect = QRectF();
+    m_preview_source_item = nullptr;
+    m_preview_closing = false;
 }
 
 void Scene::clearHovered()
 {
     setHovered(std::monostate());
+}
+
+std::vector<QPointF> Scene::currentAtomItemPositions() const
+{
+    std::vector<QPointF> positions(m_mol_model->getMol()->getNumAtoms());
+    for (const auto& [atom, item] : m_atom_to_atom_item) {
+        positions[atom->getIdx()] = item->pos();
+    }
+    return positions;
+}
+
+void Scene::animatePreviewLayout(const std::vector<QPointF>& start_positions,
+                                 bool opening, qreal start_opacity)
+{
+    const auto target_positions = currentAtomItemPositions();
+    if (start_positions.size() != target_positions.size())
+        return;
+
+    auto update_frame = [this, start_positions, target_positions, opening,
+                         start_opacity](qreal progress) {
+        for (const auto& [atom, item] : m_atom_to_atom_item) {
+            const auto index = atom->getIdx();
+            item->setPos(start_positions[index] * (1.0 - progress) +
+                         target_positions[index] * progress);
+            static_cast<AbstractGraphicsItem*>(item)->updateCachedData();
+        }
+        for (const auto& [bond, item] : m_bond_to_bond_item) {
+            static_cast<AbstractGraphicsItem*>(item)->updateCachedData();
+        }
+        for (const auto& [bond, item] : m_bond_to_secondary_connection_item) {
+            static_cast<AbstractGraphicsItem*>(item)->updateCachedData();
+        }
+        if (m_monomer_atomistic_preview != nullptr) {
+            if (m_preview_source_item != nullptr) {
+                m_monomer_atomistic_preview->setPos(
+                    m_preview_source_item->sceneBoundingRect().center());
+            }
+            m_monomer_atomistic_preview->setOpacity(
+                opening ? progress : start_opacity * (1.0 - progress));
+        }
+        updateSelectionHighlighting();
+    };
+    m_preview_animation = std::make_unique<QVariantAnimation>();
+    m_preview_animation->setStartValue(0.0);
+    m_preview_animation->setEndValue(1.0);
+    m_preview_animation->setDuration(MONOMER_PREVIEW_ANIMATION_MS);
+    m_preview_animation->setEasingCurve(QEasingCurve::OutCubic);
+    connect(m_preview_animation.get(), &QVariantAnimation::valueChanged, this,
+            [update_frame](const QVariant& value) {
+                update_frame(value.toDouble());
+            });
+    if (!opening) {
+        connect(m_preview_animation.get(), &QVariantAnimation::finished, this,
+                [this]() { removePreviewGraphics(); });
+    }
+    update_frame(0.0);
+    m_preview_animation->start();
 }
 
 void Scene::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)

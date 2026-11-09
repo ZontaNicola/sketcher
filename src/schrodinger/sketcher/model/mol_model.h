@@ -1012,6 +1012,11 @@ class SKETCHER_API MolModel : public AbstractUndoableModel
     void resizeMonomers(
         const std::unordered_map<int, RDGeom::Point3D>& monomer_sizes);
 
+    /** Restore coordinates and size after a temporary monomer preview. */
+    void restoreMonomerPreviewGeometry(
+        int monomer_index, const std::vector<RDGeom::Point3D>& coordinates,
+        const RDGeom::Point3D& monomer_size);
+
     /**
      * Persist monomer sizes without moving any monomers.
      */

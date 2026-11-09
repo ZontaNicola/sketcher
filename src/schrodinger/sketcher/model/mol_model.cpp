@@ -3443,6 +3443,21 @@ void MolModel::resizeMonomers(
     rdkit_extensions::resize_monomers(m_mol, monomer_sizes);
 }
 
+void MolModel::restoreMonomerPreviewGeometry(
+    int monomer_index, const std::vector<RDGeom::Point3D>& coordinates,
+    const RDGeom::Point3D& monomer_size)
+{
+    auto& conf = m_mol.getConformer();
+    if (coordinates.size() != conf.getNumAtoms()) {
+        throw std::invalid_argument("Monomer preview coordinate count changed");
+    }
+    for (unsigned int i = 0; i < coordinates.size(); ++i) {
+        conf.setAtomPos(i, coordinates[i]);
+    }
+    rdkit_extensions::store_initial_monomer_sizes(
+        m_mol, {{monomer_index, monomer_size}});
+}
+
 void MolModel::storeInitialMonomerSizes(
     const std::unordered_map<int, RDGeom::Point3D>& monomer_sizes)
 {

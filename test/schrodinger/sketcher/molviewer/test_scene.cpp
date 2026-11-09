@@ -1,6 +1,7 @@
 #define BOOST_TEST_MODULE Test_Sketcher
 
 #include <algorithm>
+#include <array>
 #include <cmath>
 #include <map>
 #include <string>
@@ -17,6 +18,7 @@
 #include <QMimeData>
 #include <QRectF>
 #include <QSignalSpy>
+#include <QTest>
 #include <QTemporaryDir>
 #include <QUrl>
 #include <QWidget>
@@ -24,12 +26,14 @@
 #include "../test_common.h"
 #include "schrodinger/rdkit_extensions/convert.h"
 #include "schrodinger/rdkit_extensions/helm.h"
+#include "schrodinger/rdkit_extensions/helm/monomer_coordgen.h"
 #include "schrodinger/rdkit_extensions/monomer_database.h"
 #include "schrodinger/sketcher/dialog/message_box_dialog.h"
 #include "schrodinger/sketcher/molviewer/abstract_monomer_item.h"
 #include "schrodinger/sketcher/molviewer/atom_item.h"
 #include "schrodinger/sketcher/molviewer/bond_item.h"
 #include "schrodinger/sketcher/molviewer/constants.h"
+#include "schrodinger/sketcher/molviewer/coord_utils.h"
 #include "schrodinger/sketcher/molviewer/scene.h"
 #include "schrodinger/sketcher/rdkit/monomeric.h"
 
@@ -439,6 +443,53 @@ BOOST_AUTO_TEST_CASE(test_drop_unsupported_file)
     BOOST_CHECK_NO_THROW(QCoreApplication::sendEvent(&scene, &event));
     BOOST_TEST(import_spy.count() == 0);
     BOOST_TEST(parent.findChildren<MessageBoxDialog*>().size() == 1);
+}
+
+BOOST_AUTO_TEST_CASE(test_monomer_hover_restores_layout)
+{
+    auto scene = TestScene::getScene();
+    import_mol_text(scene->m_mol_model, "PEPTIDE1{A.C}$$$$V2.0", Format::HELM);
+    const auto* mol = scene->m_mol_model->getMol();
+    BOOST_REQUIRE_EQUAL(mol->getNumAtoms(), 2);
+    const auto original = mol->getConformer().getPositions();
+    const auto original_bond_length = (original[1] - original[0]).length();
+    std::array<double, 3> original_size;
+    BOOST_REQUIRE(mol->getAtomWithIdx(0)->getPropIfPresent(
+        rdkit_extensions::MONOMER_ITEM_SIZE, original_size));
+    const auto hover_pos = scene->getGraphicsItemForAtom(mol->getAtomWithIdx(0))
+                               ->sceneBoundingRect()
+                               .center();
+
+    for (int cycle = 0; cycle < 2; ++cycle) {
+        QGraphicsSceneMouseEvent enter(QEvent::GraphicsSceneMouseMove);
+        enter.setScenePos(hover_pos);
+        scene->mouseMoveEvent(&enter);
+        const auto expanded = mol->getConformer().getPositions();
+        BOOST_CHECK((expanded[1] - expanded[0]).length() >
+                    original_bond_length);
+        // Exercise both a completed opening and an interrupted opening.
+        if (cycle == 0)
+            QTest::qWait(420);
+
+        QGraphicsSceneMouseEvent leave(QEvent::GraphicsSceneMouseMove);
+        leave.setScenePos(QPointF(10000, 10000));
+        scene->mouseMoveEvent(&leave);
+        const auto restored = mol->getConformer().getPositions();
+        for (size_t i = 0; i < original.size(); ++i) {
+            BOOST_CHECK_SMALL((restored[i] - original[i]).length(), 1e-8);
+        }
+        std::array<double, 3> restored_size;
+        BOOST_REQUIRE(mol->getAtomWithIdx(0)->getPropIfPresent(
+            rdkit_extensions::MONOMER_ITEM_SIZE, restored_size));
+        BOOST_CHECK(restored_size == original_size);
+        QTest::qWait(420);
+        const auto* monomer_item =
+            scene->getGraphicsItemForAtom(mol->getAtomWithIdx(0));
+        BOOST_CHECK(monomer_item->isVisible());
+        BOOST_CHECK_SMALL(
+            (monomer_item->pos() - to_scene_xy(original[0])).manhattanLength(),
+            1e-6);
+    }
 }
 
 } // namespace sketcher

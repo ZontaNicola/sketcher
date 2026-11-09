@@ -4,6 +4,7 @@
 #include <string>
 #include <unordered_map>
 #include <variant>
+#include <vector>
 
 #include <QGraphicsScene>
 #include <QPolygonF>
@@ -23,6 +24,7 @@
 class QObject;
 class QFont;
 class QPointF;
+class QVariantAnimation;
 
 namespace RDKit
 {
@@ -42,6 +44,7 @@ class AtomItem;
 class BondItem;
 class MolModel;
 class NonMolecularItem;
+class MonomerAtomisticPreview;
 class RotationItem;
 class SGroupItem;
 class SketcherModel;
@@ -341,6 +344,10 @@ class SKETCHER_API Scene : public QGraphicsScene
         std::variant<std::monostate, const RDKit::Atom*, const RDKit::Bond*>
             new_hovered);
     void clearHovered();
+    std::vector<QPointF> currentAtomItemPositions() const;
+    void animatePreviewLayout(const std::vector<QPointF>& start_positions,
+                              bool opening, qreal start_opacity = 1.0);
+    void removePreviewGraphics();
 
     /**
      * Set the scene tool (i.e. the mouse cursor mode) to the given value
@@ -391,6 +398,17 @@ class SKETCHER_API Scene : public QGraphicsScene
      */
     std::variant<std::monostate, const RDKit::Atom*, const RDKit::Bond*>
         m_hovered = std::monostate();
+    MonomerAtomisticPreview* m_monomer_atomistic_preview = nullptr;
+    QGraphicsItem* m_preview_source_item = nullptr;
+    QRectF m_preview_hover_rect;
+    std::vector<std::pair<QGraphicsItem*, bool>> m_preview_hidden_items;
+    int m_preview_resized_atom_index = -1;
+    RDGeom::Point3D m_preview_original_size;
+    std::vector<RDGeom::Point3D> m_preview_original_coords;
+    bool m_resizing_preview = false;
+    bool m_preview_closing = false;
+    bool m_suppress_preview_closing = false;
+    std::unique_ptr<QVariantAnimation> m_preview_animation;
 
     /**
      * Objects associated with the context menu instance that is currently open.
